@@ -35,9 +35,9 @@ const Navbar = () => {
                         <nav class="hidden gap-12 lg:flex">
                             <Link href={'/'} class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Home</Link>
                             <Link href={'#courses'} class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Course</Link>
-                            <a href="#" class="inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-[#a2cc4c]">Features</a>
+                            <Link href={'/features/feature'} class="inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-[#a2cc4c]">Features</Link>
                             <a href="#" class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Pricing</a>
-                            <a href="#" class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Blog</a>
+                            <Link href={'/blogs/blog'} class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Blog</Link>
                             <a href="#" class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Store</a>
                             <a href="#" class="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">About</a>
                         </nav>
