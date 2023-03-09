@@ -28,9 +28,9 @@ const Navbar = () => {
 
                         {/* <!-- buttons - start --> */}
                         <div class="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
-                            <a href="#" class="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</a>
+                            <a href="#" class="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</a>
 
-                            <a href="#" class="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none text-black transition duration-100 hover:bg-white focus-visible:ring active:bg-indigo-700 md:text-base">Sign up</a>
+                            <a href="#" class="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none text-black transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-indigo-700 md:text-base">Sign up</a>
                         </div>
 
                         <button type="button" class="inline-flex items-center gap-2 rounded-lg bg-gray-200 px-2.5 py-2 text-sm font-semibold text-gray-500 ring-indigo-300 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
