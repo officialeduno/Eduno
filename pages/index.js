@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
@@ -38,7 +37,7 @@ export default function Home() {
 
 
 
-      <section class=" body-font bg-[#001719]">
+      <section id='courses' class=" body-font bg-[#001719]">
 
         <div class="container px-5 py-12 mx-auto">
           <div class="flex flex-wrap -m-4">
