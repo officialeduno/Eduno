@@ -119,7 +119,7 @@ const Footer = () => {
 
                             <nav class="flex flex-col gap-4">
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Terms of Service</a>
+                                    <Link href={'/footer-pages/term-of-services'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Terms of Service</Link>
                                 </div>
 
                                 <div>
