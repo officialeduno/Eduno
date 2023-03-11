@@ -89,7 +89,7 @@ const Footer = () => {
                                 </div>
 
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Blog</a>
+                                    <Link href={'/blogs/blog'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Blog</Link>
                                 </div>
                             </nav>
                         </div>
@@ -98,19 +98,19 @@ const Footer = () => {
 
                             <nav class="flex flex-col gap-4">
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Contact</a>
+                                    <Link href={'/footer-pages/contact'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Contact</Link>
                                 </div>
 
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Documentation</a>
+                                    <Link href={'/footer-pages/documentation'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Documentation</Link>
                                 </div>
 
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Chat</a>
+                                    <Link href={'/footer-pages/chat-with-us'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Chat</Link>
                                 </div>
 
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">FAQ</a>
+                                    <Link href={'/footer-pages/faq'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">FAQ</Link>
                                 </div>
                             </nav>
                         </div>
@@ -123,11 +123,11 @@ const Footer = () => {
                                 </div>
 
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Privacy Policy</a>
+                                    <Link href={'/footer-pages/privacy-policy'} class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Privacy Policy</Link>
                                 </div>
 
                                 <div>
-                                    <a href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Cookie settings</a>
+                                    <Link href="#" class="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Cookie settings</Link>
                                 </div>
                             </nav>
                         </div>

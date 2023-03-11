@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
+import Head from 'next/head'
 
 const Blog = () => {
     return (
+        <>
+        <Head>
+            <title>Blogs (Be updated with technology with our BLogs)</title>
+        </Head>
         <div>
             <div class="bg-[#001719] py-6 sm:py-8 lg:py-12">
                 <div class="mx-auto max-w-screen-xl px-4 md:px-8">
@@ -96,6 +101,7 @@ const Blog = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

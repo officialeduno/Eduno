@@ -1,7 +1,12 @@
 import React from 'react'
+import Head from 'next/head'
 
 const Feature = () => {
     return (
+        <>
+        <Head>
+            <title>Features of Eduno | Eduno (Empower yourself with Eduno)</title>
+        </Head>
         <div>
             <div class="bg-[#001719] py-6 sm:py-8 lg:py-12">
                 <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
@@ -101,6 +106,7 @@ const Feature = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
