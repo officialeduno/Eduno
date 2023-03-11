@@ -54,23 +54,23 @@ const Navbar = () => {
                                 <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
                             </svg>
 
-                            Menu
+                            
                         </button>
                         {/* <!-- buttons - end --> */}
                     </header>
                 </div>
 
-                <div ref={ref} className='sidebar flex flex-col items-center h-[100%] px-3 py-4 fixed top-0 right-0 bg-[#001719] transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#a2cc4c]'>
-                    <span onClick={handleMenu}></span>
+                <div ref={ref} className='sidebar flex flex-col items-center h-[100%] px-3 py-4 fixed top-0 right-0 bg-[#001719] transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#a2cc4c] z-10'>
+                    <span onClick={handleMenu} className="items-start w-[100%]" ><img src="/icons/x-button.png" className='h-4' alt="" /></span>
                     <img src="logo.png" className='h-12' alt="" />
                     <h1 className='text-white text-4xl'>Eduno</h1>
-                    <a href='#' class="py-3 pt-4 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Home</a>
-                    <a href="#" class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Course</a>
-                    <a href="#" class="py-3 inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-[#a2cc4c]">Features</a>
-                    <a href="#" class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Pricing</a>
-                    <a href="#" class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Blog</a>
-                    <a href="#" class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Store</a>
-                    <a href="#" class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">About</a>
+                    <a href='#' onClick={handleMenu} class="py-3 pt-4 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Home</a>
+                    <a href="#" onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Course</a>
+                    <a href="#" onClick={handleMenu} class="py-3 inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-[#a2cc4c]">Features</a>
+                    <a href="#" onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Pricing</a>
+                    <Link href={'/blogs/blog'} onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Blog</Link>
+                    <a href="#" onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Store</a>
+                    <a href="#" onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">About</a>
                     <Link href={'/authentication/signin'} onClick={handleMenu} class="inline-block rounded-lg px-4 py-3 mt-8 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
                     <Link href={'/authentication/signup'} onClick={handleMenu} class="inline-block rounded-lg bg-[#a2cc4c] px-12 mt-4 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-indigo-700 md:text-base">Sign up</Link>
 
