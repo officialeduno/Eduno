@@ -2,7 +2,6 @@
 import Link from 'next/link';
 import React from 'react'
 import { useRef } from 'react';
-import { AiOutlineArrowRight} from 'react-icons/Ai';
 
 const Navbar = () => {
 
@@ -62,7 +61,7 @@ const Navbar = () => {
                 </div>
 
                 <div ref={ref} className='sidebar flex flex-col items-center h-[100%] px-3 py-4 fixed top-0 right-0 bg-[#001719] transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#a2cc4c]'>
-                    <span onClick={handleMenu}><AiOutlineArrowRight className='absolute top-3 left-3 cursor-pointer text-white font-bold text-2xl' /></span>
+                    <span onClick={handleMenu}></span>
                     <img src="logo.png" className='h-12' alt="" />
                     <h1 className='text-white text-4xl'>Eduno</h1>
                     <a href='#' class="py-3 pt-4 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Home</a>
