@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 
 const ForgotPassword = () => {
     return (
@@ -20,7 +21,7 @@ const ForgotPassword = () => {
                         </div>
 
                         <div class="flex items-center justify-center bg-[#a1cc4c8c] p-4">
-                            <p class="text-center text-sm text-black">Dont have an account? <a href="#" class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Sign Up</a></p>
+                            <p class="text-center text-sm text-black">Dont have an account? <Link href={'/authentication/signup'} class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Sign Up</Link></p>
                         </div>
                     </form>
                 </div>

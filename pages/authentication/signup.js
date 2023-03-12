@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Signup = () => {
     return (
@@ -58,7 +59,7 @@ const Signup = () => {
                         </div>
 
                         <div class="flex items-center justify-center bg-[#a1cc4c8c] p-4">
-                            <p class="text-center text-sm text-black">Have an account? <a href="#" class="text-indigo-200 transition duration-100 hover:text-indigo-400 active:text-indigo-700">Sign In</a></p>
+                            <p class="text-center text-sm text-black">Have an account? <Link href={'/authentication/signin'} class="text-indigo-200 transition duration-100 hover:text-indigo-400 active:text-indigo-700">Sign In</Link></p>
                         </div>
                     </form>
                 </div>
