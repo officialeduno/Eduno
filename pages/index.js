@@ -49,6 +49,13 @@ export default function Home() {
 
                   <h1 class="title-font text-2xl font-medium text-white mb-3">Android App Development</h1>
                   <p class="leading-relaxed mb-3 text-white">Android app development is a highly sought-after skill in todays job market, and taking an Android app development course can be an excellent way to learn this skill.</p>
+                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                    <h1>Price :</h1>
+                    <div className='flex'>
+                      <h1 className='pr-4'>₹1,999/-</h1>
+                      <h1 className='line-through text-sm'>₹3,999/-</h1>
+                    </div>
+                  </div>
                   <div class="flex items-center flex-wrap ">
                     <a class="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
                       <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -78,6 +85,13 @@ export default function Home() {
 
                   <h1 class="title-font text-2xl font-medium text-white mb-3">Full Stack Web Development</h1>
                   <p class="leading-relaxed mb-3 text-white">A full-stack web development course is an educational program that teaches students the skills needed to build web applications from start to finish.</p>
+                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                    <h1>Price :</h1>
+                    <div className='flex'>
+                      <h1 className='pr-4'>₹1,499/-</h1>
+                      <h1 className='line-through text-sm'>₹2,999/-</h1>
+                    </div>
+                  </div>
                   <div class="flex items-center flex-wrap ">
                     <a class="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
                       <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -107,6 +121,13 @@ export default function Home() {
 
                   <h1 class="title-font text-2xl font-medium text-white mb-3">Java Programming</h1>
                   <p class="leading-relaxed mb-3 text-white">A Java programming course is an educational program that teaches students the fundamentals of the Java programming language.</p>
+                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                    <h1>Price :</h1>
+                    <div className='flex'>
+                      <h1 className='pr-4'>₹999/-</h1>
+                      <h1 className='line-through text-sm'>₹1,999/-</h1>
+                    </div>
+                  </div>
                   <div class="flex items-center flex-wrap ">
                     <a class="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
                       <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">

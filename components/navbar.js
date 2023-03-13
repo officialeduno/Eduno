@@ -46,7 +46,7 @@ const Navbar = () => {
                         <div class="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
                             <Link href={'/authentication/signin'} class="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
 
-                            <Link href={'/authentication/signup'} class="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-indigo-700 md:text-base">Sign up</Link>
+                            <Link href={'/authentication/signup'} class="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
                         </div>
 
                         <button type="button" onClick={handleMenu} class="inline-flex items-center gap-2 rounded-lg bg-[#a2cc4c] px-2.5 py-2 text-sm font-semibold text-white ring-indigo-300 hover:bg-[#6f8d35] focus-visible:ring active:text-gray-700 md:text-base lg:hidden">
@@ -72,7 +72,7 @@ const Navbar = () => {
                     <a href="#" onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Store</a>
                     <a href="#" onClick={handleMenu} class="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">About</a>
                     <Link href={'/authentication/signin'} onClick={handleMenu} class="inline-block rounded-lg px-4 py-3 mt-8 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
-                    <Link href={'/authentication/signup'} onClick={handleMenu} class="inline-block rounded-lg bg-[#a2cc4c] px-12 mt-4 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-indigo-700 md:text-base">Sign up</Link>
+                    <Link href={'/authentication/signup'} onClick={handleMenu} class="inline-block rounded-lg bg-[#a2cc4c] px-12 mt-4 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
 
                 </div>
             </div>

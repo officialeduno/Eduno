@@ -16,12 +16,12 @@ const Signin = () => {
                     <form class="mx-auto max-w-lg rounded-lg border border-[#a1cc4c8c]">
                         <div class="flex flex-col gap-4 p-4 md:p-8">
                             <div>
-                                <label for="email" class="mb-2 inline-block text-sm text-white sm:text-base">Email*</label>
+                                <label htmlFor="email" class="mb-2 inline-block text-sm text-white sm:text-base">Email*</label>
                                 <input name="email" class="w-full rounded border bg-gray-50 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
                             </div>
 
                             <div>
-                                <label for="password" class="mb-2 inline-block text-sm text-white sm:text-base">Password*</label>
+                                <label htmlFor="password" class="mb-2 inline-block text-sm text-white sm:text-base">Password*</label>
                                 <input name="password" class="w-full rounded border bg-gray-50 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
                             </div>
 
@@ -54,7 +54,7 @@ const Signin = () => {
                         </div>
 
                         <div class="flex items-center justify-center bg-[#a1cc4c8c] p-4">
-                            <p class="text-center text-sm text-black">Dont have an account? <a href="#" class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Sign Up</a></p>
+                            <p class="text-center text-sm text-black">Dont have an account? <Link href={'/authentication/signup'} class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Sign Up</Link></p>
                         </div>
                     </form>
                 </div>
