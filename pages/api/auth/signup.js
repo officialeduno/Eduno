@@ -1,4 +1,5 @@
 import users from "@/models/users"
+var CryptoJS = require("crypto-js");
 import connectDb from "@/middleware/mongoose"
 
 const handler = async(req, res) => {
@@ -8,7 +9,7 @@ const handler = async(req, res) => {
             fullName : req.body.fullName,
             email: req.body.email,
             phoneNo: req.body.phoneNo,
-            password: req.body.password
+            password: CryptoJS.AES.encrypt(req.body.password, process.env.secret_key).toString()
         })
         console.log(p);
         await p.save()

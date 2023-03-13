@@ -21,11 +21,7 @@ const ForgotPassword = () => {
                         </div>
 
                         <div class="flex items-center justify-center bg-[#a1cc4c8c] p-4">
-<<<<<<< HEAD
                             <p class="text-center text-sm text-black">Know your password? <Link href={'/authentication/signin'} class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Sign In</Link></p>
-=======
-                            <p class="text-center text-sm text-black">Dont have an account? <Link href={'/authentication/signup'} class="text-indigo-500 transition duration-100 hover:text-indigo-600 active:text-indigo-700">Sign Up</Link></p>
->>>>>>> d4327138812313dcac2c61d02bdbfc907f8b370c
                         </div>
                     </form>
                 </div>
