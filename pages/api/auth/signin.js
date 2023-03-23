@@ -1,29 +1,34 @@
 import users from "@/models/users"
 import connectDb from "@/middleware/mongoose"
-
+var jwt = require('jsonwebtoken');
 var CryptoJS = require("crypto-js");
 
-const handler = async(req, res) => {
-    if(req.method == 'GET'){
-        const {email, password} = req.body;
+const handler = async (req, res) => {
+    if (req.method == 'GET') {
+        const { email, password } = req.body;
 
-        let user = await users.findOne({email});
-        if(!user){
-            return res.status(400).json({error:"No Gmail found"});
+        let success = true;
+
+        const user = await users.findOne({ email });
+
+        if (!user) {
+            success = false;
+            return res.status(400).json({ success, error: "Invalid credentials" });
+        } else {
+            const bytes = CryptoJS.AES.decrypt(user.password, process.env.secret_key);
+            let decryptedPass = bytes.toString(CryptoJS.enc.Utf8);
+
+            if (password !== decryptedPass) {
+                success = false;
+                return res.status(400).json(success, { error: "Invalid Crendentials" });
+            }else{
+                var token = jwt.sign({success: true, email:user.email, name:user.fullName}, process.env.jwt_secret);
+                return res.status(200).json(token);
+            }
         }
-
-        const bytes = CryptoJS.AES.decrypt(user.password, process.env.secret_key);
-        let decryptedPass = bytes.toString(CryptoJS.enc.Utf8)
-
-        if(password !== decryptedPass){
-            console.log(password);
-            console.log(decryptedPass);
-            return res.status(400).json({error:"Wrong password"});
-        }
-        res.status(200).json({success: "Ho gaya"})
     }
-    else{
-        res.status(400).json({error: "This is not allowed"})
+    else {
+        res.status(400).json({ error: "This is not allowed" })
     }
 }
 
