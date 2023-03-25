@@ -1,6 +1,9 @@
 // Import react from react package
 import React from 'react'
 
+// Import useRouter to route the path
+import { useRouter } from 'next/router'
+
 // Import head from Next head package
 import Head from 'next/head'
 
@@ -19,37 +22,43 @@ import 'react-toastify/dist/ReactToastify.css';
 // Signup component of signup page
 const Signup = () => {
 
+    
+    let router= useRouter()
+
     // Data variables of Sign up form
-    const [fullName, setName] = useState();
+    const [firstName, setFirstName] = useState();
+    const [lastName, setLastName] = useState();
     const [email, setEmail] = useState();
     const [phoneNo, setPhone] = useState();
     const [password, setPassword] = useState();
 
     // Handle the change of the form 
     const handleChange = (e) => {
-        if(e.target.name == 'fullName'){
-            setName(e.target.value);
-        }else if(e.target.name == 'email'){
+        if (e.target.name == 'firstName') {
+            setFirstName(e.target.value);
+        } else if (e.target.name == 'lastName') {
+            setLastName(e.target.value);
+        } else if (e.target.name == 'email') {
             setEmail(e.target.value);
-        }else if(e.target.name == 'phoneNo'){
+        } else if (e.target.name == 'phoneNo') {
             setPhone(e.target.value);
-        }else if(e.target.name == 'password'){
+        } else if (e.target.name == 'password') {
             setPassword(e.target.value);
         }
     }
 
-    // React Toast 
-    const signupSuccessfulToast = () => toast('Account Created Successfully...', {
-        autoClose: 2000, 
-        type: 'success' 
-    })
+    // React Toast
     const emailAlreadyExistsToast = () => toast('Email Already Exists...', {
-        autoClose: 2000, 
-        type: 'error' 
+        autoClose: 2000,
+        type: 'error'
     })
     const phoneAlreadyExistsToast = () => toast('Phone Number Already Exists...', {
-        autoClose: 2000, 
-        type: 'error' 
+        autoClose: 2000,
+        type: 'error'
+    })
+    const somethingWentWrongToast = () => toast('Some Went Wrong...', {
+        autoClose: 2000,
+        type: 'error'
     })
 
     // Handle the submit button and call the Signup API
@@ -58,13 +67,15 @@ const Signup = () => {
         e.preventDefault();
 
         // Data of sign up form 
-        const data = {fullName, email, phoneNo, password};
+        const data = { firstName, lastName, email, phoneNo, password };
+
+        console.log(data)
 
         // Call the signup API 
         let res = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
             headers: {
-                'Content-Type':'application/json'
+                'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
         });
@@ -73,19 +84,26 @@ const Signup = () => {
         let response = await res.json();
 
         // Toast on the basis of response of API
-        if(response.success == true){
-            signupSuccessfulToast();
-        }else if(response.error == "Phone Number already exists."){
-            phoneAlreadyExistsToast();
-        }else if(response.error == "User already exists."){
-            emailAlreadyExistsToast();
-        }
+        if (response.success == true) {
+            // Set the token in local storage of browser
+            localStorage.setItem('loginToken', response.token);
+            localStorage.setItem('userName', response.userName);
+            
+            router.reload();
 
-        // Clear the form 
-        setName('');
-        setEmail('');
-        setPhone('');
-        setPassword('');
+            // Clear the form 
+            setFirstName('');
+            setLastName('');
+            setEmail('');
+            setPhone('');
+            setPassword('');
+        } else if (response.error == "Phone Number already exists.") {
+            phoneAlreadyExistsToast();
+        } else if (response.error == "User already exists.") {
+            emailAlreadyExistsToast();
+        } else {
+            somethingWentWrongToast();
+        }
     }
 
     // Return of signup component
@@ -119,28 +137,34 @@ const Signup = () => {
                             {/* Input div  */}
                             <div className="flex flex-col gap-4 p-4 md:p-8">
 
-                                {/* Name input  */}
+                                {/* First Name input  */}
                                 <div>
-                                    <label htmlFor="fullName" className="mb-2 inline-block text-sm text-white sm:text-base">Name</label>
-                                    <input value={fullName} onChange={handleChange} id='fullName' name="fullName" placeholder='Full Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring"  required/>
+                                    <label htmlFor="firstName" className="mb-2 inline-block text-sm text-white sm:text-base">First Name</label>
+                                    <input value={firstName} onChange={handleChange} id='firstName' name="firstName" placeholder='First Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
+                                </div>
+
+                                {/* Last Name input  */}
+                                <div>
+                                    <label htmlFor="lastName" className="mb-2 inline-block text-sm text-white sm:text-base">Last Name</label>
+                                    <input value={lastName} onChange={handleChange} id='lastName' name="lastName" placeholder='Last Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
                                 </div>
 
                                 {/* Email Input  */}
                                 <div>
                                     <label htmlFor="email" className="mb-2 inline-block text-sm text-white sm:text-base">Email</label>
-                                    <input value={email} onChange={handleChange} id='email' name="email" type="email" placeholder='E-mail/G-mail' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring"  required/>
+                                    <input value={email} onChange={handleChange} id='email' name="email" type="email" placeholder='E-mail/G-mail' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
                                 </div>
 
                                 {/* Phone number input  */}
                                 <div>
                                     <label htmlFor="phoneNo" className="mb-2 inline-block text-sm text-white sm:text-base">Phone No</label>
-                                    <input value={phoneNo} onChange={handleChange} id='phoneNo' name="phoneNo" placeholder='Contact Number' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring"  required/>
+                                    <input value={phoneNo} onChange={handleChange} id='phoneNo' name="phoneNo" placeholder='Contact Number' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
                                 </div>
 
                                 {/* Password input  */}
                                 <div>
                                     <label htmlFor="password" className="mb-2 inline-block text-sm text-white sm:text-base">Password</label>
-                                    <input value={password} onChange={handleChange} id='password' name="password" type="password" placeholder="Password" className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required/>
+                                    <input value={password} onChange={handleChange} id='password' name="password" type="password" placeholder="Password" className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
                                 </div>
 
                                 {/* Submit button of sign up page  */}

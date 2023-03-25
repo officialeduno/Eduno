@@ -50,8 +50,8 @@ const handler = async (req, res) => {
             else{
 
                 // create a token for login time section
-                var token = jwt.sign({email:user.email, name:user.fullName}, process.env.jwt_secret);
-                return res.status(200).json({success, token});
+                var token = jwt.sign({email:user.email, name:user.firstName}, process.env.jwt_secret);
+                return res.status(200).json({success, token, userName: user.firstName});
             }
         }
     }

@@ -30,7 +30,8 @@ const handler = async (req, res) => {
                 
                 // Variable to store the details which is given to API
                 let new_user = new users({
-                    fullName: req.body.fullName,
+                    firstName: req.body.firstName,
+                    lastName: req.body.lastName,
                     email: req.body.email,
                     phoneNo: req.body.phoneNo,
                     password: CryptoJS.AES.encrypt(req.body.password, process.env.secret_key).toString()
@@ -40,10 +41,10 @@ const handler = async (req, res) => {
                 await new_user.save()
 
                 // Create a token for authentication of user
-                var token = jwt.sign({ name: req.body.fullName, email: req.body.email, phoneNo: req.body.phoneNo }, process.env.jwt_secret);
+                var token = jwt.sign({ firstName: req.body.firstName, lastName: req.body.lastName, email: req.body.email, phoneNo: req.body.phoneNo }, process.env.jwt_secret);
 
                 // return this if succesfylly save in database
-                res.status(200).json({ success: true }, token);
+                res.status(200).json({ success: true, token, userName: req.body.firstName });
 
             }
             

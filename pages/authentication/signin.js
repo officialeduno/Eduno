@@ -1,6 +1,9 @@
 // Import link from the next link package
 import Link from 'next/link'
 
+// Import useRouter to route the path
+import { useRouter } from 'next/router'
+
 // Import react and useState from react package
 import React, { useState } from 'react'
 
@@ -16,6 +19,8 @@ import 'react-toastify/dist/ReactToastify.css';
 // Signin component of signin page 
 const Signin = () => {
 
+    let router= useRouter()
+
     // Data variables of Sign in form
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
@@ -30,10 +35,6 @@ const Signin = () => {
     };
 
     // React toast 
-    const signinSuccessfulToast = () => toast('Successfully Signed In ...', {
-        autoClose: 2000,
-        type: 'success'
-    });
     const signinCancelledToast = () => toast('Invalid Credentials', {
         autoClose: 2000,
         type: 'error'
@@ -64,10 +65,17 @@ const Signin = () => {
 
         // React toast on the basis of API response
         if (response.success == true) {
-            signinSuccessfulToast();
+
+            // Set the token in local storage of browser
+            localStorage.setItem('loginToken', response.token);
+            localStorage.setItem('userName', response.userName);
+            
+            router.reload();
+
             // Clear the form 
             setEmail("");
             setPassword("");
+
         } else {
             signinCancelledToast();
         }

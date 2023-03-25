@@ -4,10 +4,15 @@ const mongoose = require ('mongoose');
 // Create a schema for the user
 const usersSchema = new mongoose.Schema({
 
-    // Name
-    fullName : {
+    // First Name
+    firstName : {
         type: String,
         required: true
+    },
+
+    // Last Name
+    lastName : {
+        type: String
     },
 
     // Email
