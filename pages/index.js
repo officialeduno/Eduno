@@ -32,38 +32,38 @@ export default function Home() {
       </Head>
       
       {/* Main component of index or main page  */}
-      <section class="bg-[#001719] md:pt-24">
+      <section className="bg-[#001719] md:pt-24">
 
         {/* Logo for home page  */}
         <img src="logo.png" className='h-20 mx-auto' alt="" />
 
         {/* Heading Section  */}
-        <div class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-8 lg:px-12">
+        <div className="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-8 lg:px-12">
 
           {/* Something New Section  */}
-          <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
-            <span class="text-xs bg-[#a2cc4c] rounded-full text-white px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Eduno is out! See whats new</span>
-            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+          <a href="#" className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+            <span className="text-xs bg-[#a2cc4c] rounded-full text-white px-4 py-1.5 mr-3">New</span> <span className="text-sm font-medium">Eduno is out! See whats new</span>
+            <svg className="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
           </a>
 
           {/* Heading of home page  */}
-          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Empower yourself with Eduno</h1>
+          <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Empower yourself with Eduno</h1>
 
           {/* Paragrph of home page  */}
-          <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Eduno is a cutting-edge platform that offers a wide range of technical education courses, including Python programming, web development, Android app development, and more. The platform is designed to provide an engaging and interactive learning experience for students of all levels, from beginners to advanced learners.</p>
+          <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Eduno is a cutting-edge platform that offers a wide range of technical education courses, including Python programming, web development, Android app development, and more. The platform is designed to provide an engaging and interactive learning experience for students of all levels, from beginners to advanced learners.</p>
 
           {/* Heading Button Section  */}
-          <div class="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
 
             {/* Learn More Button  */}
-            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#a2cc4c] hover:bg-[#81a33d] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#a2cc4c] hover:bg-[#81a33d] focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
               Learn more
-              <svg class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+              <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </a>
 
             {/* Watch Video Button  */}
-            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-              <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
               Watch video
             </a>
 
@@ -74,38 +74,38 @@ export default function Home() {
       </section>
 
       {/* Courses Section  */}
-      <section id='courses' class=" body-font bg-[#001719]">
+      <section id='courses' className=" body-font bg-[#001719]">
 
-        <div class="container px-5 py-12 mx-auto">
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="h-56 md:h-72 w-full object-cover object-center" src="android.jpg" alt="blog" />
-                <div class="p-6">
+        <div className="container px-5 py-12 mx-auto">
+          <div className="flex flex-wrap -m-4">
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="android.jpg" alt="blog" />
+                <div className="p-6">
 
-                  <h1 class="title-font text-2xl font-medium text-white mb-3">Android App Development</h1>
-                  <p class="leading-relaxed mb-3 text-white">Android app development is a highly sought-after skill in todays job market, and taking an Android app development course can be an excellent way to learn this skill.</p>
+                  <h1 className="title-font text-2xl font-medium text-white mb-3">Android App Development</h1>
+                  <p className="leading-relaxed mb-3 text-white">Android app development is a highly sought-after skill in todays job market, and taking an Android app development course can be an excellent way to learn this skill.</p>
                   <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹X,XXX/-</h1>
                     </div>
                   </div>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Coming Soon
-                      <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Coming Soon
+                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>1.2K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                       </svg>6
                     </span>
@@ -113,34 +113,34 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="h-56 md:h-72 w-full object-cover object-center" src="web.jpg" alt="blog" />
-                <div class="p-6">
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="web.jpg" alt="blog" />
+                <div className="p-6">
 
-                  <h1 class="title-font text-2xl font-medium text-white mb-3">Full Stack Web Development</h1>
-                  <p class="leading-relaxed mb-3 text-white">A full-stack web development course is an educational program that teaches students the skills needed to build web applications from start to finish.</p>
+                  <h1 className="title-font text-2xl font-medium text-white mb-3">Full Stack Web Development</h1>
+                  <p className="leading-relaxed mb-3 text-white">A full-stack web development course is an educational program that teaches students the skills needed to build web applications from start to finish.</p>
                   <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹X,XXX/-</h1>
                     </div>
                   </div>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Coming Soon
-                      <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Coming Soon
+                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>1.6K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                       </svg>32
                     </span>
@@ -148,34 +148,34 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="p-4 md:w-1/3">
-              <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img class="h-56 md:h-72 w-full object-cover object-center" src="java.jpeg" alt="blog" />
-                <div class="p-6">
+            <div className="p-4 md:w-1/3">
+              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="java.jpeg" alt="blog" />
+                <div className="p-6">
 
-                  <h1 class="title-font text-2xl font-medium text-white mb-3">Java Programming</h1>
-                  <p class="leading-relaxed mb-3 text-white">A Java programming course is an educational program that teaches students the fundamentals of the Java programming language.</p>
+                  <h1 className="title-font text-2xl font-medium text-white mb-3">Java Programming</h1>
+                  <p className="leading-relaxed mb-3 text-white">A Java programming course is an educational program that teaches students the fundamentals of the Java programming language.</p>
                   <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹XXX/-</h1>
                     </div>
                   </div>
-                  <div class="flex items-center flex-wrap ">
-                    <a class="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Coming Soon
-                      <svg class="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <div className="flex items-center flex-wrap ">
+                    <a className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Coming Soon
+                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
                     </a>
-                    <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                         <circle cx="12" cy="12" r="3"></circle>
                       </svg>2.4K
                     </span>
-                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
+                      <svg className="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                         <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
                       </svg>54
                     </span>
@@ -189,30 +189,30 @@ export default function Home() {
 
       {/* Blog Section  */}
 
-      <div class="bg-[#001719] py-6 sm:py-8 lg:py-12">
-        <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div class="flex overflow-hidden rounded-lg bg-gray-100">
+      <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
+        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+          <div className="flex overflow-hidden rounded-lg bg-gray-100">
             {/* <!-- image - start --> */}
-            <div class="relative hidden bg-gray-200 sm:block sm:w-1/3 lg:w-1/2">
-              <img src="blogs.jpg" loading="lazy" alt="Photo by mymind" class="absolute inset-0 h-full w-full object-cover object-center" />
+            <div className="relative hidden bg-gray-200 sm:block sm:w-1/3 lg:w-1/2">
+              <img src="blogs.jpg" loading="lazy" alt="Photo by mymind" className="absolute inset-0 h-full w-full object-cover object-center" />
             </div>
             {/* <!-- image - end --> */}
 
             {/* <!-- content - start --> */}
-            <div class="flex w-full items-center p-4 sm:w-2/3 sm:p-8 lg:w-1/2 lg:pl-10">
-              <div class="flex w-full flex-col items-center sm:block">
-                <div class="mb-4 sm:mb-8">
-                  <h2 class="text-center text-xl font-bold text-[#a2cc4c] sm:text-left sm:text-2xl lg:text-3xl">Get the latest updates</h2>
-                  <p class="text-center text-gray-500 sm:text-left">Sign up for our newsletter</p>
+            <div className="flex w-full items-center p-4 sm:w-2/3 sm:p-8 lg:w-1/2 lg:pl-10">
+              <div className="flex w-full flex-col items-center sm:block">
+                <div className="mb-4 sm:mb-8">
+                  <h2 className="text-center text-xl font-bold text-[#a2cc4c] sm:text-left sm:text-2xl lg:text-3xl">Get the latest updates</h2>
+                  <p className="text-center text-gray-500 sm:text-left">Sign up for our newsletter</p>
                 </div>
 
-                <form class="mb-3 flex w-full max-w-md gap-2 sm:mb-5">
-                  <input placeholder="Email" class="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
+                <form className="mb-3 flex w-full max-w-md gap-2 sm:mb-5">
+                  <input placeholder="Email" className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
 
-                  <button class="inline-block rounded bg-[#a2cc4c] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
+                  <button className="inline-block rounded bg-[#a2cc4c] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
                 </form>
 
-                <p class="text-center text-xs text-gray-400 sm:text-left">By signing up to our newsletter you agree to our <a href="#" class="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Term of Service</a> and <a href="#" class="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.</p>
+                <p className="text-center text-xs text-gray-400 sm:text-left">By signing up to our newsletter you agree to our <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Term of Service</a> and <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.</p>
               </div>
             </div>
             {/* <!-- content - end --> */}

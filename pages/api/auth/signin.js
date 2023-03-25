@@ -4,7 +4,7 @@ var jwt = require('jsonwebtoken');
 var CryptoJS = require("crypto-js");
 
 const handler = async (req, res) => {
-    if (req.method == 'GET') {
+    if (req.method == 'POST') {
         const { email, password } = req.body;
 
         let success = true;
