@@ -69,10 +69,8 @@ const Signup = () => {
         // Data of sign up form 
         const data = { firstName, lastName, email, phoneNo, password };
 
-        console.log(data)
-
         // Call the signup API 
-        let res = await fetch('http://localhost:3000/api/auth/signup', {
+        let res = await fetch('https://eduno.netlify.app/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
