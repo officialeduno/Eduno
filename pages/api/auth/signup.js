@@ -27,6 +27,7 @@ const handler = async (req, res) => {
 
             // If phone number not exists in database
             if (!alreadyPhone) {
+                
                 // Variable to store the details which is given to API
                 let new_user = new users({
                     fullName: req.body.fullName,

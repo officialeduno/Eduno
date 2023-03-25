@@ -19,13 +19,13 @@ import 'react-toastify/dist/ReactToastify.css';
 // Signup component of signup page
 const Signup = () => {
 
-
+    // Data variables of Sign up form
     const [fullName, setName] = useState();
     const [email, setEmail] = useState();
     const [phoneNo, setPhone] = useState();
     const [password, setPassword] = useState();
 
-
+    // Handle the change of the form 
     const handleChange = (e) => {
         if(e.target.name == 'fullName'){
             setName(e.target.value);
@@ -38,8 +38,8 @@ const Signup = () => {
         }
     }
 
+    // React Toast 
     const signupSuccessfulToast = () => toast('Account Created Successfully...', {
-        hideProgressBar: true, 
         autoClose: 2000, 
         type: 'success' 
     })
@@ -52,10 +52,15 @@ const Signup = () => {
         type: 'error' 
     })
 
+    // Handle the submit button and call the Signup API
     const handleSubmit = async (e) => {
+        // prevent from the reload of page 
         e.preventDefault();
+
+        // Data of sign up form 
         const data = {fullName, email, phoneNo, password};
 
+        // Call the signup API 
         let res = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
             headers: {
@@ -64,9 +69,10 @@ const Signup = () => {
             body: JSON.stringify(data)
         });
 
+        // Respone of above API stores in this variable
         let response = await res.json();
-        console.log(response)
 
+        // Toast on the basis of response of API
         if(response.success == true){
             signupSuccessfulToast();
         }else if(response.error == "Phone Number already exists."){
@@ -74,49 +80,73 @@ const Signup = () => {
         }else if(response.error == "User already exists."){
             emailAlreadyExistsToast();
         }
+
+        // Clear the form 
         setName('');
         setEmail('');
         setPhone('');
         setPassword('');
     }
 
-
+    // Return of signup component
     return (
+
         <>
+
+            {/* Head of the page  */}
             <Head>
                 <title>Create your Account | Eduno (Empower yourself with Eduno)</title>
             </Head>
+
+            {/* Toast container to show the toast  */}
             <ToastContainer />
+
+            {/* Main div element */}
             <div>
+
+                {/* background div  */}
                 <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
+
+                    {/* signup div  */}
                     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
+
+                        {/* Sign up heading  */}
                         <h2 className="mb-4 text-center text-3xl font-bold text-[#a2cc4c] md:mb-8 lg:text-4xl">Sign Up</h2>
 
+                        {/* Form of the sign up page  */}
                         <form onSubmit={handleSubmit} className="mx-auto max-w-lg rounded-lg border border-[#a1cc4c8c]">
+
+                            {/* Input div  */}
                             <div className="flex flex-col gap-4 p-4 md:p-8">
+
+                                {/* Name input  */}
                                 <div>
                                     <label htmlFor="fullName" className="mb-2 inline-block text-sm text-white sm:text-base">Name</label>
                                     <input value={fullName} onChange={handleChange} id='fullName' name="fullName" placeholder='Full Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring"  required/>
                                 </div>
 
+                                {/* Email Input  */}
                                 <div>
                                     <label htmlFor="email" className="mb-2 inline-block text-sm text-white sm:text-base">Email</label>
                                     <input value={email} onChange={handleChange} id='email' name="email" type="email" placeholder='E-mail/G-mail' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring"  required/>
                                 </div>
 
+                                {/* Phone number input  */}
                                 <div>
                                     <label htmlFor="phoneNo" className="mb-2 inline-block text-sm text-white sm:text-base">Phone No</label>
                                     <input value={phoneNo} onChange={handleChange} id='phoneNo' name="phoneNo" placeholder='Contact Number' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring"  required/>
                                 </div>
+
+                                {/* Password input  */}
                                 <div>
                                     <label htmlFor="password" className="mb-2 inline-block text-sm text-white sm:text-base">Password</label>
                                     <input value={password} onChange={handleChange} id='password' name="password" type="password" placeholder="Password" className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required/>
                                 </div>
 
+                                {/* Submit button of sign up page  */}
                                 <button className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-[#a1cc4cbd] focus-visible:ring active:bg-gray-600 md:text-base">Create Account </button>
 
-
-
+                                {/* Continue with Facebook button  */}
                                 <button className="flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-700 md:text-base">
                                     <svg className="h-5 w-5 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 0C5.37273 0 0 5.37273 0 12C0 18.0164 4.43182 22.9838 10.2065 23.8516V15.1805H7.23764V12.0262H10.2065V9.92727C10.2065 6.45218 11.8996 4.92655 14.7878 4.92655C16.1711 4.92655 16.9025 5.02909 17.2489 5.076V7.82945H15.2787C14.0525 7.82945 13.6244 8.99182 13.6244 10.302V12.0262H17.2178L16.7302 15.1805H13.6244V23.8773C19.4815 23.0825 24 18.0747 24 12C24 5.37273 18.6273 0 12 0Z" fill="white" />
@@ -125,6 +155,7 @@ const Signup = () => {
                                     Continue with Facebook
                                 </button>
 
+                                {/* Continue with google button  */}
                                 <button className="flex items-center justify-center gap-2 rounded-lg border border-gray-300 bg-white px-8 py-3 text-center text-sm font-semibold text-gray-800 outline-none ring-gray-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:text-base">
                                     <svg className="h-5 w-5 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M23.7449 12.27C23.7449 11.48 23.6749 10.73 23.5549 10H12.2549V14.51H18.7249C18.4349 15.99 17.5849 17.24 16.3249 18.09V21.09H20.1849C22.4449 19 23.7449 15.92 23.7449 12.27Z" fill="#4285F4" />
@@ -137,16 +168,26 @@ const Signup = () => {
                                 </button>
                             </div>
 
+                            {/* Have an account section  */}
                             <div className="flex items-center justify-center bg-[#a1cc4c8c] p-4">
                                 <p className="text-center text-sm text-black">Have an account? <Link href={'/authentication/signin'} className="text-indigo-200 transition duration-100 hover:text-white active:text-indigo-700">Sign In</Link></p>
                             </div>
+
                         </form>
+
                     </div>
+
                 </div>
+
                 <hr />
+
             </div>
+
         </>
+
     )
+
 }
 
+// Export the signup component 
 export default Signup
