@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import React, { useState } from 'react'
 import Head from 'next/head'
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Signin = () => {
 
@@ -15,8 +17,21 @@ const Signin = () => {
         }
     }
 
+    const signinSuccessfulToast = () => toast('Successfully Signed In ...', {
+        hideProgressBar: true, 
+        autoClose: 2000, 
+        type: 'success' 
+    })
+
+    const signinCancelledToast = () => toast('Invalid Credentials', {
+        hideProgressBar: true, 
+        autoClose: 2000, 
+        type: 'danger' 
+    })
+
+
     const handleSubmit = async(e) => {
-        e.preventDefault();
+        e.preventDefault(); 
         const data = {email, password};
         let res = await fetch('http://localhost:3000/api/auth/signin', {
             method: 'POST',
@@ -27,6 +42,12 @@ const Signin = () => {
         });
 
         let response = await res.json();
+        console.log(response)
+        if(response.success == true){
+            signinSuccessfulToast();
+        }else{
+            signinCancelledToast();
+        }
         setEmail("");
         setPassword("");
     }
@@ -37,6 +58,7 @@ const Signin = () => {
                 <title>Login or Sign in | Eduno (Empower yourself with Eduno)</title>
             </Head>
             <div>
+                <ToastContainer />
                 <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
                     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
                         <h2 className="mb-4 text-center text-3xl font-bold text-[#a2cc4c] md:mb-8 lg:text-4xl">Sign in / Login</h2>

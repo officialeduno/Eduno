@@ -10,6 +10,12 @@ import Link from 'next/link'
 // Import useState from react package
 import { useState } from 'react'
 
+// Import react toastify
+import { ToastContainer, toast } from "react-toastify";
+
+// Import react toastify CSS
+import 'react-toastify/dist/ReactToastify.css';
+
 // Signup component of signup page
 const Signup = () => {
 
@@ -32,11 +38,23 @@ const Signup = () => {
         }
     }
 
+    const signupSuccessfulToast = () => toast('Account Created Successfully...', {
+        hideProgressBar: true, 
+        autoClose: 2000, 
+        type: 'success' 
+    })
+    const emailAlreadyExistsToast = () => toast('Email Already Exists...', {
+        autoClose: 2000, 
+        type: 'error' 
+    })
+    const phoneAlreadyExistsToast = () => toast('Phone Number Already Exists...', {
+        autoClose: 2000, 
+        type: 'error' 
+    })
+
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const data = {fullName, email, phoneNo, password}
-
-        console.log(data);
+        const data = {fullName, email, phoneNo, password};
 
         let res = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
@@ -47,6 +65,15 @@ const Signup = () => {
         });
 
         let response = await res.json();
+        console.log(response)
+
+        if(response.success == true){
+            signupSuccessfulToast();
+        }else if(response.error == "Phone Number already exists."){
+            phoneAlreadyExistsToast();
+        }else if(response.error == "User already exists."){
+            emailAlreadyExistsToast();
+        }
         setName('');
         setEmail('');
         setPhone('');
@@ -59,6 +86,7 @@ const Signup = () => {
             <Head>
                 <title>Create your Account | Eduno (Empower yourself with Eduno)</title>
             </Head>
+            <ToastContainer />
             <div>
                 <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
                     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
