@@ -1,14 +1,25 @@
 /* eslint-disable @next/next/no-img-element */
+
+// Import react from react package
 import React from 'react'
+
+// Import head from next head package
 import Head from 'next/head'
 
+// Component of Blog
 const Blog = () => {
     return (
         <>
+
+        {/* Head of the page  */}
         <Head>
             <title>Blogs (Be updated with technology with our BLogs)</title>
         </Head>
+
+        {/* Main div of component */}
         <div>
+
+            {/* Background div  */}
             <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
                 <div className="mx-auto max-w-screen-xl px-4 md:px-8">
                     <div className="mb-10 md:mb-16">

@@ -11,7 +11,7 @@ const FAQ = () => {
             <div className='bg-[#001719] text-white flex items-center flex-col'>
                 <Image src="/logo.png" className='pt-8' width={40} height={40} alt="" />
                 <h1 className='text-4xl font-bold pb-2'>Eduno</h1>
-                <h1 className='text-4xl pt-4 pb-4'>FAQ (Frequently Asked Questions)</h1>
+                <h1 className='text-2xl text-center sm:text-4xl pt-4 pb-4'>FAQ (Frequently Asked Questions)</h1>
                 <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
                     <div className="mx-auto max-w-screen-xl px-4 md:px-8">
 

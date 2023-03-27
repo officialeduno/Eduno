@@ -69,12 +69,9 @@ const Signin = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-            
-            router.reload();
 
-            // Clear the form 
-            setEmail("");
-            setPassword("");
+            // Reload the page
+            router.reload();
 
         } else {
             signinCancelledToast();

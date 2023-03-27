@@ -70,7 +70,7 @@ const Signup = () => {
         const data = { firstName, lastName, email, phoneNo, password };
 
         // Call the signup API 
-        let res = await fetch('https://eduno.netlify.app/api/auth/signup', {
+        let res = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -87,14 +87,10 @@ const Signup = () => {
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
             
+            // Reload the page if response is successfully true
             router.reload();
 
-            // Clear the form 
-            setFirstName('');
-            setLastName('');
-            setEmail('');
-            setPhone('');
-            setPassword('');
+            router.push("/dashboard")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();
         } else if (response.error == "User already exists.") {
