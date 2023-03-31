@@ -12,10 +12,6 @@ import users from "@/models/users";
 // Use JWT to authenticate the token
 var jwt = require('jsonwebtoken');
 
-var nodemailer = require('nodemailer');
-
-import { useRouter } from 'next/router'
-
 // Handler to use for middleware
 const handler = async (req, res) => {
 
