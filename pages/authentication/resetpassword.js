@@ -8,6 +8,12 @@ import Link from 'next/link'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+// Import toast container and toast from react-toastify package
+import { ToastContainer, toast } from "react-toastify";
+
+// Import react toast CSS
+import 'react-toastify/dist/ReactToastify.css';
+
 // Forgot password component
 const ForgotPassword = () => {
 
@@ -26,6 +32,16 @@ const ForgotPassword = () => {
         }
     }
 
+    // React toast 
+    const resetconfirmed = () => toast('Password Reset Successfully', {
+        autoClose: 2000,
+        type: 'success'
+    });
+    const invalidToken = () => toast('Invalid Token', {
+        autoClose: 2000,
+        type: 'error'
+    });
+
     const handleSubmit = async(e) => {
         e.preventDefault();
 
@@ -39,9 +55,13 @@ const ForgotPassword = () => {
             body: JSON.stringify(data)
         });
 
-        let respsonse = await res.json();
+        let response = await res.json();
 
-        console.log(respsonse);
+        if(response.success == true){
+            resetconfirmed();
+        }else{
+            invalidToken();
+        }
         
     }
 
@@ -55,6 +75,9 @@ const ForgotPassword = () => {
 
         {/* main div of forgot password component */}
         <div>
+
+            {/* Toast container to showcase the toast  */}
+            <ToastContainer />
 
             {/* Background div  */}
             <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
@@ -74,12 +97,12 @@ const ForgotPassword = () => {
                             {/* New password input  */}
                             <div>
                                 <label htmlFor="npassword" className="mb-2 inline-block text-sm text-white sm:text-base">New Password</label>
-                                <input id='npassword' value={npassword} onChange={handleChange} name="npassword" placeholder='New Password' className="w-full rounded border bg-gray-50 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
+                                <input type='password' id='npassword' value={npassword} onChange={handleChange} name="npassword" placeholder='New Password' className="w-full rounded border bg-gray-50 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
                             </div>
                             {/* Confirm password input  */}
                             <div>
                                 <label htmlFor="cpassword" className="mb-2 inline-block text-sm text-white sm:text-base">Confirm Password</label>
-                                <input name="cpassword" id='cpassword' value={cpassword} onChange={handleChange} placeholder='Confirm Password' className="w-full rounded border bg-gray-50 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
+                                <input type='password' name="cpassword" id='cpassword' value={cpassword} onChange={handleChange} placeholder='Confirm Password' className="w-full rounded border bg-gray-50 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
                             </div>
 
                             {npassword!=cpassword && <div className='text-red-400'>Password does not match</div>}

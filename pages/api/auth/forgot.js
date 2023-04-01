@@ -57,7 +57,7 @@ Dear ${user.firstName},
 
 We have received a request to reset your password. If you did not initiate this request, please ignore this email.
                 
-To reset your password, please click on the following link:
+To reset your password, please click on the following link and valid for 5 minutes:
 "${forgot_link}"
                 
 You will be directed to a page where you can create a new password. Please ensure that your new password is at least eight characters long and includes a combination of uppercase and lowercase letters, numbers, and special characters.

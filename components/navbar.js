@@ -4,13 +4,19 @@
 import Link from 'next/link';
 
 // Import react from the react package
-import React from 'react'
+import React, { useState } from 'react'
 
 // Import useRef from the react package
 import { useRef } from 'react';
+import { useRouter } from 'next/router'
 
 // Create Navbar component
 const Navbar = (props) => {
+
+    
+    const router = useRouter();
+    const userId = router.query.userId;
+
     // HandleMenu to handle the menu section of the mobile system
     const handleMenu = () => {
         // If it already open then close 
@@ -23,6 +29,21 @@ const Navbar = (props) => {
             ref.current.classList.remove('translate-x-0')
             ref.current.classList.add('translate-x-full')
         }
+    }
+
+    const handleUserButton = async(e) => {
+        e.preventDefault();
+        let data = {userId}
+        let res = await fetch('http://localhost:3000/dashboard/getuser', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        let response = res.json();
+        console.log(response);
     }
 
     // Create red variable
@@ -68,7 +89,7 @@ const Navbar = (props) => {
 
                             {/* Sign up button  */}
                             <Link href={'/authentication/signup'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
-                        </div> : <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><Link href={'/dashboard/dashboard'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</Link></div>}
+                        </div> : <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button onClick={handleUserButton} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</button></div>}
 
 
                         {/* Menu button for mobile  */}

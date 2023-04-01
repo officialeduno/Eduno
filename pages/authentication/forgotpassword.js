@@ -7,6 +7,12 @@ import Link from 'next/link'
 // Import head from next head package
 import Head from 'next/head'
 
+// Import toast container and toast from react-toastify package
+import { ToastContainer, toast } from "react-toastify";
+
+// Import react toast CSS
+import 'react-toastify/dist/ReactToastify.css';
+
 // Forgot password component
 const ForgotPassword = () => {
 
@@ -17,6 +23,12 @@ const ForgotPassword = () => {
             setEmail(e.target.value);
         }
     }
+
+    // React toast 
+    const linkSend = () => toast('Link Send Successfully', {
+        autoClose: 2000,
+        type: 'success'
+    });
 
     const handleSubmit = async(e) => {
         e.preventDefault();
@@ -34,7 +46,9 @@ const ForgotPassword = () => {
 
         let response = await res.json();
 
-        console.log(response);
+        if(response.success == true){
+            linkSend();
+        }
     }
 
     return (
@@ -47,6 +61,9 @@ const ForgotPassword = () => {
 
         {/* main div of forgot password component */}
         <div>
+
+            {/* Toast container to showcase the toast  */}
+            <ToastContainer />
 
             {/* Background div  */}
             <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">

@@ -35,7 +35,7 @@ const Signin = () => {
     };
 
     // React toast 
-    const signinCancelledToast = () => toast('Invalid Credentials', {
+    const signinCancelledToast = () => toast('Invalid credentials', {
         autoClose: 2000,
         type: 'error'
     });
@@ -69,9 +69,7 @@ const Signin = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-
-            // Reload the page
-            router.reload();
+            router.push(`http://localhost:3000/dashboard/dashboard?userId=${response.userId}`)
 
         } else {
             signinCancelledToast();

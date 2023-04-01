@@ -37,7 +37,7 @@ const handler = async (req, res) => {
                 let sec_password = CryptoJS.AES.encrypt(npassword, process.env.secret_key).toString();
                 user.password = sec_password;
                 user.save();
-                res.status(200).json({verification:"verified"})
+                res.status(200).json({success: true})
             }
             else{
                 return res.status(400).json({success: false, error: "Invalid Token"})
