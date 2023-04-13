@@ -4,7 +4,7 @@
 import Link from 'next/link';
 
 // Import react from the react package
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 // Import useRef from the react package
 import { useRef } from 'react';
@@ -12,9 +12,10 @@ import { useRouter } from 'next/router'
 
 // Create Navbar component
 const Navbar = (props) => {
-
-    
     const router = useRouter();
+
+
+
     const userId = router.query.userId;
 
     // HandleMenu to handle the menu section of the mobile system
@@ -73,7 +74,6 @@ const Navbar = (props) => {
                             <Link href={'/'} className="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Home</Link>
                             <Link href={'#courses'} className="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Course</Link>
                             <Link href={'/features/feature'} className="inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-[#a2cc4c]">Features</Link>
-                            <a href="#" className="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Pricing</a>
                             <Link href={'/blogs/blog'} className="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Blog</Link>
                             <a href="#" className="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Store</a>
                             <a href="#" className="text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">About</a>
@@ -118,7 +118,6 @@ const Navbar = (props) => {
                     <Link href={'/'} onClick={handleMenu} className="py-3 pt-4 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Home</Link>
                     <Link href={'/features/feature'} onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Course</Link>
                     <a href="#" onClick={handleMenu} className="py-3 inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-[#a2cc4c]">Features</a>
-                    <a href="#" onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Pricing</a>
                     <Link href={'/blogs/blog'} onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Blog</Link>
                     <a href="#" onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">Store</a>
                     <a href="#" onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-[#a2cc4c]">About</a>

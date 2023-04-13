@@ -24,6 +24,7 @@ export default function App({ Component, pageProps }) {
     if (loginToken) {
       setUser({ value: loginToken });
       setUserName({value: username});
+      setKey(Math.random())
     }
   }, [])
 
