@@ -2,21 +2,19 @@
 
 // Import link from the Next link package
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 // Import react from the react package
 import React, { useEffect, useState } from 'react'
 
 // Import useRef from the react package
 import { useRef } from 'react';
-import { useRouter } from 'next/router'
 
 // Create Navbar component
 const Navbar = (props) => {
+
     const router = useRouter();
 
-
-
-    const userId = router.query.userId;
 
     // HandleMenu to handle the menu section of the mobile system
     const handleMenu = () => {
@@ -32,20 +30,8 @@ const Navbar = (props) => {
         }
     }
 
-    const handleUserButton = async(e) => {
-        e.preventDefault();
-        let data = {userId}
-        let res = await fetch('http://localhost:3000/dashboard/getuser', {
-            method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(data)
-        });
+    const [dropdown, setDropdown] = useState(false);
 
-        let response = res.json();
-        console.log(response);
-    }
 
     // Create red variable
     const ref = useRef();
@@ -82,14 +68,33 @@ const Navbar = (props) => {
 
 
                         {/* <!-- buttons - start --> */}
-                        {!props.user.value ? <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
+                        {!props.user.value && <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
 
                             {/* Sign in Button  */}
                             <Link href={'/authentication/signin'} className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
 
                             {/* Sign up button  */}
                             <Link href={'/authentication/signup'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
-                        </div> : <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button onClick={handleUserButton} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</button></div>}
+                        </div>}
+
+                        {props.user.value && <a onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }}>
+
+                            {dropdown && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute right-16 top-16 border-2 border-[#a2cc4c] text-white">
+                                <ul className='flex flex-col items-left'>
+                                    <li className='cursor-pointer my-4 mx-4 mr-10'><Link href={'/dashboard/profile'}>Profile</Link></li>
+                                    <hr className='border-1 border-[#a2cc4c]' />
+                                    <li className='cursor-pointer my-2 mt-4 mx-4 mr-10'><Link href={'/dashboard/yourcourses'}>Your Courses</Link></li>
+                                    <li className='cursor-pointer my-2 mx-4 mr-10'><Link href={'/dashboard/yourcertificates'}>Your Certificates</Link></li>
+                                    <li className='cursor-pointer my-2 mx-4 mr-10'><Link href={'/dashboard/achievements'}>Achievements</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4 mx-4 mr-10'><Link href={'/dashboard/setting'}>Setting</Link></li>
+                                    <hr className='border-1 border-[#a2cc4c]' />
+                                    <li className='cursor-pointer my-2 mx-4 mr-10'><Link href={'/dashboard/help'}>Help</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4 mx-4 mr-10' onClick={props.logout}>Sign Out</li>
+                                </ul>
+                            </div>}
+                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</button></div>}
+
+                        </a>}
 
 
                         {/* Menu button for mobile  */}

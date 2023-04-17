@@ -69,7 +69,8 @@ const Signin = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-            router.push(`http://localhost:3000?userId=${response.userId}`)
+            router.push(`http://localhost:3000`)
+            
 
         } else {
             signinCancelledToast();

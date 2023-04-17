@@ -86,11 +86,8 @@ const Signup = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-            
-            // Reload the page if response is successfully true
-            router.reload();
 
-            router.push("/dashboard")
+            router.push("http://localhost:3000")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();
         } else if (response.error == "User already exists.") {

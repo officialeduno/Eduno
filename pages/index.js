@@ -5,12 +5,18 @@ import Head from 'next/head'
 
 // Import Inter font form google font
 import { Inter } from 'next/font/google'
+import { useRouter } from 'next/router'
 
 // Import latin from google font
 const inter = Inter({ subsets: ['latin'] })
 
 // Home component
 export default function Home() {
+
+  let router = useRouter();
+
+
+
   return (
 
     // Main div component
