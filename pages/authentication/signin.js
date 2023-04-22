@@ -50,7 +50,7 @@ const Signin = () => {
         const data = { email, password };
 
         // Call the signin API
-        let res = await fetch('http://localhost:3000/api/auth/signin', {
+        let res = await fetch(`${process.env.localhost}api/auth/signin`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
