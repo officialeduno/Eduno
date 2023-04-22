@@ -1,15 +1,12 @@
 import React from 'react'
 import Head from 'next/head'
-import { useRouter } from 'next/router'
 
 
-const Dashboard = () => {
-    const router = useRouter();
-    const userId = router.query.userId;
+const Dashboard = (props) => {
     return (
         <>
             <Head>
-                <title>Dashboard</title>
+                <title>Profile: {props.userName.value} | Eduno (Empower yourself with Eduno)</title>
             </Head>
             <div>
                 

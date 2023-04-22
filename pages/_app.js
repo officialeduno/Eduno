@@ -17,24 +17,27 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   const [user, setUser] = useState({ value: null });
-  const [userName, setUserName] = useState({value: null})
+  const [userName, setUserName] = useState({ value: null })
   const [key, setKey] = useState(0);
 
   const logout = () => {
-    localStorage.removeItem('loginToken');
-    localStorage.removeItem('userName');
-    setKey(Math.random());
-    setUser({value: null});
-    router.push(`http://localhost:3000`)
+    const logout_confirmation_message = "Are you sure? Want to Sign Out?";
+    if (confirm(logout_confirmation_message) == true) {
+      localStorage.removeItem('loginToken');
+      localStorage.removeItem('userName');
+      setKey(Math.random());
+      setUser({ value: null });
+      router.push(`http://localhost:3000`)
+    }
   }
 
   // Check login token is present or not
-  useEffect(()=>{
+  useEffect(() => {
     const loginToken = localStorage.getItem('loginToken');
     const username = localStorage.getItem('userName')
     if (loginToken) {
       setUser({ value: loginToken });
-      setUserName({value: username});
+      setUserName({ value: username });
       setKey(Math.random())
     }
   }, [router.query])
@@ -45,7 +48,7 @@ export default function App({ Component, pageProps }) {
     <Navbar logout={logout} user={user} userName={userName} key={key} />
 
     {/* Other pages  */}
-    <Component {...pageProps} />
+    <Component {...pageProps} user={user} userName={userName} />
 
     {/* Footer component  */}
     <Footer />

@@ -5,7 +5,12 @@ import Head from 'next/head'
 
 // Import Inter font form google font
 import { Inter } from 'next/font/google'
-import { useRouter } from 'next/router'
+import { useState } from 'react';
+// Import toast container and toast from react-toastify package
+import { ToastContainer, toast } from "react-toastify";
+
+// Import react toast CSS
+import 'react-toastify/dist/ReactToastify.css';
 
 // Import latin from google font
 const inter = Inter({ subsets: ['latin'] })
@@ -13,9 +18,23 @@ const inter = Inter({ subsets: ['latin'] })
 // Home component
 export default function Home() {
 
-  let router = useRouter();
+  const [email, setEmail] = useState();
 
+  const handleChange = (e) => {
+    if (e.target.email == 'email') {
+      setEmail(e.target.value);
+    }
+  }
 
+  const signupNewsletterMessage = () => toast('Successfully Subscribed our News Letter and All the Updates are on your Notification.', {
+    autoClose: 2000,
+    type: 'success'
+  });
+
+  const signupNewsletter = (e) => {
+    e.preventDefault();
+    signupNewsletterMessage();
+  }
 
   return (
 
@@ -36,9 +55,12 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="logo-wbg-icon.ico"></link>
 
       </Head>
-      
+
       {/* Main component of index or main page  */}
       <section className="bg-[#001719] md:pt-24">
+
+        {/* Toast container to showcase the toast  */}
+        <ToastContainer />
 
         {/* Logo for home page  */}
         <img src="logo.png" className='h-20 mx-auto' alt="" />
@@ -213,9 +235,9 @@ export default function Home() {
                 </div>
 
                 <form className="mb-3 flex w-full max-w-md gap-2 sm:mb-5">
-                  <input placeholder="Email" className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
+                  <input value={email} id='email' onChange={handleChange} placeholder="Email" className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
 
-                  <button className="inline-block rounded bg-[#a2cc4c] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
+                  <button onClick={signupNewsletter} className="inline-block rounded bg-[#a2cc4c] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
                 </form>
 
                 <p className="text-center text-xs text-gray-400 sm:text-left">By signing up to our newsletter you agree to our <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Term of Service</a> and <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.</p>
