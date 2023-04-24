@@ -47,7 +47,7 @@ const ForgotPassword = () => {
 
         const data = {npassword, userid, forgot_token};
 
-        let res = await fetch('http://localhost:3000/api/auth/reset', {
+        let res = await fetch('https://eduno.in/api/auth/reset', {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json'

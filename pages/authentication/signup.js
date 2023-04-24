@@ -87,7 +87,7 @@ const Signup = () => {
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
 
-            router.push("http://localhost:3000")
+            router.push("https://eduno.in/")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();
         } else if (response.error == "User already exists.") {

@@ -50,7 +50,7 @@ const Signin = () => {
         const data = { email, password };
 
         // Call the signin API
-        let res = await fetch(`${process.env.localhost}api/auth/signin`, {
+        let res = await fetch('https://eduno.in/api/auth/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -69,7 +69,7 @@ const Signin = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-            router.push(`http://localhost:3000`)
+            router.push(`https://eduno.in/`)
             
 
         } else {
