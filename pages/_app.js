@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
       localStorage.removeItem('userName');
       setKey(Math.random());
       setUser({ value: null });
-      router.push(`http://localhost:3000`)
+      router.push(`https://eduno.in/`)
     }
   }
 
