@@ -70,7 +70,7 @@ const Signup = () => {
         const data = { firstName, lastName, email, phoneNo, password };
 
         // Call the signup API 
-        let res = await fetch('http://localhost:3000/api/auth/signup', {
+        let res = await fetch('https://eduno.in/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
