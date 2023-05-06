@@ -6,10 +6,9 @@ import Head from 'next/head'
 const Android = (props) => {
     const buyNow = (e) => {
         e.preventDefault();
-        props.buyNow("training")
+        props.buyNow("datascience")
     }
     return (
-
         <>
             <Head>
                 <title>Android App Development | Eduno (Empower yourself with Eduno)</title>
@@ -22,7 +21,7 @@ const Android = (props) => {
                             {/* <!-- images - start --> */}
                             <div class="space-y-4">
                                 <div class="relative overflow-hidden rounded-lg bg-gray-100">
-                                    <img src="../courses_images/training_intern.png" loading="lazy" alt="Photo by Himanshu Dewangan" class="h-full w-full object-cover object-center" />
+                                    <img src="../courses_images/data_science.png" loading="lazy" alt="Photo by Himanshu Dewangan" class="h-full w-full object-cover object-center" />
 
                                     <span class="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">sale</span>
                                 </div>
@@ -33,7 +32,7 @@ const Android = (props) => {
                             <div class="md:py-8">
                                 {/* <!-- name - start --> */}
                                 <div class="mb-2 md:mb-3">
-                                    <h2 class="text-3xl font-bold text-white lg:text-3xl">Training and Internship 2023</h2>
+                                    <h2 class="text-3xl font-bold text-white lg:text-3xl">Data Science</h2>
                                 </div>
                                 {/* <!-- name - end --> */}
 
@@ -70,8 +69,8 @@ const Android = (props) => {
                                 {/* <!-- price - start --> */}
                                 <div class="mb-4">
                                     <div class="flex items-end gap-2">
-                                        <span class="text-xl font-bold text-white md:text-2xl">₹799.00</span>
-                                        <span class="mb-0.5 text-red-500 line-through">₹2,999.00</span>
+                                        <span class="text-xl font-bold text-white md:text-2xl">₹1,999.00</span>
+                                        <span class="mb-0.5 text-red-500 line-through">₹4,999.00</span>
                                     </div>
 
                                     <span class="text-sm text-gray-500">incl. GST and all Taxes</span>
@@ -93,10 +92,11 @@ const Android = (props) => {
                                     <div class="mb-3 text-2xl font-bold text-white">Description</div>
 
                                     <p class="text-white">
-                                    Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable. <br /> <br />
+                                    The course covers a wide range of topics, including data exploration, data cleaning, data transformation, and data modeling. It also covers popular programming languages such as Python and R, and tools such as SQL, Tableau, and Hadoop. Students have access to practical, hands-on experience working with real-world data sets, learning how to use statistical techniques and machine learning algorithms to analyze data and gain insights. <br /> <br />
 
-CS training programs can vary in length and focus, but typically cover a wide range of topics such as programming, data structures, algorithms, computer architecture, operating systems, software engineering, databases, artificial intelligence, and more. <br /> <br />
+Upon completion of the data science course, students receive a certification that is recognized and valued by employers in the industry. In addition to the certification, Eduno also offers goodies such as t-shirts, mugs, and other types of gifts according to the student's performance in the course, which can serve as a motivator and a symbol of accomplishment. <br /> <br />
 
+One of the key benefits of the Eduno data science course is the ongoing support and resources provided to students even after the completion of the course. The company has a dedicated team of professionals who offer career guidance, mentorship, and networking opportunities to help students advance their careers.
                                     </p>
 
 

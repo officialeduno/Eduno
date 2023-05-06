@@ -109,7 +109,7 @@ export default function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="training.png" alt="blog" />
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/training_intern.png" alt="blog" />
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Training and Internship 2023</h1>
@@ -118,6 +118,7 @@ export default function Home() {
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹799/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹2,999.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">
@@ -144,7 +145,7 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="web.jpg" alt="blog" />
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/data_science.png" alt="blog" />
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Data Science</h1>
@@ -153,15 +154,16 @@ export default function Home() {
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹1,999/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹3,999.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">
-                    <a className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
+                    <Link href="/courses/datascience" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
                       <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </Link>
                     <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
@@ -179,7 +181,7 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="java.jpeg" alt="blog" />
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/aiml.png" alt="blog" />
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">AI / ML</h1>
@@ -188,15 +190,16 @@ export default function Home() {
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹1,999/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹3,999.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">
-                    <a className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
+                    <Link href="/courses/aiml" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
                       <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M5 12h14"></path>
                         <path d="M12 5l7 7-7 7"></path>
                       </svg>
-                    </a>
+                    </Link>
                     <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
                       <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
@@ -223,7 +226,7 @@ export default function Home() {
           <div className="flex flex-wrap -m-4">
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="android.jpg" alt="blog" />
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/android_app_dev.png" alt="blog" />
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Android App Development</h1>
@@ -232,6 +235,7 @@ export default function Home() {
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹2,500/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹5,000.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">
@@ -258,7 +262,7 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="web.jpg" alt="blog" />
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/web_dev.png" alt="blog" />
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Full Stack Web Development</h1>
@@ -267,6 +271,7 @@ export default function Home() {
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹1,499/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹2,499.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">
@@ -293,7 +298,7 @@ export default function Home() {
             </div>
             <div className="p-4 md:w-1/3">
               <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="java.jpeg" alt="blog" />
+                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/java.png" alt="blog" />
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Java Programming</h1>
@@ -302,6 +307,7 @@ export default function Home() {
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹999/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹1,999.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">

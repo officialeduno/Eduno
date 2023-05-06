@@ -17,8 +17,22 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   const [user, setUser] = useState({ value: null });
-  const [userName, setUserName] = useState({ value: null })
+  const [userName, setUserName] = useState({ value: null });
   const [key, setKey] = useState(0);
+  const [courseCode, setCourseCode] = useState({value: null});
+
+  const buyNow = (courseCode) => {
+    setCourseCode(courseCode);
+    const loginToken = localStorage.getItem('loginToken');
+    if(loginToken){
+      router.push(`http://localhost:3000/payment/buynow`)
+    }else{
+      const signInMessage = "You are not Logged In. Please Login your account."
+      if(confirm(signInMessage)==true){
+        router.push(`http://localhost:3000/authentication/signin`);
+      }
+    }
+  }
 
   const logout = () => {
     const logout_confirmation_message = "Are you sure? Want to Sign Out?";
@@ -27,14 +41,14 @@ export default function App({ Component, pageProps }) {
       localStorage.removeItem('userName');
       setKey(Math.random());
       setUser({ value: null });
-      router.push(`https://eduno.in/`)
+      router.push(`http://localhost:3000/`);
     }
   }
 
   // Check login token is present or not
   useEffect(() => {
     const loginToken = localStorage.getItem('loginToken');
-    const username = localStorage.getItem('userName')
+    const username = localStorage.getItem('userName');
     if (loginToken) {
       setUser({ value: loginToken });
       setUserName({ value: username });
@@ -48,7 +62,7 @@ export default function App({ Component, pageProps }) {
     <Navbar logout={logout} user={user} userName={userName} key={key} />
 
     {/* Other pages  */}
-    <Component {...pageProps} user={user} userName={userName} />
+    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode}/>
 
     {/* Footer component  */}
     <Footer />
