@@ -28,11 +28,11 @@ const BuyNow = (props) => {
     return (
         <>
             {/* <!-- component --> */}
-            <div className='bg-[#001719] text-white'>
+            <div className='bg-[#001719] text-white flex flex-col justify-center items-center'>
                 <h1 className='text-3xl font-bold italic text-center p-4'>Buy Now</h1>
                 <div class="p-6 mx-4 px-4 md:p-8">
-                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
-                        <div class="text-gray-600">
+                    <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-2">
+                        <div class="text-gray-600 md:px-24">
                             <p class="font-medium text-xl py-2 text-white">Your Course : </p>
                             {props.courseCode == "training" && <img src="../courses_images/training_intern.png" className='rounded-xl h-56 md:h-72 w-full object-cover object-center' alt="" />}
                             {props.courseCode == "java" && <img src="../courses_images/java.png" className='rounded-xl h-56 md:h-72 w-full object-cover object-center' alt="" />}
@@ -62,7 +62,7 @@ const BuyNow = (props) => {
                             </div>
                         </div>
 
-                        <div class="lg:col-span-2 md:px-48">
+                        <div class="lg:col-span-1 md:px-12">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
                                 <div class="md:col-span-5 py-2">
                                     <label for="fullName">Full Name*</label>
