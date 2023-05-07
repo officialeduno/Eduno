@@ -234,8 +234,8 @@ export default function Home() {
                   <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
-                      <h1 className='pr-4'>₹2,500/-</h1>
-                      <span class="mb-0.5 text-red-500 line-through">₹5,000.00</span>
+                      <h1 className='pr-4'>₹2,499/-</h1>
+                      <span class="mb-0.5 text-red-500 line-through">₹4,999.00</span>
                     </div>
                   </div>
                   <div className="flex items-center flex-wrap ">

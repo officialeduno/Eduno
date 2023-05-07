@@ -129,14 +129,19 @@ const Navbar = (props) => {
 
 
                     {/* Sign in and Sign up button for the mobile  */}
-                    {!props.user.value ? <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
+                    {!props.user.value && <div className="flex gap-2.5 flex-col sm:justify-center lg:flex lg:justify-start">
 
                         {/* Sign in Button  */}
-                        <Link href={'/authentication/signin'} className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
+                        <Link href={'/authentication/signin'} onClick={handleMenu} className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold outline-none text-[#a2cc4c] transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
 
                         {/* Sign up button  */}
-                        <Link href={'/authentication/signup'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
-                    </div> : <Link href={'/'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</Link>}
+                        <Link href={'/authentication/signup'} onClick={handleMenu} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
+                    </div>}
+
+                    {props.user.value && <div className='flex flex-col'>
+                        <Link href={'/'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</Link>
+                        <Link href={'/'} onClick={props.logout} className=" mt-4 inline-block rounded-lg border-4 border-[#739235] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign Out</Link>
+                    </div> }
 
                 </div>
             </div>

@@ -56,8 +56,8 @@ const BuyNow = (props) => {
                             <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2 px-4'>
                                 <h1>Price :</h1>
                                 <div className='flex'>
-                                    <h1 className='pr-4'>{props.courseCode == "training" && "₹799/-"}{props.courseCode == "datascience" && "₹1,999/-"}{props.courseCode == "aiml" && "₹1,999/-"}{props.courseCode == "android" && "₹2,500/-"}{props.courseCode == "fullstack" && "₹1,499/-"}{props.courseCode == "java" && "₹999/-"}</h1>
-                                    <span class="mb-0.5 text-red-500 line-through">{props.courseCode == "training" && "₹2,999/-"}{props.courseCode == "datascience" && "₹3,999/-"}{props.courseCode == "aiml" && "₹3,999/-"}{props.courseCode == "android" && "₹5,000/-"}{props.courseCode == "fullstack" && "₹2,499/-"}{props.courseCode == "java" && "₹1,999/-"}</span>
+                                    <h1 className='pr-4'>{props.courseCode == "training" && "₹799/-"}{props.courseCode == "datascience" && "₹1,999/-"}{props.courseCode == "aiml" && "₹1,999/-"}{props.courseCode == "android" && "₹2,499/-"}{props.courseCode == "fullstack" && "₹1,499/-"}{props.courseCode == "java" && "₹999/-"}</h1>
+                                    <span class="mb-0.5 text-red-500 line-through">{props.courseCode == "training" && "₹2,999/-"}{props.courseCode == "datascience" && "₹3,999/-"}{props.courseCode == "aiml" && "₹3,999/-"}{props.courseCode == "android" && "₹4,999/-"}{props.courseCode == "fullstack" && "₹2,499/-"}{props.courseCode == "java" && "₹1,999/-"}</span>
                                 </div>
                             </div>
                         </div>

@@ -69,7 +69,7 @@ const Android = (props) => {
                                 {/* <!-- price - start --> */}
                                 <div class="mb-4">
                                     <div class="flex items-end gap-2">
-                                        <span class="text-xl font-bold text-white md:text-2xl">₹2,500.00</span>
+                                        <span class="text-xl font-bold text-white md:text-2xl">₹2,499.00</span>
                                         <span class="mb-0.5 text-red-500 line-through">₹4,999.00</span>
                                     </div>
 
