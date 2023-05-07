@@ -30,7 +30,7 @@ const BuyNow = (props) => {
             {/* <!-- component --> */}
             <div className='bg-[#001719] text-white'>
                 <h1 className='text-3xl font-bold italic text-center p-4'>Buy Now</h1>
-                <div class="p-12 mx-24 px-4 md:p-8">
+                <div class="p-6 mx-4 px-4 md:p-8">
                     <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
                         <div class="text-gray-600">
                             <p class="font-medium text-xl py-2 text-white">Your Course : </p>
@@ -62,7 +62,7 @@ const BuyNow = (props) => {
                             </div>
                         </div>
 
-                        <div class="lg:col-span-2 px-48">
+                        <div class="lg:col-span-2 md:px-48">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
                                 <div class="md:col-span-5 py-2">
                                     <label for="fullName">Full Name*</label>
@@ -85,7 +85,7 @@ const BuyNow = (props) => {
                                 </div>
 
                             </div>
-                            <div className='bg-[#001719] flex text-white py-4'>
+                            <div className='bg-[#001719] flex text-white py-4 flex-col md:flex-row'>
                                 {props.courseCode == "aiml" && <img className='h-56' src="../qrs/aiml.jpg" alt="" />}
                                 {props.courseCode == "fullstack" && <img className='h-56' src="../qrs/fullstack.jpg" alt="" />}
                                 {props.courseCode == "android" && <img className='h-56' src="../qrs/android.jpg" alt="" />}
