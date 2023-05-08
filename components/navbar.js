@@ -79,7 +79,7 @@ const Navbar = (props) => {
 
                         {props.user.value && <a onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }}>
 
-                            {dropdown && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute right-16 top-16 border-2 border-[#a2cc4c] text-white">
+                            {dropdown && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute right-16 top-16 border-2 border-[#a2cc4c] text-white bg-[#001719]">
                                 <ul className='flex flex-col items-left'>
                                     <li className='cursor-pointer my-4 mx-4 mr-10'><Link href={'/dashboard/profile'}>Profile</Link></li>
                                     <hr className='border-1 border-[#a2cc4c]' />

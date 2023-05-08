@@ -11,6 +11,8 @@ import { useRouter } from 'next/router';
 // Import useState from react package
 import { useEffect, useState } from 'react';
 
+import LoadingBar from 'react-top-loading-bar'
+
 // Main function of the Application  
 export default function App({ Component, pageProps }) {
 
@@ -19,16 +21,17 @@ export default function App({ Component, pageProps }) {
   const [user, setUser] = useState({ value: null });
   const [userName, setUserName] = useState({ value: null });
   const [key, setKey] = useState(0);
-  const [courseCode, setCourseCode] = useState({value: null});
+  const [courseCode, setCourseCode] = useState({ value: null });
+  const [progress, setProgress] = useState(0)
 
   const buyNow = (courseCode) => {
     setCourseCode(courseCode);
     const loginToken = localStorage.getItem('loginToken');
-    if(loginToken){
+    if (loginToken) {
       router.push(`http://localhost:3000/payment/buynow`)
-    }else{
+    } else {
       const signInMessage = "You are not Logged In. Please Login your account."
-      if(confirm(signInMessage)==true){
+      if (confirm(signInMessage) == true) {
         router.push(`http://localhost:3000/authentication/signin`);
       }
     }
@@ -47,6 +50,12 @@ export default function App({ Component, pageProps }) {
 
   // Check login token is present or not
   useEffect(() => {
+    router.events.on('routeChangeStart', ()=>{
+      setProgress(40);
+    })
+    router.events.on('routeChangeComplete', ()=>{
+      setProgress(100);
+    })
     const loginToken = localStorage.getItem('loginToken');
     const username = localStorage.getItem('userName');
     if (loginToken) {
@@ -58,11 +67,18 @@ export default function App({ Component, pageProps }) {
 
   return <>
 
+    <LoadingBar
+      color='#a2cc4c'
+      progress={progress}
+      waitingTime={300}
+      onLoaderFinished={() => setProgress(0)}
+    />
+
     {/* Navbar component  */}
     <Navbar logout={logout} user={user} userName={userName} key={key} />
 
     {/* Other pages  */}
-    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode}/>
+    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode} progress={progress} setProgress={setProgress} />
 
     {/* Footer component  */}
     <Footer />

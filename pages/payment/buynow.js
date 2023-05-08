@@ -1,8 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
+import { useRouter } from 'next/router';
 import React, { useState } from 'react'
+import Head from 'next/head';
 
 const BuyNow = (props) => {
+
+    const router = useRouter();
 
     const [fullName, setFullName] = useState();
     const [email, setEmail] = useState();
@@ -23,10 +27,15 @@ const BuyNow = (props) => {
     }
 
     const confirm = () => {
-        console.log(fullName, email, phoneNo)
+        router.push(`http://localhost:3000/payment/confirmpayment`)
     }
     return (
         <>
+
+            <Head>
+                <title>Buy Now | Eduno (Empower Yourself with Eduno)</title>
+            </Head>
+
             {/* <!-- component --> */}
             <div className='bg-[#001719] text-white flex flex-col justify-center items-center'>
                 <h1 className='text-3xl font-bold italic text-center p-4'>Buy Now</h1>
@@ -103,7 +112,7 @@ const BuyNow = (props) => {
                                 </div>
                             <div class="md:col-span-5 text-right">
                                 <div class="inline-flex items-end">
-                                    <button class="bg-[#a2cc4c] hover:bg-[#7b9c3a] text-white font-bold py-2 px-4 rounded" onClick={confirm}>Confirm</button>
+                                    <button class="bg-[#a2cc4c] hover:bg-[#7b9c3a] text-white font-bold py-2 px-8 text-xl rounded" onClick={confirm}>Confirm</button>
                                 </div>
                             </div>
                         </div>

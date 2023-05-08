@@ -20,7 +20,7 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 // Signup component of signup page
-const Signup = () => {
+const Signup = (props) => {
 
     
     let router= useRouter()
@@ -66,6 +66,8 @@ const Signup = () => {
         // prevent from the reload of page 
         e.preventDefault();
 
+        props.setProgress(30);
+
         // Data of sign up form 
         const data = { firstName, lastName, email, phoneNo, password };
 
@@ -78,6 +80,8 @@ const Signup = () => {
             body: JSON.stringify(data)
         });
 
+        props.setProgress(80);
+
         // Respone of above API stores in this variable
         let response = await res.json();
 
@@ -86,7 +90,6 @@ const Signup = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-
             router.push("https://eduno.in/")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();

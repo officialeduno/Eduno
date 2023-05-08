@@ -17,9 +17,9 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 // Signin component of signin page 
-const Signin = () => {
+const Signin = (props) => {
 
-    let router= useRouter()
+    let router= useRouter();
 
     // Data variables of Sign in form
     const [email, setEmail] = useState();
@@ -46,11 +46,13 @@ const Signin = () => {
         // prevent from the reload of page
         e.preventDefault();
 
+        props.setProgress(40);
+
         // Data of sign in page which is send in sign in API
         const data = { email, password };
 
         // Call the signin API
-        let res = await fetch('http://localhost:3000/api/auth/signin', {
+        let res = await fetch('https://eduno.in/api/auth/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -58,10 +60,11 @@ const Signin = () => {
             body: JSON.stringify(data)
         });
 
+        props.setProgress(90);
+
         // Store the reponse of the API
         let response = await res.json();
 
-        console.log(response)
 
         // React toast on the basis of API response
         if (response.success == true) {
@@ -69,7 +72,7 @@ const Signin = () => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-            router.push(`http://localhost:3000/`)
+            router.push(`https://eduno.in/`)
             
 
         } else {

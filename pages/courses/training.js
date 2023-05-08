@@ -12,7 +12,7 @@ const Android = (props) => {
 
         <>
             <Head>
-                <title>Android App Development | Eduno (Empower yourself with Eduno)</title>
+                <title>Training & Internship 2023 | Eduno (Empower yourself with Eduno)</title>
             </Head>
 
             <div>

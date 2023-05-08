@@ -11,7 +11,7 @@ const Android = (props) => {
     return (
         <>
             <Head>
-                <title>Android App Development | Eduno (Empower yourself with Eduno)</title>
+                <title>Data Science | Eduno (Empower yourself with Eduno)</title>
             </Head>
 
             <div>
