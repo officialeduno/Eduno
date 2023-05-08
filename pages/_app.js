@@ -28,11 +28,11 @@ export default function App({ Component, pageProps }) {
     setCourseCode(courseCode);
     const loginToken = localStorage.getItem('loginToken');
     if (loginToken) {
-      router.push(`http://localhost:3000/payment/buynow`)
+      router.push(`https://eduno.in/payment/buynow`)
     } else {
       const signInMessage = "You are not Logged In. Please Login your account."
       if (confirm(signInMessage) == true) {
-        router.push(`http://localhost:3000/authentication/signin`);
+        router.push(`https://eduno.in/authentication/signin`);
       }
     }
   }
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
       localStorage.removeItem('userName');
       setKey(Math.random());
       setUser({ value: null });
-      router.push(`http://localhost:3000/`);
+      router.push(`https://eduno.in/`);
     }
   }
 

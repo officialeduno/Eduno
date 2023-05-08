@@ -27,7 +27,7 @@ const BuyNow = (props) => {
     }
 
     const confirm = () => {
-        router.push(`http://localhost:3000/payment/confirmpayment`)
+        router.push(`https://eduno.in/payment/confirmpayment`)
     }
     return (
         <>
