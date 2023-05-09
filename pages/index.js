@@ -113,8 +113,8 @@ export default function Home() {
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Training and Internship 2023</h1>
-                  <p className="leading-relaxed mb-3 text-white">Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable.</p>
-                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                  <p className="leading-relaxed md:text-sm mb-3 text-white">Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable.</p>
+                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹799/-</h1>
@@ -150,7 +150,7 @@ export default function Home() {
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Data Science</h1>
                   <p className="leading-relaxed mb-3 text-white"> These courses are designed to provide a comprehensive overview of the techniques and technologies used in Data Science, including statistical analysis, machine learning, and data visualization.</p>
-                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹1,999/-</h1>
@@ -186,7 +186,7 @@ export default function Home() {
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">AI / ML</h1>
                   <p className="leading-relaxed mb-3 text-white">AI/ML are rapidly evolving fields that are changing the way we live and work. AI/ML courses provide students with the skills and knowledge needed to pursue a career in these exciting fields.</p>
-                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹1,999/-</h1>
@@ -231,7 +231,7 @@ export default function Home() {
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Android App Development</h1>
                   <p className="leading-relaxed mb-3 text-white">Android app development is a highly sought-after skill in todays job market, and taking an Android app development course can be an excellent way to learn this skill.</p>
-                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹2,499/-</h1>
@@ -267,7 +267,7 @@ export default function Home() {
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Full Stack Web Development</h1>
                   <p className="leading-relaxed mb-3 text-white">A full-stack web development course is an educational program that teaches students the skills needed to build web applications from start to finish.</p>
-                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹1,499/-</h1>
@@ -303,7 +303,7 @@ export default function Home() {
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Java Programming</h1>
                   <p className="leading-relaxed mb-3 text-white">A Java programming course is an educational program that teaches students the fundamentals of the Java programming language.</p>
-                  <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2'>
+                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>
                       <h1 className='pr-4'>₹999/-</h1>
