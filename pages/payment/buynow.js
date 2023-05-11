@@ -31,7 +31,7 @@ const BuyNow = (props) => {
         }
     }
 
-    const somethingWentWrong = () => toast('Some Went Wrong...', {
+    const somethingWentWrongToast = () => toast('Some Went Wrong...', {
         autoClose: 2000,
         type: 'error'
     })
@@ -64,7 +64,7 @@ const BuyNow = (props) => {
             router.push(`https://eduno.in/payment/confirmpayment`);
         }
         else {
-            somethingWentWrong();
+            somethingWentWrongToast();
         }
     }
     return (
