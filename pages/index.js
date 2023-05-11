@@ -113,7 +113,7 @@ export default function Home() {
                 <div className="p-6">
 
                   <h1 className="title-font text-2xl font-medium text-white mb-3">Training and Internship 2023</h1>
-                  <p className="leading-relaxed md:text-sm mb-3 text-white">Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable.</p>
+                  <p className="leading-relaxed mb-3 text-white">Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable.</p>
                   <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
                     <h1>Price :</h1>
                     <div className='flex'>

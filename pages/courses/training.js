@@ -2,6 +2,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const Android = (props) => {
     const buyNow = (e) => {
@@ -82,9 +83,9 @@ const Android = (props) => {
                                 <div class="flex gap-2.5">
                                     <button class="inline-block flex-1 rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-[#a2cc4c] transition duration-100 hover:bg-[#a2cc4c] focus-visible:ring active:bg-[#a2cc4c] sm:flex-none md:text-base" onClick={buyNow}>Buy Now</button>
 
-                                    <a href="#" class="inline-block rounded-lg bg-gray-200 px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-[#a2cc4c] transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
+                                    <Link href="https://drive.google.com/file/d/1NNWnSMBjQVf9qBvsqSGgdjqxQ4Ag_Ewx/view?usp=share_link" target='_blank' class="inline-block rounded-lg bg-gray-200 px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-[#a2cc4c] transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
                                         PDF
-                                    </a>
+                                    </Link>
                                 </div>
                                 {/* <!-- buttons - end --> */}
 
