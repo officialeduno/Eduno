@@ -59,7 +59,7 @@ const BuyNow = (props) => {
         // Respone of above API stores in this variable
         let response = await res.json();
 
-        // Toast on the basis of response of API
+        
         if (response.success == true) {
             router.push(`https://eduno.in/payment/confirmpayment`);
         }
