@@ -3,6 +3,11 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 import Head from 'next/head';
+// Import react toastify
+import { ToastContainer, toast } from "react-toastify";
+
+// Import react toastify CSS
+import 'react-toastify/dist/ReactToastify.css';
 
 const BuyNow = (props) => {
 
@@ -26,8 +31,41 @@ const BuyNow = (props) => {
         }
     }
 
-    const confirm = () => {
-        router.push(`https://eduno.in/payment/confirmpayment`)
+    const somethingWentWrongToast = () => toast('Some Went Wrong...', {
+        autoClose: 2000,
+        type: 'error'
+    })
+
+    const confirm = async (e) => {
+        // prevent from the reload of page 
+        e.preventDefault();
+
+        props.setProgress(30);
+
+        // Data of sign up form 
+        const data = { fullName, email, phoneNo, whatsappNo };
+
+        // Call the signup API 
+        let res = await fetch('https://eduno.in/api/payment/payment', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+
+        props.setProgress(80);
+
+        // Respone of above API stores in this variable
+        let response = await res.json();
+
+        // Toast on the basis of response of API
+        if (response.success == true) {
+            router.push(`https://eduno.in/payment/confirmpayment`);
+        }
+        else {
+            somethingWentWrongToast();
+        }
     }
     return (
         <>
@@ -35,6 +73,9 @@ const BuyNow = (props) => {
             <Head>
                 <title>Buy Now | Eduno (Empower Yourself with Eduno)</title>
             </Head>
+
+            {/* Toast container to show the toast  */}
+            <ToastContainer />
 
             {/* <!-- component --> */}
             <div className='bg-[#001719] text-white flex flex-col justify-center items-center'>

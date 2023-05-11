@@ -9,8 +9,18 @@ const handler = async (req, res) => {
     // POST method to call the API
     if (req.method == 'POST') {
 
+        let success = true;
+
+        let user_payment = new payment({
+            fullName : req.body.fullName,
+            email : req.body.email,
+            phoneNo : req.body.phoneNo,
+            whatsappNo : req.body.whatsappNo
+        })
+
+        await user_payment.save();
         
-        
+        res.status(200).json({success: true});
     }
 
     // If API do not call properly
