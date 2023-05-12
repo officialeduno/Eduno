@@ -2,7 +2,7 @@
 const mongoose = require ('mongoose');
 
 // Create a schema for the user
-const usersSchema = new mongoose.Schema({
+const paymentSchema = new mongoose.Schema({
 
     // First Name
     fullName : {
@@ -40,4 +40,4 @@ const usersSchema = new mongoose.Schema({
 mongoose.models = {}
 
 // Export mongoose model or schema
-export default mongoose.model("payment", usersSchema);
+export default mongoose.model("payment", paymentSchema);

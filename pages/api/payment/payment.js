@@ -9,13 +9,12 @@ const handler = async (req, res) => {
     // POST method to call the API
     if (req.method == 'POST') {
 
-        let success = true;
-
         let user_payment = new payment({
             fullName : req.body.fullName,
             email : req.body.email,
             phoneNo : req.body.phoneNo,
-            whatsappNo : req.body.whatsappNo
+            whatsappNo : req.body.whatsappNo,
+            course : req.body.course
         })
 
         await user_payment.save();

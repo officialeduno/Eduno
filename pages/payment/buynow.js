@@ -17,14 +17,12 @@ const BuyNow = (props) => {
     const [email, setEmail] = useState();
     const [phoneNo, setPhoneNo] = useState();
     const [whatsappNo, setWhatsappNo] = useState();
-    let course = props.courseCode;
 
     const handleChange = (e) => {
         if (e.target.name == 'email') {
             setEmail(e.target.value);
         } else if (e.target.name == 'phoneNo') {
             setPhoneNo(e.target.value);
-            console.log(e.target.value)
         } else if (e.target.name == 'fullName') {
             setFullName(e.target.value);
         } else if (e.target.name == 'whatsappNo') {
@@ -44,7 +42,7 @@ const BuyNow = (props) => {
         props.setProgress(30);
 
         // Data of sign up form 
-        const data = { fullName, email, phoneNo, whatsappNo, course };
+        const data = { fullName, email, phoneNo, whatsappNo, course : props.courseCode };
 
         // Call the signup API 
         let res = await fetch('https://eduno.in/api/payment/payment', {
@@ -59,6 +57,7 @@ const BuyNow = (props) => {
 
         // Respone of above API stores in this variable
         let response = await res.json();
+        console.log(response);
 
         
         if (response.success == true) {
