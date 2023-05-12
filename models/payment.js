@@ -28,6 +28,10 @@ const usersSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    course : {
+        type: String,
+        required : true
+    }
 
     // Timestamp for record the time to user access
 }, {timestamps: true})
