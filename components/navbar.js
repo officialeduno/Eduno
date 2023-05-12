@@ -49,7 +49,7 @@ const Navbar = (props) => {
                     <header className="flex items-center justify-between py-4 md:py-4">
                         {/* <!-- logo - start --> */}
                         <div className='flex'>
-                            <img src="logo.png" className='h-10 px-2' alt="" />
+                            <img src="./logo.png" className='h-10 px-2' alt="" />
                             <Link href={'/'} className="text-white inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
                                 Eduno
                             </Link>
