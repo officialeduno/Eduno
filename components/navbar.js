@@ -48,10 +48,12 @@ const Navbar = (props) => {
                     {/* Header Component  */}
                     <header className="flex items-center justify-between py-4 md:py-4">
                         {/* <!-- logo - start --> */}
-                        <Link href={'/'} className="text-white inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
-                            <img src="logo.png" className='h-10' alt="" />
-                            Eduno
-                        </Link>
+                        <div className='flex'>
+                            <img src="logo.png" className='h-10 px-2' alt="" />
+                            <Link href={'/'} className="text-white inline-flex items-center gap-2.5 text-2xl font-bold md:text-3xl" aria-label="logo">
+                                Eduno
+                            </Link>
+                        </div>
                         {/* <!-- logo - end --> */}
 
 
@@ -141,7 +143,7 @@ const Navbar = (props) => {
                     {props.user.value && <div className='flex flex-col'>
                         <Link href={'/'} className="inline-block rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</Link>
                         <Link href={'/'} onClick={props.logout} className=" mt-4 inline-block rounded-lg border-4 border-[#739235] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#739235] hover:text-black focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign Out</Link>
-                    </div> }
+                    </div>}
 
                 </div>
             </div>

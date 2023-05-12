@@ -57,7 +57,6 @@ const BuyNow = (props) => {
 
         // Respone of above API stores in this variable
         let response = await res.json();
-        console.log(response);
 
         
         if (response.success == true) {
