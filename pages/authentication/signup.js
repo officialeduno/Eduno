@@ -1,29 +1,18 @@
-
 import React from 'react'
-
 import { useRouter } from 'next/router'
-
 import Head from 'next/head'
-
 import Link from 'next/link'
-
 import { useState } from 'react'
-
 import { ToastContainer, toast } from "react-toastify";
-
 import 'react-toastify/dist/ReactToastify.css';
 
-const Signup = (props) => {
-
-    
+const Signup = (props) => {    
     let router= useRouter()
-
     const [firstName, setFirstName] = useState();
     const [lastName, setLastName] = useState();
     const [email, setEmail] = useState();
     const [phoneNo, setPhone] = useState();
     const [password, setPassword] = useState();
-
     const handleChange = (e) => {
         if (e.target.name == 'firstName') {
             setFirstName(e.target.value);
@@ -37,7 +26,6 @@ const Signup = (props) => {
             setPassword(e.target.value);
         }
     }
-
     const emailAlreadyExistsToast = () => toast('Email Already Exists...', {
         autoClose: 2000,
         type: 'error'
@@ -50,14 +38,10 @@ const Signup = (props) => {
         autoClose: 2000,
         type: 'error'
     })
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         props.setProgress(30);
-
         const data = { firstName, lastName, email, phoneNo, password };
-
         let res = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
             headers: {
@@ -65,11 +49,8 @@ const Signup = (props) => {
             },
             body: JSON.stringify(data)
         });
-
         props.setProgress(80);
-
         let response = await res.json();
-
         if (response.success == true) {
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
@@ -84,9 +65,7 @@ const Signup = (props) => {
     }
 
     return (
-
         <>
-
             <Head>
                 <title>Create your Account | Eduno (Empower yourself with Eduno)</title>
             </Head>
@@ -166,9 +145,7 @@ const Signup = (props) => {
             </div>
 
         </>
-
     )
-
 }
 
 export default Signup

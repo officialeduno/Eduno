@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -6,25 +5,19 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const ForgotPassword = () => {
-
     const [email, setEmail] = useState();
-
     const handleChange = (e)=>{
         if (e.target.name == 'email') {
             setEmail(e.target.value);
         }
-    }
-
+    };
     const linkSend = () => toast('Link Send Successfully', {
         autoClose: 2000,
         type: 'success'
     });
-
     const handleSubmit = async(e) => {
         e.preventDefault();
-
         const data = {email};
-
         let res = await fetch(`http://localhost:3000/api/auth/forgot`, {
             method: 'POST',
             headers: {
@@ -32,22 +25,17 @@ const ForgotPassword = () => {
             },
             body: JSON.stringify(data)
         });
-
         let response = await res.json();
-
         if(response.success == true){
             linkSend();
         }
     }
 
     return (
-
         <>
-
         <Head>
             <title>Forgot Password | Eduno (Empower yourself with Eduno)</title>
         </Head>
-
         <div>
 
             <ToastContainer />
@@ -86,9 +74,7 @@ const ForgotPassword = () => {
         </div>
 
         </>
-
     )
-
 }
 
 export default ForgotPassword

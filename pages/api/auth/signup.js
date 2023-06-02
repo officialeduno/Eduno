@@ -1,54 +1,33 @@
-
 import users from "@/models/users"
-
-
-var CryptoJS = require("crypto-js");
-
 import connectDb from "@/middleware/mongoose"
 
+var CryptoJS = require("crypto-js");
 var jwt = require('jsonwebtoken');
 
 const handler = async (req, res) => {
-
     if (req.method == 'POST') {
-
         const alreadyEmail = await users.findOne({ email: req.body.email });
-
         if (!alreadyEmail) {
-
             const alreadyPhone = await users.findOne({ phoneNo: req.body.phoneNo });
-
             if (!alreadyPhone) {
-                
                 let new_user = new users({
                     firstName: req.body.firstName,
                     lastName: req.body.lastName,
                     email: req.body.email,
                     phoneNo: req.body.phoneNo,
                     password: CryptoJS.AES.encrypt(req.body.password, process.env.secret_key).toString()
-                })
-
-                await new_user.save()
-
+                });
+                await new_user.save();
                 var token = jwt.sign({ firstName: req.body.firstName, lastName: req.body.lastName, email: req.body.email, phoneNo: req.body.phoneNo }, process.env.jwt_secret);
-
                 res.status(200).json({ success: true, token, userName: req.body.firstName });
-
+            } else {
+                return res.status(400).json({ success: false, error: "Phone Number already exists." });
             }
-            
-            else{
-                return res.status(400).json({success: false, error: "Phone Number already exists."})
-            }
-        } 
-        
-        else {
+        } else {
             return res.status(400).json({ success: false, error: "User already exists." });
         }
-    }
-
-    else {
-
-        res.status(400).json({ success: false, error: "This is not allowed" })
+    } else {
+        res.status(400).json({ success: false, error: "This is not allowed" });
     }
 }
 

@@ -3,17 +3,15 @@ import Navbar from '@/components/navbar'
 import '@/styles/globals.css'
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-
 import LoadingBar from 'react-top-loading-bar'
+
 export default function App({ Component, pageProps }) {
-
   const router = useRouter();
-
   const [user, setUser] = useState({ value: null });
   const [userName, setUserName] = useState({ value: null });
   const [key, setKey] = useState(0);
   const [courseCode, setCourseCode] = useState({ value: null });
-  const [progress, setProgress] = useState(0)
+  const [progress, setProgress] = useState(0);
 
   const buyNow = (courseCode) => {
     setCourseCode(courseCode);
@@ -56,7 +54,6 @@ export default function App({ Component, pageProps }) {
   }, [router.query])
 
   return <>
-
     <LoadingBar
       color='#a2cc4c'
       progress={progress}

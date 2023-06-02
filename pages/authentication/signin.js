@@ -1,23 +1,14 @@
-
 import Link from 'next/link'
-
 import { useRouter } from 'next/router'
-
 import React, { useState } from 'react'
-
 import Head from 'next/head'
-
 import { ToastContainer, toast } from "react-toastify";
-
 import 'react-toastify/dist/ReactToastify.css';
 
 const Signin = (props) => {
-
     let router= useRouter();
-
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
-
     const handleChange = (e) => {
         if (e.target.name == 'email') {
             setEmail(e.target.value);
@@ -25,20 +16,14 @@ const Signin = (props) => {
             setPassword(e.target.value);
         }
     };
-
     const signinCancelledToast = () => toast('Invalid credentials', {
         autoClose: 2000,
         type: 'error'
     });
-
-
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         props.setProgress(40);
-
         const data = { email, password };
-
         let res = await fetch('http://localhost:3000/api/auth/signin', {
             method: 'POST',
             headers: {
@@ -46,32 +31,22 @@ const Signin = (props) => {
             },
             body: JSON.stringify(data)
         });
-
         props.setProgress(90);
-
         let response = await res.json();
-
-
         if (response.success == true) {
-
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
             router.push(`http://localhost:3000/`)
-            
-
         } else {
             signinCancelledToast();
         }
-
     }
 
     return (
         <>
-
             <Head>
                 <title>Login or Sign in | Eduno (Empower yourself with Eduno)</title>
             </Head>
-
             <div>
 
                 <ToastContainer />
@@ -137,9 +112,7 @@ const Signin = (props) => {
             </div>
 
         </>
-
     )
-
 }
 
 export default Signin

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @next/next/no-img-element */
+
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 import Head from 'next/head';
@@ -7,14 +8,11 @@ import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
 const BuyNow = (props) => {
-
     const router = useRouter();
-
     const [fullName, setFullName] = useState();
     const [email, setEmail] = useState();
     const [phoneNo, setPhoneNo] = useState();
     const [whatsappNo, setWhatsappNo] = useState();
-
     const handleChange = (e) => {
         if (e.target.name == 'email') {
             setEmail(e.target.value);
@@ -26,19 +24,14 @@ const BuyNow = (props) => {
             setWhatsappNo(e.target.value);
         }
     }
-
     const somethingWentWrongToast = () => toast('Some Went Wrong...', {
         autoClose: 2000,
         type: 'error'
     })
-
     const confirm = async (e) => {
         e.preventDefault();
-
         props.setProgress(30);
-
-        const data = { fullName, email, phoneNo, whatsappNo, course : props.courseCode };
-
+        const data = { fullName, email, phoneNo, whatsappNo, course: props.courseCode };
         let res = await fetch('http://localhost:3000/api/payment/payment', {
             method: 'POST',
             headers: {
@@ -46,22 +39,16 @@ const BuyNow = (props) => {
             },
             body: JSON.stringify(data)
         });
-
         props.setProgress(80);
-
         let response = await res.json();
-
-        
         if (response.success == true) {
             router.push(`http://localhost:3000/payment/confirmpayment`);
-        }
-        else {
+        } else {
             somethingWentWrongToast();
         }
     }
     return (
         <>
-
             <Head>
                 <title>Buy Now | Eduno (Empower Yourself with Eduno)</title>
             </Head>
@@ -138,9 +125,9 @@ const BuyNow = (props) => {
                                 </div>
                             </div>
                             <div class="md:col-span-5 py-2">
-                                    <label for="email">Share your Screenshot of Payment : </label>
-                                    <input type="file" className='px-2'/>
-                                </div>
+                                <label for="email">Share your Screenshot of Payment : </label>
+                                <input type="file" className='px-2' />
+                            </div>
                             <div class="md:col-span-5 text-right">
                                 <div class="inline-flex items-end">
                                     <button class="bg-[#a2cc4c] hover:bg-[#7b9c3a] text-white font-bold py-2 px-8 text-xl rounded" onClick={confirm}>Confirm</button>
