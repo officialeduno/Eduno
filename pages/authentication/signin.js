@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { setCookie } from 'cookies-next';
 
 const Signin = (props) => {
     let router= useRouter();
@@ -34,6 +35,7 @@ const Signin = (props) => {
         props.setProgress(90);
         let response = await res.json();
         if (response.success == true) {
+            setCookie('token', response.token);
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
             router.push(`http://localhost:3000/`)

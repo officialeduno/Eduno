@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useState } from 'react'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { setCookie } from 'cookies-next';
 
 const Signup = (props) => {    
     let router= useRouter()
@@ -52,6 +53,7 @@ const Signup = (props) => {
         props.setProgress(80);
         let response = await res.json();
         if (response.success == true) {
+            setCookie('token', response.token);
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
             router.push("http://localhost:3000/")

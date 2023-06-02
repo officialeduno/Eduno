@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "cookies": "^0.8.0",
+    "cookies-next": "^2.1.1",
     "crypto-js": "^4.1.1",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
