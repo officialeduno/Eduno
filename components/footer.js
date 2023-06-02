@@ -132,11 +132,11 @@ const Footer = () => {
                                 </div>
 
                                 <div>
-                                    <Link href={'/footer-pages/privacy-policy'} className="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Privacy Policy</Link>
+                                    <Link href={'/footer-pages/privacy_policy'} className="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Privacy Policy</Link>
                                 </div>
 
                                 <div>
-                                    <Link href="#" className="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Cookie settings</Link>
+                                    <Link href={'/footer-pages/refund_policy'} className="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-[#59aca7]">Refund Policy</Link>
                                 </div>
                             </nav>
                         </div>
