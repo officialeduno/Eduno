@@ -3,10 +3,7 @@
 import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 import Head from 'next/head';
-// Import react toastify
 import { ToastContainer, toast } from "react-toastify";
-
-// Import react toastify CSS
 import 'react-toastify/dist/ReactToastify.css';
 
 const BuyNow = (props) => {
@@ -36,15 +33,12 @@ const BuyNow = (props) => {
     })
 
     const confirm = async (e) => {
-        // prevent from the reload of page 
         e.preventDefault();
 
         props.setProgress(30);
 
-        // Data of sign up form 
         const data = { fullName, email, phoneNo, whatsappNo, course : props.courseCode };
 
-        // Call the signup API 
         let res = await fetch('http://localhost:3000/api/payment/payment', {
             method: 'POST',
             headers: {
@@ -55,7 +49,6 @@ const BuyNow = (props) => {
 
         props.setProgress(80);
 
-        // Respone of above API stores in this variable
         let response = await res.json();
 
         
@@ -73,10 +66,8 @@ const BuyNow = (props) => {
                 <title>Buy Now | Eduno (Empower Yourself with Eduno)</title>
             </Head>
 
-            {/* Toast container to show the toast  */}
             <ToastContainer />
 
-            {/* <!-- component --> */}
             <div className='bg-[#001719] text-white flex flex-col justify-center items-center'>
                 <h1 className='text-3xl font-bold italic text-center p-4'>Buy Now</h1>
                 <div class="p-6 mx-4 px-4 md:p-8">

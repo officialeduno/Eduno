@@ -1,21 +1,15 @@
 // Next.js API route support: http://localhost:3000/auth/forgot
 
-// Import forgot schema from models
 import connectDb from "@/middleware/mongoose";
 
-// Use cryptoJS for encrypt the password
 var CryptoJS = require("crypto-js");
 
-// Import user schema
 import users from "@/models/users";
 
-// Use JWT to authenticate the token
 var jwt = require('jsonwebtoken');
 
-// Handler to use for middleware
 const handler = async (req, res) => {
 
-    // POSR method to call the API
     if (req.method == 'POST') {
 
         const {npassword, userid, forgot_token} = req.body;

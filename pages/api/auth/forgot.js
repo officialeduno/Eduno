@@ -1,38 +1,27 @@
 // Next.js API route support: http://localhost:3000/auth/forgot
 
-// Import forgot schema from models
 import connectDb from "@/middleware/mongoose";
 
-// Import user schema
 import users from "@/models/users";
 
-// Use JWT to authenticate the token
 var jwt = require('jsonwebtoken');
 
 var nodemailer = require('nodemailer');
 
-// Handler to use for middleware
 const handler = async (req, res) => {
 
-    // POSR method to call the API
     if (req.method == 'POST') {
 
-        // Data of input form 
         const { email } = req.body;
 
-        // Create a variable for defined the success of API and send back this
         let success = true;
 
-        // Find the user of that email which is entered
         const user = await users.findOne({ email });
 
-        // If user is not in database
         if (!user) {
             success = false;
             return res.status(400).json({ success, error: "User does not found" });
         }
-
-        // If user exists in database
         else {
             const secret = process.env.secret_key + user.password;
 
