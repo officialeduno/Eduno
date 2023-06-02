@@ -72,7 +72,7 @@ const Signup = (props) => {
         const data = { firstName, lastName, email, phoneNo, password };
 
         // Call the signup API 
-        let res = await fetch('https://eduno.in/api/auth/signup', {
+        let res = await fetch('http://localhost:3000/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -90,7 +90,7 @@ const Signup = (props) => {
             // Set the token in local storage of browser
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
-            router.push("https://eduno.in/")
+            router.push("http://localhost:3000/")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();
         } else if (response.error == "User already exists.") {

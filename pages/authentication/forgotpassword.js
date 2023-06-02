@@ -36,7 +36,7 @@ const ForgotPassword = () => {
         const data = {email};
 
         // Call the forgot API
-        let res = await fetch(`https://eduno.in/api/auth/forgot`, {
+        let res = await fetch(`http://localhost:3000/api/auth/forgot`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

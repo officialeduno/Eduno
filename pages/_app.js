@@ -1,19 +1,10 @@
-// Import footer component from component sections
 import Footer from '@/components/footer'
-
-// Import navbar component from component section
 import Navbar from '@/components/navbar'
-
-// Import Global CSS
 import '@/styles/globals.css'
 import { useRouter } from 'next/router';
-
-// Import useState from react package
 import { useEffect, useState } from 'react';
 
 import LoadingBar from 'react-top-loading-bar'
-
-// Main function of the Application  
 export default function App({ Component, pageProps }) {
 
   const router = useRouter();
@@ -28,11 +19,11 @@ export default function App({ Component, pageProps }) {
     setCourseCode(courseCode);
     const loginToken = localStorage.getItem('loginToken');
     if (loginToken) {
-      router.push(`https://eduno.in/payment/buynow`)
+      router.push(`http://localhost:3000/payment/buynow`)
     } else {
       const signInMessage = "You are not Logged In. Please Login your account."
       if (confirm(signInMessage) == true) {
-        router.push(`https://eduno.in/authentication/signin`);
+        router.push(`http://localhost:3000/authentication/signin`);
       }
     }
   }
@@ -44,11 +35,10 @@ export default function App({ Component, pageProps }) {
       localStorage.removeItem('userName');
       setKey(Math.random());
       setUser({ value: null });
-      router.push(`https://eduno.in/`);
+      router.push(`http://localhost:3000/`);
     }
   }
 
-  // Check login token is present or not
   useEffect(() => {
     router.events.on('routeChangeStart', ()=>{
       setProgress(40);
@@ -74,13 +64,10 @@ export default function App({ Component, pageProps }) {
       onLoaderFinished={() => setProgress(0)}
     />
 
-    {/* Navbar component  */}
     <Navbar logout={logout} user={user} userName={userName} key={key} />
 
-    {/* Other pages  */}
     <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode} progress={progress} setProgress={setProgress} />
 
-    {/* Footer component  */}
     <Footer />
 
   </>

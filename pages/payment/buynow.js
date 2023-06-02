@@ -45,7 +45,7 @@ const BuyNow = (props) => {
         const data = { fullName, email, phoneNo, whatsappNo, course : props.courseCode };
 
         // Call the signup API 
-        let res = await fetch('https://eduno.in/api/payment/payment', {
+        let res = await fetch('http://localhost:3000/api/payment/payment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const BuyNow = (props) => {
 
         
         if (response.success == true) {
-            router.push(`https://eduno.in/payment/confirmpayment`);
+            router.push(`http://localhost:3000/payment/confirmpayment`);
         }
         else {
             somethingWentWrongToast();
