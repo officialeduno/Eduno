@@ -20,7 +20,7 @@ const handler = async (req, res) => {
                 return res.status(400).json(success, { error: "Invalid Crendentials" });
             } else {
                 var token = jwt.sign({ email: user.email, name: user.firstName }, process.env.jwt_secret);
-                return res.status(200).json({ success, token, userName: user.firstName, userId: user._id });
+                return res.status(200).json({ success, token, userName: user.firstName, edunoId: user.edunoId });
             }
         }
     } else {

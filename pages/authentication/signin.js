@@ -35,6 +35,7 @@ const Signin = (props) => {
         props.setProgress(90);
         let response = await res.json();
         if (response.success == true) {
+            setCookie('edunoId', response.edunoId);
             setCookie('token', response.token);
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);

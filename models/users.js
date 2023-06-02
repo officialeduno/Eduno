@@ -3,6 +3,12 @@ const mongoose = require ('mongoose');
 
 const usersSchema = new mongoose.Schema({
 
+    edunoId : {
+        type: String,
+        required: true,
+        unique: true
+    },
+
     firstName : {
         type: String,
         required: true

@@ -11,6 +11,7 @@ const handler = async (req, res) => {
             const alreadyPhone = await users.findOne({ phoneNo: req.body.phoneNo });
             if (!alreadyPhone) {
                 let new_user = new users({
+                    edunoId: req.body.edunoId,
                     firstName: req.body.firstName,
                     lastName: req.body.lastName,
                     email: req.body.email,
@@ -19,7 +20,7 @@ const handler = async (req, res) => {
                 });
                 await new_user.save();
                 var token = jwt.sign({ firstName: req.body.firstName, lastName: req.body.lastName, email: req.body.email, phoneNo: req.body.phoneNo }, process.env.jwt_secret);
-                res.status(200).json({ success: true, token, userName: req.body.firstName });
+                res.status(200).json({ success: true, token, userName: req.body.firstName, edunoId: req.body.edunoId });
             } else {
                 return res.status(400).json({ success: false, error: "Phone Number already exists." });
             }
