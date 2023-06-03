@@ -25,6 +25,7 @@ const Footer = () => {
                             </div>
 
                             <p className="mb-6 text-gray-400 sm:pr-8">Empower yourselft with Eduno. It Help to enhance the technical skills.</p>
+                            <p className="mb-6 text-gray-400 sm:pr-8">Address: 131F, Nazim Pura Bhoor, BSR</p>
 
                             <div className="flex gap-4">
                                 <Link href={'https://www.instagram.com/the.eduno/'} target="_blank" className="text-gray-400 transition duration-100 hover:text-[#a2cc4c] active:text-gray-600">

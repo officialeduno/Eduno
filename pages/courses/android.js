@@ -80,7 +80,7 @@ const Android = (props) => {
 
                                 {/* <!-- buttons - start --> */}
                                 <div class="flex gap-2.5">
-                                    <Link href={"https://rzp.io/l/ZEjFAjK"} class="inline-block flex-1 rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-[#a2cc4c] transition duration-100 hover:bg-[#a2cc4c] focus-visible:ring active:bg-[#a2cc4c] sm:flex-none md:text-base">Buy Now</Link>
+                                    <button class="inline-block flex-1 rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-[#a2cc4c] transition duration-100 hover:bg-[#a2cc4c] focus-visible:ring active:bg-[#a2cc4c] sm:flex-none md:text-base" onClick={buyNow}>Buy Now</button>
 
                         
 
