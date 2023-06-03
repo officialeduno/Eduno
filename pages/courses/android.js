@@ -80,7 +80,10 @@ const Android = (props) => {
 
                                 {/* <!-- buttons - start --> */}
                                 <div class="flex gap-2.5">
-                                    <button class="inline-block flex-1 rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-[#a2cc4c] transition duration-100 hover:bg-[#a2cc4c] focus-visible:ring active:bg-[#a2cc4c] sm:flex-none md:text-base" onClick={buyNow}>Buy Now</button>
+                                    <Link href={"https://rzp.io/l/ZEjFAjK"} class="inline-block flex-1 rounded-lg bg-[#a2cc4c] px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-[#a2cc4c] transition duration-100 hover:bg-[#a2cc4c] focus-visible:ring active:bg-[#a2cc4c] sm:flex-none md:text-base">Buy Now</Link>
+
+                        
+
 
                                     <Link href="https://drive.google.com/file/d/1OkHkdyupXR_ZEfS9mnwpa1wMFx5vL2KA/view?usp=share_link" target='_blank' class="inline-block rounded-lg bg-gray-200 px-4 py-3 text-center text-sm font-semibold text-gray-500 outline-none ring-[#a2cc4c] transition duration-100 hover:bg-gray-300 focus-visible:ring active:text-gray-700 md:text-base">
                                         PDF
@@ -134,7 +137,7 @@ const Android = (props) => {
                                         </div>
                                         <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#a2cc4c] text-white relative z-10 title-font font-medium text-sm">2</div>
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                            
+
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                                                 <h2 class="font-medium title-font text-white mb-1 text-2xl">Interactive learning experience</h2>
                                                 <p class="leading-relaxed">The course is designed to be engaging and interactive, with hands-on projects and real-world examples to help students apply what theym have learned.</p>
@@ -147,7 +150,7 @@ const Android = (props) => {
                                         </div>
                                         <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#a2cc4c] text-white relative z-10 title-font font-medium text-sm">3</div>
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                            
+
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                                                 <h2 class="font-medium title-font text-white mb-1 text-2xl">Experienced teachers and developers</h2>
                                                 <p class="leading-relaxed"> Eduno's team of teachers and developers are highly skilled and experienced in building high-quality Android apps, ensuring that students receive top-notch instruction.</p>
@@ -160,7 +163,7 @@ const Android = (props) => {
                                         </div>
                                         <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#a2cc4c] text-white relative z-10 title-font font-medium text-sm">4</div>
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                            
+
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                                                 <h2 class="font-medium title-font text-white mb-1 text-2xl">Comprehensive curriculum</h2>
                                                 <p class="leading-relaxed">The course covers all the important aspects of Android app development, including architecture, UI design, database management, and deployment.</p>
@@ -173,7 +176,7 @@ const Android = (props) => {
                                         </div>
                                         <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#a2cc4c] text-white relative z-10 title-font font-medium text-sm">5</div>
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                            
+
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                                                 <h2 class="font-medium title-font text-white mb-1 text-2xl">Performance-based gifts</h2>
                                                 <p class="leading-relaxed">Students who perform well in the course can receive exciting goodies such as t-shirts, mugs, and other types of gifts.</p>
@@ -186,14 +189,14 @@ const Android = (props) => {
                                         </div>
                                         <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#a2cc4c] text-white relative z-10 title-font font-medium text-sm">6</div>
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                                            
+
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
                                                 <h2 class="font-medium title-font text-white mb-1 text-2xl">Ongoing suppor</h2>
                                                 <p class="leading-relaxed"> Eduno provides ongoing support to students even after they complete the course, ensuring that they have the resources they need to succeed in their careers.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </section>
                         </div>
