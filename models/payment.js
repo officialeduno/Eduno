@@ -3,6 +3,12 @@ const mongoose = require ('mongoose');
 
 const paymentSchema = new mongoose.Schema({
 
+    edunoId : {
+        type: String,
+        required: true,
+        unique: true
+    },
+
     fullName : {
         type: String,
         required: true

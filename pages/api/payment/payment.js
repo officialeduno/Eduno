@@ -4,6 +4,7 @@ import connectDb from "@/middleware/mongoose"
 const handler = async (req, res) => {
     if (req.method == 'POST') {
         let user_payment = new payment({
+            edunoId : req.body.edunoId,
             fullName : req.body.fullName,
             email : req.body.email,
             phoneNo : req.body.phoneNo,

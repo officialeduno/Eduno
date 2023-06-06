@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navigationbg {
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(0, 0, 0) 0%);
+}
+
+.headerbg {
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rrgb(0, 0, 0)100%);
+}

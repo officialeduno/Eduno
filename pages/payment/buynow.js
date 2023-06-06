@@ -6,6 +6,7 @@ import React, { useState } from 'react'
 import Head from 'next/head';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import { getCookie } from 'cookies-next';
 
 const BuyNow = (props) => {
     const router = useRouter();
@@ -31,7 +32,8 @@ const BuyNow = (props) => {
     const confirm = async (e) => {
         e.preventDefault();
         props.setProgress(30);
-        const data = { fullName, email, phoneNo, whatsappNo, course: props.courseCode };
+        const edunoId = getCookie('edunoId');
+        const data = { edunoId, fullName, email, phoneNo, whatsappNo, course: props.courseCode };
         let res = await fetch('http://localhost:3000/api/payment/payment', {
             method: 'POST',
             headers: {
