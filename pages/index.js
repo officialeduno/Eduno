@@ -34,266 +34,156 @@ export default function Home() {
         <link rel="icon" type="image/x-icon" href="logo-wbg-icon.ico"></link>
       </Head>
 
-      <section className="headerbg md:pt-32 h-[80vh] flex justify-between">
+      <section className="headerbg md:pt-32 h-[80vh] flex justify-between md:px-12">
 
-        <div className='ml-16'>
+        <div className='ml-16 flex flex-col justify-center items-start'>
 
-            <h1 className="mb-4 ml-1 text-4xl font-sans-regular text-left text-gray-500 md:text-6xl dark:text-white">Empower yourself 
-            with </h1> <img src="eduno-white.png" className='h-20 mt-8' alt="" />
+          <h1 className="mb-4 ml-1 text-4xl font-sans-regular text-left text-gray-500 md:text-7xl dark:text-white">Empower yourself
+            with </h1> <img src="eduno-white.png" className='h-20 mt-4' alt="" />
 
-            <div className="flex flex-col ml-2 mt-8 mb-8 md:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                Learn more
-                <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+          <div className="flex flex-col mt-8 mb-8 md:ml-4 md:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4">
+            <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              Learn more
+              <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+            </Link>
+
+            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
+              Watch video
+            </a>
+          </div>
+
+        </div>
+        <div className='mr-24'>
+          <img src="./img/handcode.png" className='md:h-[70vh]' alt="" />
+        </div>
+
+      </section>
+
+
+      <section className='bg-black py-32 px-32'>
+
+        <div className='bg-[#1D1D1D] w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
+          <img src="img/developers.png" className='h-[50vh]' alt="" />
+          <div className='flex flex-col justify-center items-center'>
+            <h1 className='text-white text-5xl text-center pb-6'>Developers</h1>
+            <p className='text-white text-lg px-12 text-center'>Developers are the creative minds behind the digital world we live in today. They are the architects who design and build the applications, websites, and software that power our daily lives. From the complex algorithms that drive search engines to the sleek user interfaces of our favorite mobile apps, developers play a vital role in shaping our digital experiences.</p>
+
+            <div className="mt-6">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Join the Community
               </Link>
 
-              <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
-                <svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                Watch video
+              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Learn More
+
+                <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </a>
             </div>
-
           </div>
-        <div className='mr-24'>
-          <img src="./img/handcode.png" className='md:h-[50vh]' alt="" />
         </div>
 
       </section>
-      <section id='courses' className=" body-font bg-black">
 
-        <div className="container px-5 py-12 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/training_intern.png" alt="blog" />
-                <div className="p-6">
 
-                  <h1 className="title-font text-2xl font-medium text-white mb-3">Training and Internship 2023</h1>
-                  <p className="leading-relaxed mb-3 text-white">Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable.</p>
-                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
-                    <h1>Price :</h1>
-                    <div className='flex'>
-                      <h1 className='pr-4'>₹799/-</h1>
-                      <span className="mb-0.5 text-red-500 line-through">₹2,999.00</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center flex-wrap ">
-                    <Link href="/courses/training" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
-                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
-                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
+      <section className='bg-black px-32 flex justify-around items-start pb-12'>
+        <div className='flex flex-col justify-center items-center'>
+          <h1 className='text-white text-5xl text-center pb-6'>Roadmaps for Developers</h1>
+          <p className='text-white text-2xl px-12 text-center'>EDUNO is a platform dedicated to empowering aspiring developers and individuals interested in starting a career in the programming and development field. With a strong belief in accessible education, EDUNO provides comprehensive roadmaps and personal guidance to help individuals navigate the complex world of programming, all at no cost.</p>
+          <div className="mt-6">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Go to Roadmap
+              </Link>
+
+              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                Personal Guidance
+
+                <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+              </a>
             </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/data_science.png" alt="blog" />
-                <div className="p-6">
+        </div>
+        <img src="img/roadmap.png" className='h-[50vh]' alt="" />
+      </section>
 
-                  <h1 className="title-font text-2xl font-medium text-white mb-3">Data Science</h1>
-                  <p className="leading-relaxed mb-3 text-white"> These courses are designed to provide a comprehensive overview of the techniques and technologies used in Data Science, including statistical analysis, machine learning, and data visualization.</p>
-                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
-                    <h1>Price :</h1>
-                    <div className='flex'>
-                      <h1 className='pr-4'>₹1,999/-</h1>
-                      <span className="mb-0.5 text-red-500 line-through">₹3,999.00</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center flex-wrap ">
-                    <Link href="/courses/datascience" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
-                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
-                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>0.6K
-                    </span>
-                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>23
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/aiml.png" alt="blog" />
-                <div className="p-6">
 
-                  <h1 className="title-font text-2xl font-medium text-white mb-3">AI / ML</h1>
-                  <p className="leading-relaxed mb-3 text-white">AI/ML are rapidly evolving fields that are changing the way we live and work. AI/ML courses provide students with the skills and knowledge needed to pursue a career in these exciting fields.</p>
-                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
-                    <h1>Price :</h1>
-                    <div className='flex'>
-                      <h1 className='pr-4'>₹1,999/-</h1>
-                      <span className="mb-0.5 text-red-500 line-through">₹3,999.00</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center flex-wrap ">
-                    <Link href="/courses/aiml" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
-                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
-                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.4K
-                    </span>
-                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>90
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+      <section className='bg-[#1D1D1D] flex flex-col justify-center items-center pt-12 px-32'>
+        <h1 className='text-white text-5xl text-center pb-6'>Provide a path to MNCs</h1>
+        <div className='flex justify-around items-center p-2'>
+          <img src="mnc/google.png" className='px-6 h-28' alt="" />
+          <img src="mnc/walmart.png" className='px-6 h-28' alt="" />
+          <img src="mnc/amazon.png" className='px-6' alt="" />
+          <img src="mnc/flipkart.png" className='px-6' alt="" />
+        </div>
+        <div className='flex justify-around items-center p-2'>
+          <img src="mnc/samsung.png" className='px-6' alt="" />
+          <img src="mnc/adobe.png" className='px-6 h-20' alt="" />
+          <img src="mnc/microsoft.png" className='px-6 h-20' alt="" />
         </div>
       </section>
 
 
-      <section id='courses' className=" body-font bg-[#001719]">
+      <section className='bg-black px-32 flex flex-col justify-center items-center py-12'>
+        <div className='flex justify-center items-center'>
+          <img src="eduno-white.png" className='h-14' alt="" />
+          <h1 className='text-white text-6xl text-center'>Offer Courses</h1>
+        </div>
+        <div className='flex justify-center items-center py-12'>
+          <div className='bg-gray-400 h-[50vh] w-[20rem] mx-6'>
 
-        <div className="container px-5 py-12 mx-auto">
-          <div className="flex flex-wrap -m-4">
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/android_app_dev.png" alt="blog" />
-                <div className="p-6">
+          </div>
+          <div className='bg-gray-400 h-[50vh] w-[20rem] mx-6'>
 
-                  <h1 className="title-font text-2xl font-medium text-white mb-3">Android App Development</h1>
-                  <p className="leading-relaxed mb-3 text-white">Android app development is a highly sought-after skill in todays job market, and taking an Android app development course can be an excellent way to learn this skill.</p>
-                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
-                    <h1>Price :</h1>
-                    <div className='flex'>
-                      <h1 className='pr-4'>₹2,499/-</h1>
-                      <span className="mb-0.5 text-red-500 line-through">₹4,999.00</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center flex-wrap ">
-                    <Link href="/courses/android" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
-                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
-                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.2K
-                    </span>
-                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>6
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/web_dev.png" alt="blog" />
-                <div className="p-6">
+          </div>
+          <div className='bg-gray-400 h-[50vh] w-[20rem] mx-6'>
 
-                  <h1 className="title-font text-2xl font-medium text-white mb-3">Full Stack Web Development</h1>
-                  <p className="leading-relaxed mb-3 text-white">A full-stack web development course is an educational program that teaches students the skills needed to build web applications from start to finish.</p>
-                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
-                    <h1>Price :</h1>
-                    <div className='flex'>
-                      <h1 className='pr-4'>₹1,499/-</h1>
-                      <span className="mb-0.5 text-red-500 line-through">₹2,499.00</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center flex-wrap ">
-                    <Link href="/courses/fullstack" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
-                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
-                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>1.6K
-                    </span>
-                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>32
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="p-4 md:w-1/3">
-              <div className="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                <img className="h-56 md:h-72 w-full object-cover object-center" src="/courses_images/java.png" alt="blog" />
-                <div className="p-6">
+          </div>
+          <div className='bg-gray-400 h-[50vh] w-[20rem] mx-6'>
 
-                  <h1 className="title-font text-2xl font-medium text-white mb-3">Java Programming</h1>
-                  <p className="leading-relaxed mb-3 text-white">A Java programming course is an educational program that teaches students the fundamentals of the Java programming language.</p>
-                  <div className='text-white font-bold text-xl md:text-2xl flex justify-between pt-1 pb-2'>
-                    <h1>Price :</h1>
-                    <div className='flex'>
-                      <h1 className='pr-4'>₹999/-</h1>
-                      <span className="mb-0.5 text-red-500 line-through">₹1,999.00</span>
-                    </div>
-                  </div>
-                  <div className="flex items-center flex-wrap ">
-                    <Link href="/courses/java" className="text-[#a2cc4c] hover:text-[#59aca7] cursor-pointer inline-flex items-center text-2xl md:mb-2 lg:mb-0">Buy Now
-                      <svg className="w-6 h-6 ml-2" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M5 12h14"></path>
-                        <path d="M12 5l7 7-7 7"></path>
-                      </svg>
-                    </Link>
-                    <span className="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                        <circle cx="12" cy="12" r="3"></circle>
-                      </svg>2.4K
-                    </span>
-                    <span className="text-gray-400 inline-flex items-center leading-none text-sm">
-                      <svg className="w-4 h-4 mr-1" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                        <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                      </svg>54
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
+      <section className='bg-black pb-28 px-32'>
 
-      <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
+        <div className='bg-[#1D1D1D] w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
+          <div className='flex flex-col justify-center items-center'>
+            <h1 className='text-white text-5xl text-center pb-6'>Weekly Coding Contest</h1>
+            <p className='text-white text-lg px-12 text-center'>Join the weekly coding contest to enhance your programming solving skills and boost your career with the help of contest. Get some exciting prizes and goodies (T-shirts, Hoodies,  Stickers, etc). By consistently participating and excelling in these contests, developers can establish a strong reputation within the programming community and enhance their professional credibility</p>
+
+            <div className="mt-6">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Join Contest
+              </Link>
+
+              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                More Information
+
+                <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+              </a>
+            </div>
+          </div>
+          <img src="img/contest.png" className='h-[45vh]' alt="" />
+        </div>
+
+      </section>
+
+      <section className='bg-[#1D1D1D] flex justify-center items-center px-32'>
+      <img src="img/mentorship.png" className='h-[50vh]' alt="" />
+      <div className='flex flex-col justify-center items-center'>
+          <h1 className='text-white text-5xl text-center pb-6'>Mentorship</h1>
+          <p className='text-white text-lg px-12 text-center'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more. 
+EDUNO is not just limited to providing roadmaps and personal guidance; it offers a comprehensive solution to address all your mentoring requirements. Whether you are a beginner looking to kickstart your programming journey or an experienced developer seeking to expand your knowledge, EDUNO has got you covered.</p>
+          <div className="mt-6">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                Learn More
+                <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
+              </Link>
+            </div>
+        </div>
+      </section>
+
+
+      <div className="bg-black py-6 sm:py-8 lg:py-24 px-32">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="flex overflow-hidden rounded-lg bg-gray-100">
             <div className="relative hidden bg-gray-200 sm:block sm:w-1/3 lg:w-1/2">
