@@ -86,7 +86,7 @@ export default function Home() {
       </section>
 
 
-      <section className='bg-black px-32 flex justify-around items-start pb-24'>
+      <section className='bg-black px-32 flex justify-around items-start pb-6'>
         <div className='flex flex-col justify-center items-center'>
           <h1 className='text-[#FD7014] text-5xl text-font-heading text-center pb-6'>Roadmaps for Developers</h1>
           <p className='text-white text-xl text-font px-12 text-center'>EDUNO is a platform dedicated to empowering aspiring developers and individuals interested in starting a career in the programming and development field. With a strong belief in accessible education, EDUNO provides comprehensive roadmaps and personal guidance to help individuals navigate the complex world of programming, all at no cost.</p>
@@ -103,22 +103,6 @@ export default function Home() {
             </div>
         </div>
         <img src="img/roadmap2.png" className='h-[50vh]' alt="" />
-      </section>
-
-
-      <section className='bg-[#222831] flex flex-col justify-center items-center pt-6 px-32'>
-        <h1 className='text-[#EEEEEE] text-5xl text-center pb-4 text-font underline'>Provide a path to MNCs</h1>
-        <div className='flex justify-around items-center'>
-          <img src="mnc/google.png" className='px-6 h-28' alt="" />
-          <img src="mnc/walmart.png" className='px-6 h-28' alt="" />
-          <img src="mnc/amazon.png" className='px-6' alt="" />
-          <img src="mnc/flipkart.png" className='px-6' alt="" />
-        </div>
-        <div className='flex justify-around items-center'>
-          <img src="mnc/samsung.png" className='px-6' alt="" />
-          <img src="mnc/adobe.png" className='px-6 h-20' alt="" />
-          <img src="mnc/microsoft.png" className='px-6 h-20' alt="" />
-        </div>
       </section>
 
 
@@ -143,7 +127,22 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-black pb-28 px-32'>
+      <section className='bg-[#222831] flex flex-col justify-center items-center pt-6 px-32'>
+        <h1 className='text-[#EEEEEE] text-5xl text-center pb-4 text-font underline'>Provide a path to MNCs</h1>
+        <div className='flex justify-around items-center'>
+          <img src="mnc/google.png" className='px-6 h-28' alt="" />
+          <img src="mnc/walmart.png" className='px-6 h-28' alt="" />
+          <img src="mnc/amazon.png" className='px-6' alt="" />
+          <img src="mnc/flipkart.png" className='px-6' alt="" />
+        </div>
+        <div className='flex justify-around items-center'>
+          <img src="mnc/samsung.png" className='px-6' alt="" />
+          <img src="mnc/adobe.png" className='px-6 h-20' alt="" />
+          <img src="mnc/microsoft.png" className='px-6 h-20' alt="" />
+        </div>
+      </section>
+
+      <section className='bg-black pt-28 pb-28 px-32'>
 
         <div className='developer-section-background w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
           <div className='flex flex-col justify-center items-center'>
