@@ -55,7 +55,7 @@ export default function App({ Component, pageProps }) {
 
   return <>
     <LoadingBar
-      color='#a2cc4c'
+      color='#ff6500'
       progress={progress}
       waitingTime={300}
       onLoaderFinished={() => setProgress(0)}

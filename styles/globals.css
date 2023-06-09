@@ -1,13 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+.text-font{
+    font-family: 'Source Code Pro', monospace;
+}
+.text-font-heading{
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+}
 
 .navigationbg {
     background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(0, 0, 0) 0%);
+background: linear-gradient(354deg, rgba(0,0,0,1) 55%, rgba(253,112,20,1) 100%);
 }
 
 .headerbg {
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgb(0, 0, 0) 30%, rgb(0, 0, 0)100%);
+    background: black;
 }
+
+.footerbg{
+    background: rgb(0,0,0);
+background: linear-gradient(175deg, rgba(0,0,0,1) 86%, rgba(253,112,20,1) 100%);
+}
+
+/* Developer Section  */
+.developer-section-background{
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(255,101,0,1) 100%);
+}
+
+/* Learn More Button Theme */
+.button-background{
+    background: #EEEEEE;
+}
+.button-hover-background:hover{
+    background: #393E46;
+}
+.button-text{
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+.button-hover-text:hover{
+    color: #FD7014;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* Watch video button */
+.button2-text{
+    color: #FD7014;
+}
+
+/* Navbar Menu theme */
+.navbar-menu-text-color{
+    color: #EEEEEE;
+}
+.navbar-menu-hover-text-color:hover{
+    color: #FD7014;
+}
+.footer-menu-hover-text-color:hover{
+    color: #FD7014;
+}
+

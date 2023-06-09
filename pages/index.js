@@ -38,16 +38,16 @@ export default function Home() {
 
         <div className='ml-16 flex flex-col justify-center items-start'>
 
-          <h1 className="mb-4 ml-1 text-4xl font-sans-regular text-left text-gray-500 md:text-7xl dark:text-white">Empower yourself
+          <h1 className="mb-4 ml-1 text-4xl text-font-heading text-left text-[#FD7014] md:text-6xl">Empower yourself
             with </h1> <img src="eduno-white.png" className='h-20 mt-4' alt="" />
 
-          <div className="flex flex-col mt-8 mb-8 md:ml-4 md:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4">
-            <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+          <div className="flex flex-col mt-8 mb-8 md:ml-4 md:mb-16 space-y-4 sm:flex-row sm:justify-left sm:space-y-0 sm:space-x-4 text-font">
+            <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center  rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
               Learn more
               <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
             </Link>
 
-            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+            <a href="#" className="inline-flex justify-center items-center py-3 px-5 text-base text-font text-center text-[#FD7014] rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
               <svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
               Watch video
             </a>
@@ -55,26 +55,26 @@ export default function Home() {
 
         </div>
         <div className='mr-24'>
-          <img src="./img/handcode.png" className='md:h-[70vh]' alt="" />
+          <img src="./img/headerimg2.png" className='md:h-[70vh]' alt="" />
         </div>
 
       </section>
 
 
-      <section className='bg-black py-32 px-32'>
+      <section className='headerbg py-32 px-32'>
 
-        <div className='bg-[#1D1D1D] w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
-          <img src="img/developers.png" className='h-[50vh]' alt="" />
+        <div className='developer-section-background w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
+          <img src="img/developers4.png" className='h-[50vh]' alt="" />
           <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-white text-5xl text-center pb-6'>Developers</h1>
-            <p className='text-white text-lg px-12 text-center'>Developers are the creative minds behind the digital world we live in today. They are the architects who design and build the applications, websites, and software that power our daily lives. From the complex algorithms that drive search engines to the sleek user interfaces of our favorite mobile apps, developers play a vital role in shaping our digital experiences.</p>
+            <h1 className='text-[#FD7014] text-5xl text-font text-center pb-6'>Developers</h1>
+            <p className='text-white text-md px-12 text-center text-font'>Developers are the creative minds behind the digital world we live in today. They are the architects who design and build the applications, websites, and software that power our daily lives. From the complex algorithms that drive search engines to the sleek user interfaces of our favorite mobile apps, developers play a vital role in shaping our digital experiences.</p>
 
             <div className="mt-6">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Join the Community
               </Link>
 
-              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 button2-text">
                 Learn More
 
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
@@ -86,35 +86,35 @@ export default function Home() {
       </section>
 
 
-      <section className='bg-black px-32 flex justify-around items-start pb-12'>
+      <section className='bg-black px-32 flex justify-around items-start pb-24'>
         <div className='flex flex-col justify-center items-center'>
-          <h1 className='text-white text-5xl text-center pb-6'>Roadmaps for Developers</h1>
-          <p className='text-white text-2xl px-12 text-center'>EDUNO is a platform dedicated to empowering aspiring developers and individuals interested in starting a career in the programming and development field. With a strong belief in accessible education, EDUNO provides comprehensive roadmaps and personal guidance to help individuals navigate the complex world of programming, all at no cost.</p>
+          <h1 className='text-[#FD7014] text-5xl text-font-heading text-center pb-6'>Roadmaps for Developers</h1>
+          <p className='text-white text-xl text-font px-12 text-center'>EDUNO is a platform dedicated to empowering aspiring developers and individuals interested in starting a career in the programming and development field. With a strong belief in accessible education, EDUNO provides comprehensive roadmaps and personal guidance to help individuals navigate the complex world of programming, all at no cost.</p>
           <div className="mt-6">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Go to Roadmap
               </Link>
 
-              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 button2-text">
                 Personal Guidance
 
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </a>
             </div>
         </div>
-        <img src="img/roadmap.png" className='h-[50vh]' alt="" />
+        <img src="img/roadmap2.png" className='h-[50vh]' alt="" />
       </section>
 
 
-      <section className='bg-[#1D1D1D] flex flex-col justify-center items-center pt-12 px-32'>
-        <h1 className='text-white text-5xl text-center pb-6'>Provide a path to MNCs</h1>
-        <div className='flex justify-around items-center p-2'>
+      <section className='bg-[#222831] flex flex-col justify-center items-center pt-6 px-32'>
+        <h1 className='text-[#EEEEEE] text-5xl text-center pb-4 text-font underline'>Provide a path to MNCs</h1>
+        <div className='flex justify-around items-center'>
           <img src="mnc/google.png" className='px-6 h-28' alt="" />
           <img src="mnc/walmart.png" className='px-6 h-28' alt="" />
           <img src="mnc/amazon.png" className='px-6' alt="" />
           <img src="mnc/flipkart.png" className='px-6' alt="" />
         </div>
-        <div className='flex justify-around items-center p-2'>
+        <div className='flex justify-around items-center'>
           <img src="mnc/samsung.png" className='px-6' alt="" />
           <img src="mnc/adobe.png" className='px-6 h-20' alt="" />
           <img src="mnc/microsoft.png" className='px-6 h-20' alt="" />
@@ -122,10 +122,10 @@ export default function Home() {
       </section>
 
 
-      <section className='bg-black px-32 flex flex-col justify-center items-center py-12'>
+      <section className='bg-black px-32 flex flex-col justify-center items-center py-12 pt-16'>
         <div className='flex justify-center items-center'>
           <img src="eduno-white.png" className='h-14' alt="" />
-          <h1 className='text-white text-6xl text-center'>Offer Courses</h1>
+          <h1 className='text-white text-6xl text-center text-font pl-2'>Offer Courses</h1>
         </div>
         <div className='flex justify-center items-center py-12'>
           <div className='bg-gray-400 h-[50vh] w-[20rem] mx-6'>
@@ -145,17 +145,17 @@ export default function Home() {
 
       <section className='bg-black pb-28 px-32'>
 
-        <div className='bg-[#1D1D1D] w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
+        <div className='developer-section-background w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
           <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-white text-5xl text-center pb-6'>Weekly Coding Contest</h1>
-            <p className='text-white text-lg px-12 text-center'>Join the weekly coding contest to enhance your programming solving skills and boost your career with the help of contest. Get some exciting prizes and goodies (T-shirts, Hoodies,  Stickers, etc). By consistently participating and excelling in these contests, developers can establish a strong reputation within the programming community and enhance their professional credibility</p>
+            <h1 className='text-[#FD7014] text-5xl text-center pb-6 text-font-heading'>Weekly Coding Contest</h1>
+            <p className='text-white text-md px-12 text-center text-font'>Join the weekly coding contest to enhance your programming solving skills and boost your career with the help of contest. Get some exciting prizes and goodies (T-shirts, Hoodies,  Stickers, etc). By consistently participating and excelling in these contests, developers can establish a strong reputation within the programming community and enhance their professional credibility</p>
 
             <div className="mt-6">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center focus:ring-4 rounded-lg focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Join Contest
               </Link>
 
-              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 button2-text">
                 More Information
 
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
@@ -167,14 +167,14 @@ export default function Home() {
 
       </section>
 
-      <section className='bg-[#1D1D1D] flex justify-center items-center px-32'>
-      <img src="img/mentorship.png" className='h-[50vh]' alt="" />
+      <section className='bg-[#222831] flex justify-center items-center px-32'>
+      <img src="img/mentorship2.png" className='h-[50vh]' alt="" />
       <div className='flex flex-col justify-center items-center'>
-          <h1 className='text-white text-5xl text-center pb-6'>Mentorship</h1>
-          <p className='text-white text-lg px-12 text-center'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more. 
+          <h1 className='text-[#FD7014] text-5xl text-center pb-6 text-font-heading'>Mentorship</h1>
+          <p className='text-white text-lg px-12 text-center text-font'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more. 
 EDUNO is not just limited to providing roadmaps and personal guidance; it offers a comprehensive solution to address all your mentoring requirements. Whether you are a beginner looking to kickstart your programming journey or an experienced developer seeking to expand your knowledge, EDUNO has got you covered.</p>
           <div className="mt-6">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center text-white rounded-lg bg-[#5d5d5d] hover:bg-gray-700 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Learn More
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </Link>
@@ -183,32 +183,7 @@ EDUNO is not just limited to providing roadmaps and personal guidance; it offers
       </section>
 
 
-      <div className="bg-black py-6 sm:py-8 lg:py-24 px-32">
-        <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <div className="flex overflow-hidden rounded-lg bg-gray-100">
-            <div className="relative hidden bg-gray-200 sm:block sm:w-1/3 lg:w-1/2">
-              <img src="blogs.jpg" loading="lazy" alt="Photo by mymind" className="absolute inset-0 h-full w-full object-cover object-center" />
-            </div>
-
-            <div className="flex w-full items-center p-4 sm:w-2/3 sm:p-8 lg:w-1/2 lg:pl-10">
-              <div className="flex w-full flex-col items-center sm:block">
-                <div className="mb-4 sm:mb-8">
-                  <h2 className="text-center text-xl font-bold text-[#a2cc4c] sm:text-left sm:text-2xl lg:text-3xl">Get the latest updates</h2>
-                  <p className="text-center text-gray-500 sm:text-left">Sign up for our newsletter</p>
-                </div>
-
-                <form className="mb-3 flex w-full max-w-md gap-2 sm:mb-5">
-                  <input value={email} id='email' onChange={handleChange} placeholder="Email" className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
-
-                  <button onClick={signupNewsletter} className="inline-block rounded bg-[#a2cc4c] px-8 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Send</button>
-                </form>
-
-                <p className="text-center text-xs text-gray-400 sm:text-left">By signing up to our newsletter you agree to our <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Term of Service</a> and <a href="#" className="underline transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy Policy</a>.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
     </>
   )

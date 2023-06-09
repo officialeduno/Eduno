@@ -40,20 +40,20 @@ const Navbar = (props) => {
 
 
                         <nav className="hidden gap-12 lg:flex">
-                            <Link href={'/'} className="text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Home</Link>
-                            <Link href={'#courses'} className="text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Course</Link>
-                            <Link href={'/features/feature'} className="inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-gray-400">Features</Link>
-                            <Link href={'/blogs/blog'} className="text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Blog</Link>
-                            <a href="#" className="text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Store</a>
-                            <a href="#" className="text-lg font-semibold text-white transition duration-100 hover:text-gray-400">About</a>
+                            <Link href={'/'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Home</Link>
+                            <Link href={'#courses'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Course</Link>
+                            <Link href={'/features/feature'} className="inline-flex items-center navbar-menu-text-color gap-1 text-lg text-font navbar-menu-hover-text-color">Features</Link>
+                            <Link href={'/blogs/blog'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Blog</Link>
+                            <a href="#" className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Store</a>
+                            <a href="#" className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">About</a>
                         </nav>
 
 
                         {!props.user.value && <div className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start">
 
-                            <Link href={'/authentication/signin'} className="inline-block rounded-lg px-4 py-3 text-center text-sm font-semibold outline-none text-gray-400 transition duration-100 hover:text-white focus-visible:ring md:text-base">Sign in</Link>
+                            <Link href={'/authentication/signin'} className="inline-block rounded-lg px-4 py-3 text-center text-sm text-font outline-none text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] focus-visible:ring md:text-base">Sign in</Link>
 
-                            <Link href={'/authentication/signup'} className="inline-block rounded-lg bg-gray-400 px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-300 hover:bg-gray-900 hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
+                            <Link href={'/authentication/signup'} className="inline-block rounded-lg px-8 py-3 text-center text-sm text-font  outline-none  transition duration-300 bg-[#FD7014] button-hover-background button-text button-hover-text focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
                         </div>}
 
                         {props.user.value && <a onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }}>
