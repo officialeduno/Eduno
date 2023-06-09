@@ -90,7 +90,7 @@ export default function Home() {
         <div className='flex flex-col justify-center items-center pt-6 md:pt-0'>
           <h1 className='text-[#FD7014] text-4xl md:text-5xl text-font-heading text-center pb-2 md:pb-6'>Roadmaps for Developers</h1>
           <h1 className='text-white text-sm md:text-xl text-font px-2 md:px-12 text-center'>EDUNO is a platform dedicated to empowering aspiring developers and individuals interested in starting a career in the programming and development field. With a strong belief in accessible education, EDUNO provides comprehensive roadmaps and personal guidance to help individuals navigate the complex world of programming, all at no cost.</h1>
-          <div className="md:mt-6 flex flex-col md:flex-row justify-center items-center">
+          <div className="md:mt-6 flex flex-col md:flex-row ">
               <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center px-4 py-2 mb-3 mt-2 md:py-3 md:px-5 md:ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Go to Roadmap
               </Link>
@@ -118,53 +118,53 @@ export default function Home() {
         </div>
       </section>
 
-      <section className='bg-[#222831] flex flex-col justify-center items-center pt-6 px-32'>
-        <h1 className='text-[#EEEEEE] text-5xl text-center pb-4 text-font underline'>Provide a path to MNCs</h1>
-        <div className='flex justify-around items-center'>
-          <img src="mnc/google.png" className='px-6 h-28' alt="" />
-          <img src="mnc/walmart.png" className='px-6 h-28' alt="" />
-          <img src="mnc/amazon.png" className='px-6' alt="" />
-          <img src="mnc/flipkart.png" className='px-6' alt="" />
+      <section className='bg-[#222831] flex flex-col justify-center items-center md:pt-6 md:px-32 py-8'>
+        <h1 className='text-[#EEEEEE] text-xl pb-4 md:py-0 md:text-4xl text-center md:pb-4 text-font'>Provide a path to MNCs</h1>
+        <div className='flex flex-wrap justify-around items-center'>
+          <img src="mnc/google.png" className='md:px-6 h-14 md:h-24' alt="" />
+          <img src="mnc/walmart.png" className='md:px-6 h-14 md:h-24' alt="" />
+          <img src="mnc/amazon.png" className='md:px-6 h-14 md:h-28' alt="" />
+          <img src="mnc/flipkart.png" className='md:px-6 h-16 md:h-32' alt="" />
         </div>
-        <div className='flex justify-around items-center'>
-          <img src="mnc/samsung.png" className='px-6' alt="" />
-          <img src="mnc/adobe.png" className='px-6 h-20' alt="" />
-          <img src="mnc/microsoft.png" className='px-6 h-20' alt="" />
+        <div className='flex flex-wrap justify-around items-center'>
+          <img src="mnc/samsung.png" className='md:px-6 h-14 md:h-28' alt="" />
+          <img src="mnc/adobe.png" className='md:px-6 h-10 md:h-18' alt="" />
+          <img src="mnc/microsoft.png" className='md:px-6 h-10 md:h-18' alt="" />
         </div>
       </section>
 
-      <section className='bg-black pt-28 pb-28 px-32'>
+      <section className='bg-black md:pt-28 md:pb-28 md:px-32 px-4 py-8'>
 
-        <div className='developer-section-background w-full h-[40vh] flex justify-around items-center rounded-3xl px-8'>
+        <div className='developer-section-background flex flex-col-reverse md:flex-row justify-around items-center rounded-3xl md:px-8'>
           <div className='flex flex-col justify-center items-center'>
-            <h1 className='text-[#FD7014] text-5xl text-center pb-6 text-font-heading'>Weekly Coding Contest</h1>
-            <p className='text-white text-md px-12 text-center text-font'>Join the weekly coding contest to enhance your programming solving skills and boost your career with the help of contest. Get some exciting prizes and goodies (T-shirts, Hoodies,  Stickers, etc). By consistently participating and excelling in these contests, developers can establish a strong reputation within the programming community and enhance their professional credibility</p>
+            <h1 className='text-[#FD7014] text-3xl md:text-5xl text-center pb-6 text-font-heading'>Weekly Coding Contest</h1>
+            <h1 className='text-white md:text-md px-2 md:px-12 text-center text-font'>Join the weekly coding contest to enhance your programming solving skills and boost your career with the help of contest. Get some exciting prizes and goodies (T-shirts, Hoodies,  Stickers, etc). By consistently participating and excelling in these contests, developers can establish a strong reputation within the programming community and enhance their professional credibility</h1>
 
-            <div className="mt-6">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center focus:ring-4 rounded-lg focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+            <div className="md:mt-6 my-2 flex flex-col md:flex-row">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center px-4 py-2 md:py-3 md:px-5 md:ml-2 text-base font-medium text-center focus:ring-4 rounded-lg focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Join Contest
               </Link>
 
-              <a href="#" className="inline-flex justify-center items-center py-3 px-5 ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 button2-text">
+              <a href="#" className="inline-flex justify-center items-center px-4 py-2 mt-2 md:py-3 md:px-5 md:ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 button2-text">
                 More Information
 
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </a>
             </div>
           </div>
-          <img src="img/contest.png" className='h-[45vh]' alt="" />
+          <img src="img/contest.png" className='h-[30vh] md:h-[45vh]' alt="" />
         </div>
 
       </section>
 
-      <section className='bg-[#222831] flex justify-center items-center px-32'>
-      <img src="img/mentorship2.png" className='h-[50vh]' alt="" />
+      <section className='bg-[#222831] flex md:flex-row flex-col justify-center items-center md:px-32'>
+      <img src="img/mentorship2.png" className='h-[30vh] md:h-[50vh]' alt="" />
       <div className='flex flex-col justify-center items-center'>
-          <h1 className='text-[#FD7014] text-5xl text-center pb-6 text-font-heading'>Mentorship</h1>
-          <p className='text-white text-lg px-12 text-center text-font'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more. 
+          <h1 className='text-[#FD7014] text-3xl md:text-5xl text-center pb-2 md:pb-6 text-font-heading'>Mentorship</h1>
+          <p className='text-white text-md md:px-12 text-center text-font'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more. 
 EDUNO is not just limited to providing roadmaps and personal guidance; it offers a comprehensive solution to address all your mentoring requirements. Whether you are a beginner looking to kickstart your programming journey or an experienced developer seeking to expand your knowledge, EDUNO has got you covered.</p>
           <div className="mt-6">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-3 px-5 ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center px-4 py-2 mb-6 md:py-3 md:px-5 md:ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Learn More
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
               </Link>
