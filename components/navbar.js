@@ -53,7 +53,7 @@ const Navbar = (props) => {
 
                             <Link href={'/authentication/signin'} className="inline-block rounded-lg px-4 py-3 text-center text-sm text-font outline-none text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] focus-visible:ring md:text-base">Sign in</Link>
 
-                            <Link href={'/authentication/signup'} className="inline-block rounded-lg px-8 py-3 text-center text-sm text-font  outline-none  transition duration-300 bg-[#FD7014] button-hover-background button-text button-hover-text focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
+                            <Link href={'/authentication/signup'} className="inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold  outline-none  transition duration-300 bg-[#FD7014] button-hover-background button-text button-hover-text focus-visible:ring active:bg-[#a2cc4c] md:text-base">Sign up</Link>
                         </div>}
 
                         {props.user.value && <a onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }}>
