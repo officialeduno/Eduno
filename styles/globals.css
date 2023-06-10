@@ -70,3 +70,27 @@ background: linear-gradient(73deg, rgba(0,0,0,1) 72%, rgba(17,0,158,1) 100%);
 .faq-question-bg{
     background: #222831;
 }
+
+
+/* Buy Now Button Theme  */
+
+.buynow-button{
+    background: #EEEEEE;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+}
+.buynow-button:hover{
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(17,0,158,1) 85%);
+color: white;
+}
+.pdf-button{
+    background: rgb(17,0,158);
+background: linear-gradient(167deg, rgba(17,0,158,1) 0%, rgba(253,112,20,1) 100%);
+    color: black;
+}
+.pdf-button:hover{
+    background: rgb(253,112,20);
+background: linear-gradient(106deg, rgba(253,112,20,1) 0%, rgba(17,0,158,1) 100%);
+    color: black;
+}
