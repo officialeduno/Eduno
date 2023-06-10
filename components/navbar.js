@@ -58,7 +58,7 @@ const Navbar = (props) => {
 
                         {props.user.value && <a onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }}>
 
-                            {dropdown && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute right-16 top-16 border-2 border-white text-white bg-black">
+                            {dropdown && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute right-16 top-16 border-2 border-[#FD7014] text-white bg-black">
                                 <ul className='flex flex-col items-left'>
                                     <li className='cursor-pointer my-4 mx-4 mr-10'><Link href={'/dashboard/profile'}>Profile</Link></li>
                                     <hr className='border-1 border-white' />
@@ -84,30 +84,30 @@ const Navbar = (props) => {
                 </div>
 
 
-                <div ref={ref} className='sidebar flex flex-col items-center h-[100%] px-3 py-4 fixed top-0 right-0 bg-black transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-gray-400 z-10'>
+                <div ref={ref} className='sidebar flex flex-col items-center h-[100%] px-3 py-4 fixed top-0 right-0 navbar-hamburger-bg transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#FD7014] z-10'>
 
                     <span onClick={handleMenu} className="items-start w-[100%]" ><img src="/icons/x-button.png" className='h-4' alt="" /></span>
                     <img src="eduno-white.png" className='h-8 mb-8 mt-8' alt="" />
 
 
-                    <Link href={'/'} onClick={handleMenu} className="py-3 pt-4 text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Home</Link>
-                    <Link href={'/features/feature'} onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Course</Link>
-                    <a href="#" onClick={handleMenu} className="py-3 inline-flex items-center text-white gap-1 text-lg font-semibold hover:text-gray-400">Features</a>
-                    <Link href={'/blogs/blog'} onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Blog</Link>
-                    <a href="#" onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-gray-400">Store</a>
-                    <a href="#" onClick={handleMenu} className="py-3 text-lg font-semibold text-white transition duration-100 hover:text-gray-400">About</a>
+                    <Link href={'/'} onClick={handleMenu} className="py-3 pt-4 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Home</Link>
+                    <Link href={'/features/feature'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Course</Link>
+                    <a href="#" onClick={handleMenu} className="py-3 inline-flex items-center text-white gap-1 text-lg text-font navbar-menu-hover-text-color">Features</a>
+                    <Link href={'/blogs/blog'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Blog</Link>
+                    <a href="#" onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Store</a>
+                    <a href="#" onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">About</a>
 
 
                     {!props.user.value && <div className="flex gap-2.5 flex-col sm:justify-center lg:flex lg:justify-start">
 
-                        <Link href={'/authentication/signin'} onClick={handleMenu} className="inline-block rounded-lg bg-gray-400 px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-white md:text-base">Sign in</Link>
+                        <Link href={'/authentication/signin'} onClick={handleMenu} className="inline-block rounded-lg bg-[#EEEEEE] px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-100 hover:bg-black hover:text-[#FD7014] focus-visible:ring active:bg-white md:text-base">Sign in</Link>
 
-                        <Link href={'/authentication/signup'} onClick={handleMenu} className="inline-block rounded-lg px-4 py-3 text-center text-md font-semibold outline-none text-white transition duration-100 hover:text-[#616161] focus-visible:ring md:text-base">Sign up</Link>
+                        <Link href={'/authentication/signup'} onClick={handleMenu} className="inline-block rounded-lg px-4 py-3 text-center text-md font-semibold outline-none text-[#FD7014] transition duration-100 hover:text-[#EEEEEE] focus-visible:ring md:text-base">Sign up</Link>
                     </div>}
 
                     {props.user.value && <div className='flex flex-col'>
-                        <Link href={'/'} className="inline-block rounded-lg bg-gray-400 px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-white md:text-base">Hi! {props.userName.value}</Link>
-                        <Link href={'/'} onClick={props.logout} className=" mt-4 inline-block rounded-lg border-4 border-gray-600 px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-white md:text-base">Sign Out</Link>
+                        <Link href={'/'} className="inline-block rounded-lg bg-[#EEEEEE] px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-100 hover:bg-white hover:text-[#FD7014] focus-visible:ring active:bg-white md:text-base">Hi! {props.userName.value}</Link>
+                        <Link href={'/'} onClick={props.logout} className=" mt-4 inline-block rounded-lg border-4 border-[#fd7114c5] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-white md:text-base">Sign Out</Link>
                     </div>}
 
                 </div>
