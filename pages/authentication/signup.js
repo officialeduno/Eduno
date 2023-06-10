@@ -79,42 +79,42 @@ const Signup = (props) => {
 
             <div>
 
-                <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
+                <div className="bg-black py-6 sm:py-8 lg:py-12">
 
                     <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
 
-                        <h2 className="mb-4 text-center text-3xl font-bold text-[#a2cc4c] md:mb-8 lg:text-4xl">Sign Up</h2>
+                        <h2 className="mb-4 text-center text-3xl font-bold text-[#FD7014] md:mb-8 lg:text-4xl">Sign Up</h2>
 
-                        <form onSubmit={handleSubmit} className="mx-auto max-w-lg rounded-lg border border-[#a1cc4c8c]">
+                        <form onSubmit={handleSubmit} className="mx-auto max-w-lg rounded-lg border border-[#FD7014]">
 
                             <div className="flex flex-col gap-4 p-4 md:p-8">
 
                                 <div>
                                     <label htmlFor="firstName" className="mb-2 inline-block text-sm text-white sm:text-base">First Name</label>
-                                    <input value={firstName} onChange={handleChange} id='firstName' name="firstName" placeholder='First Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
+                                    <input value={firstName} onChange={handleChange} id='firstName' name="firstName" placeholder='First Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#FD7014] transition duration-100 focus:ring" required />
                                 </div>
 
                                 <div>
                                     <label htmlFor="lastName" className="mb-2 inline-block text-sm text-white sm:text-base">Last Name</label>
-                                    <input value={lastName} onChange={handleChange} id='lastName' name="lastName" placeholder='Last Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
+                                    <input value={lastName} onChange={handleChange} id='lastName' name="lastName" placeholder='Last Name' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#FD7014] transition duration-100 focus:ring" required />
                                 </div>
 
                                 <div>
                                     <label htmlFor="email" className="mb-2 inline-block text-sm text-white sm:text-base">Email</label>
-                                    <input value={email} onChange={handleChange} id='email' name="email" type="email" placeholder='E-mail/G-mail' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
+                                    <input value={email} onChange={handleChange} id='email' name="email" type="email" placeholder='E-mail/G-mail' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#FD7014] transition duration-100 focus:ring" required />
                                 </div>
 
                                 <div>
                                     <label htmlFor="phoneNo" className="mb-2 inline-block text-sm text-white sm:text-base">Phone No</label>
-                                    <input value={phoneNo} onChange={handleChange} id='phoneNo' name="phoneNo" placeholder='Contact Number' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
+                                    <input value={phoneNo} onChange={handleChange} id='phoneNo' name="phoneNo" placeholder='Contact Number' className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#FD7014] transition duration-100 focus:ring" required />
                                 </div>
 
                                 <div>
                                     <label htmlFor="password" className="mb-2 inline-block text-sm text-white sm:text-base">Password</label>
-                                    <input value={password} onChange={handleChange} id='password' name="password" type="password" placeholder="Password" className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#a2cc4c] transition duration-100 focus:ring" required />
+                                    <input value={password} onChange={handleChange} id='password' name="password" type="password" placeholder="Password" className="w-full rounded border bg-gray-300 px-3 py-2 text-black outline-none ring-[#FD7014] transition duration-100 focus:ring" required />
                                 </div>
 
-                                <button className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-[#a1cc4cbd] focus-visible:ring active:bg-gray-600 md:text-base">Create Account </button>
+                                <button className="block rounded-lg bg-gray-800 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-gray-300 transition duration-100 hover:bg-[#fd7114bb] focus-visible:ring active:bg-gray-600 md:text-base">Create Account </button>
 
                                 <button className="flex items-center justify-center gap-2 rounded-lg bg-blue-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-blue-300 transition duration-100 hover:bg-blue-600 focus-visible:ring active:bg-blue-700 md:text-base">
                                     <svg className="h-5 w-5 shrink-0" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +135,7 @@ const Signup = (props) => {
                                     Continue with Google
                                 </button>
                             </div>
-                            <div className="flex items-center justify-center bg-[#a1cc4c8c] p-4">
+                            <div className="flex items-center justify-center bg-[#fd7114bb] p-4">
                                 <p className="text-center text-sm text-black">Have an account? <Link href={'/authentication/signin'} className="text-indigo-200 transition duration-100 hover:text-white active:text-indigo-700">Sign In</Link></p>
                             </div>
 
