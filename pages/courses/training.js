@@ -34,7 +34,7 @@ const Android = (props) => {
                             <div class="md:py-8">
                                 {/* <!-- name - start --> */}
                                 <div class="mb-2 md:mb-3">
-                                    <h2 class="text-3xl font-bold text-white lg:text-3xl text-font">Training and Internship 2023</h2>
+                                    <h2 class="text-xl md:text-3xl font-bold text-white lg:text-3xl text-font">Training and Internship 2023</h2>
                                 </div>
                                 {/* <!-- name - end --> */}
 
@@ -71,8 +71,8 @@ const Android = (props) => {
                                 {/* <!-- price - start --> */}
                                 <div class="mb-4">
                                     <div class="flex items-end gap-2">
-                                        <span class="text-xl font-bold text-white md:text-2xl text-font">₹799.00</span>
-                                        <span class="mb-0.5 text-red-500 line-through text-font">₹2,999.00</span>
+                                        <span class="text-xl font-bold text-white md:text-2xl text-font">₹899</span>
+                                        <span class="mb-0.5 text-red-500 line-through text-font">₹1,798</span>
                                     </div>
 
                                     <span class="text-sm text-gray-500">incl. GST and all Taxes</span>
