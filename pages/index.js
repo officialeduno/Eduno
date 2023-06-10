@@ -63,7 +63,7 @@ export default function Home() {
 
       <section className='headerbg px-4 py-8 md:py-32 md:px-32'>
 
-        <div className='developer-section-background md:h-[40vh] flex flex-col md:flex-row justify-around items-center rounded-2xl md:rounded-3xl px-2 md:px-8'>
+        <div className='developer-section-background flex flex-col md:flex-row justify-around items-center rounded-2xl md:rounded-3xl px-2 md:px-8'>
           <img src="img/developers4.png" className='h-[30vh] md:h-[50vh]' alt="" />
           <div className='flex flex-col justify-center items-center'>
             <h1 className='text-[#FD7014] text-4xl md:text-5xl text-font text-center pb-2 md:pb-6'>Developers</h1>
