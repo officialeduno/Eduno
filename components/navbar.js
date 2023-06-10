@@ -84,7 +84,7 @@ const Navbar = (props) => {
                 </div>
 
 
-                <div ref={ref} className='sidebar flex flex-col items-center h-[100%] px-3 py-4 fixed top-0 right-0 navbar-hamburger-bg transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#FD7014] z-10'>
+                <div ref={ref} className='sidebar flex flex-col items-center h-[100vh] px-3 py-4 fixed top-0 right-0 navbar-hamburger-bg transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#FD7014] z-10'>
 
                     <span onClick={handleMenu} className="items-start w-[100%]" ><img src="/icons/x-button.png" className='h-4' alt="" /></span>
                     <img src="/eduno-white.png" className='h-8 mb-8 mt-8' alt="" />
