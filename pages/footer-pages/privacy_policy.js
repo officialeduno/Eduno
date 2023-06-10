@@ -8,9 +8,9 @@ const Privacy_Policy = () => {
         <Head>
             <title>Privacy Policy | Eduno (Empower yourself with Eduno)</title>
         </Head>
-        <div className='bg-[#001719] text-white flex items-center flex-col'>
+        <div className='bg-black text-[#EEEEEE] flex items-center flex-col'>
             
-            <h1 className='text-4xl pt-4 pb-4'>Privacy Policy</h1>
+            <h1 className='text-4xl pt-4 pb-4 text-white'>Privacy Policy</h1>
             <div className='px-4 md:mx-24 md:px-24'>
                 <p className='text-sm md:text-lg pl-4'>At Eduno, we are committed to protecting the privacy and security of our users personal information. This Privacy Policy explains how we collect, use, and disclose your personal information when you use our online courses for technical skills and other features such as technical blogs, doubt solving, etc.</p>
 
@@ -34,7 +34,7 @@ const Privacy_Policy = () => {
 
                 <br />
 
-                <p className='font-bold text-sm md:text-xl pl-4'>If you have any questions or concerns about our Privacy Policy, please contact us at <span className='font-bold text-[#a2cc4c]'>officialeduno@gmail.com</span></p>
+                <p className='font-bold text-sm md:text-xl pl-4'>If you have any questions or concerns about our Privacy Policy, please contact us at <span className='font-bold text-[#FD7014]'>officialeduno@gmail.com</span></p>
                 <br />
             </div>
         </div>

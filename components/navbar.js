@@ -36,7 +36,7 @@ const Navbar = (props) => {
                 <div className="mx-auto max-w-screen-4xl px-4 md:px-16">
 
                     <header className="flex items-center justify-between py-4 md:py-4">
-                        <img src="../eduno-white.png" className='h-8' alt="" />
+                        <Link href={"/"}><img src="../eduno-white.png" className='h-8' alt="" /></Link>
 
 
                         <nav className="hidden gap-12 lg:flex">
@@ -69,7 +69,7 @@ const Navbar = (props) => {
                                     <li className='cursor-pointer my-2 mb-4 mx-4 mr-10' onClick={props.logout}>Sign Out</li>
                                 </ul>
                             </div>}
-                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="inline-block rounded-lg bg-gray-700 px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-gray-900 hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</button></div>}
+                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="inline-block rounded-lg bg-[#fd7114a8] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#fd711452] hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</button></div>}
 
                         </a>}
 

@@ -8,9 +8,9 @@ const Refund_policy = () => {
             <Head>
                 <title>Refund Policy | Eduno (Empower yourself with Eduno)</title>
             </Head>
-            <div className='bg-[#001719] text-white flex items-center flex-col'>
+            <div className='bg-black text-[#EEEEEE] flex items-center flex-col'>
                 
-                <h1 className='text-4xl pt-4 pb-4'>Refund Policy</h1>
+                <h1 className='text-4xl pt-4 pb-4 text-white'>Refund Policy</h1>
                 <div className='px-4 md:mx-24 md:px-24'>
                     <p className='text-sm md:text-lg pl-4'>At Eduno, we strive to provide the best coding courses and a comprehensive learning experience for all our users. We understand that sometimes circumstances may change, and you may need to request a refund. Please review our refund policy outlined below:</p>
                     <h1 className='text-md md:text-xl font-medium pt-4'>1. Eligibility for Refund</h1>
@@ -38,7 +38,7 @@ const Refund_policy = () => {
 
                     <p className='text-sm md:text-xl pl-4 font-bold'>Please note that our refund policy is designed to be fair and reasonable for all parties involved. We encourage you to thoroughly review the course and roadmap details before making a purchase decision.</p>
                     <br />
-                    <p className='text-sm md:text-xl pl-4 font-bold'>For any further questions or concerns regarding our refund policy, please contact our customer support team at <span className='font-bold text-[#a2cc4c]'>officialeduno@gmail.com</span> or <span className='font-bold text-[#a2cc4c]'>9457963552</span>. We are committed to providing excellent customer service and will be happy to assist you.</p>
+                    <p className='text-sm md:text-xl pl-4 font-bold'>For any further questions or concerns regarding our refund policy, please contact our customer support team at <span className='font-bold text-[#FD7014]'>officialeduno@gmail.com</span> or <span className='font-bold text-[#FD7014]'>9457963552</span>. We are committed to providing excellent customer service and will be happy to assist you.</p>
                     <br />
                     <p className='text-sm md:text-xl pl-4 font-bold'>Thank you for choosing Eduno for your coding education needs. Happy learning!</p>
                     <br /> 

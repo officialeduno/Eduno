@@ -19,12 +19,12 @@ const Footer = () => {
                             <div className="mb-4 lg:-mt-2">
 
                                 <Link href={"/"} className="inline-flex items-center gap-2 text-2xl font-bold text-gray-100 md:text-4xl" aria-label="logo">
-                                    <img src="eduno-white.png" className='h-10' alt="" />
+                                    <img src="../eduno-white.png" className='h-10' alt="" />
                                 </Link>
                             </div>
 
-                            <p className="mb-2 text-[#EEEEEE] footer-menu-hover-text-color text-font sm:pr-8">Empower yourselft with Eduno. It Help to enhance the technical skills.</p>
-                            <p className="mb-6 text-[#EEEEEE] footer-menu-hover-text-color text-font sm:pr-8">Address: 131F, Nazim Pura Bhoor, BSR</p>
+                            <p className="mb-2 text-[#EEEEEE] text-sm md:text-md footer-menu-hover-text-color text-font sm:pr-8">Empower yourselft with Eduno. It Help to enhance the technical skills.</p>
+                            <p className="mb-6 text-[#EEEEEE] text-sm md:text-md footer-menu-hover-text-color text-font sm:pr-8">Address: 131F, Nazim Pura Bhoor, BSR</p>
 
                             <div className="flex gap-4">
                                 <Link href={'https://www.instagram.com/the.eduno/'} target="_blank" className="text-gray-400 transition duration-100 footer-menu-hover-text-color text-font active:text-gray-600">

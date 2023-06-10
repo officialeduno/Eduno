@@ -8,8 +8,8 @@ const Terms_of_Services = () => {
             <Head>
                 <title>Terms of Services | Eduno (Empower yourself with Eduno)</title>
             </Head>
-            <div className='bg-[#001719] text-white flex items-center flex-col'>
-                <h1 className='text-4xl pt-4 pb-4'>Terms of Services</h1>
+            <div className='bg-black text-[#EEEEEE] flex items-center flex-col'>
+                <h1 className='text-4xl pt-4 pb-4 text-white'>Terms of Services</h1>
                 <div className='px-4 md:mx-24 md:px-24'>
                     <p className='text-sm md:text-lg pl-4'>Welcome to Eduno. These terms of service (Terms) are a legal agreement between you and Eduno, and govern your use of our online courses, technical blogs, and other features and services we offer (Services). By accessing or using our Services, you agree to be bound by these Terms.</p>
                     <h1 className='text-md md:text-xl font-medium pt-4'>1. Use of Services</h1>
@@ -42,7 +42,7 @@ const Terms_of_Services = () => {
 
                     <br />
 
-                    <p className='text-sm md:text-xl pl-4 font-bold'>By using our platform, you agree to these Terms of Service. If you have any questions, please contact us at <span className='font-bold text-[#a2cc4c]'>officialeduno@gmail.com</span></p>
+                    <p className='text-sm md:text-xl pl-4 font-bold'>By using our platform, you agree to these Terms of Service. If you have any questions, please contact us at <span className='font-bold text-[#FD7014]'>officialeduno@gmail.com</span></p>
                     <br />
                 </div>
             </div>
