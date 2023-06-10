@@ -17,15 +17,15 @@ const Android = (props) => {
             </Head>
 
             <div>
-                <div class="bg-[#001719] py-6 sm:py-8 lg:py-12">
+                <div class="bg-black py-6 sm:py-8 lg:py-12">
                     <div class="mx-4 px-4 md:px-4 md:mx-4 lg:mx-24">
                         <div class="grid gap-8 md:grid-cols-2">
                             {/* <!-- images - start --> */}
                             <div class="space-y-4">
                                 <div class="relative overflow-hidden rounded-lg bg-gray-100">
-                                    <img src="../courses_images/training_intern.png" loading="lazy" alt="Photo by Himanshu Dewangan" class="h-full w-full object-cover object-center" />
+                                    <img src="../img/training.png" loading="lazy" alt="Photo by Himanshu Dewangan" class="h-full w-full object-cover object-center" />
 
-                                    <span class="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">sale</span>
+                                    <span class="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">50% Off</span>
                                 </div>
                             </div>
                             {/* <!-- images - end --> */}

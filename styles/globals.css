@@ -12,8 +12,8 @@
 }
 
 .navigationbg {
-    background: rgb(0,0,0);
-background: linear-gradient(354deg, rgba(0,0,0,1) 55%, rgba(253,112,20,1) 100%);
+    background: rgb(17,0,158);
+background: linear-gradient(170deg, rgba(17,0,158,1) 0%, rgba(0,0,0,1) 50%);
 }
 
 .headerbg {
@@ -22,13 +22,13 @@ background: linear-gradient(354deg, rgba(0,0,0,1) 55%, rgba(253,112,20,1) 100%);
 
 .footerbg{
     background: rgb(0,0,0);
-background: linear-gradient(175deg, rgba(0,0,0,1) 86%, rgba(253,112,20,1) 100%);
+background: radial-gradient(circle, rgba(0,0,0,1) 76%, rgba(17,0,158,1) 100%);
 }
 
 /* Developer Section  */
 .developer-section-background{
     background: rgb(0,0,0);
-background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(255,101,0,1) 100%);
+background: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(17,0,158,1) 100%);
 }
 
 /* Learn More Button Theme */
