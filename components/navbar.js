@@ -61,7 +61,8 @@ const Navbar = (props) => {
 
                             {dropdown && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="absolute right-16 top-16 border-2 border-[#FD7014] text-white bg-black">
                                 <ul className='flex flex-col items-left'>
-                                    <li className='cursor-pointer my-4 mx-4 mr-10'><Link href={'/dashboard/profile'}>Profile</Link></li>
+                                    <li className='cursor-pointer my-2 mx-4 mr-10'><Link href={'/dashboard/profile'}>Profile</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4 mx-4 mr-10'><Link href={'/dashboard/yourcourses'}>Your Courses</Link></li>
                                     <hr className='border-1 border-white' />
                                     <li className='cursor-pointer my-2 mx-4 mr-10'><Link href={'/dashboard/achievements'}>Achievements</Link></li>
                                     <li className='cursor-pointer my-2 mb-4 mx-4 mr-10'><Link href={'/dashboard/setting'}>Setting</Link></li>
@@ -70,7 +71,7 @@ const Navbar = (props) => {
                                     <li className='cursor-pointer my-2 mb-4 mx-4 mr-10' onClick={props.logout}>Sign Out</li>
                                 </ul>
                             </div>}
-                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="inline-block rounded-lg bg-[#fd7114a8] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-[#fd711452] hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base">Hi! {props.userName.value}</button></div>}
+                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base hi-button">Hi! {props.userName.value}</button></div>}
 
                         </a>}
 
