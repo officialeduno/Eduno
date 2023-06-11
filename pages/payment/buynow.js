@@ -9,11 +9,16 @@ import 'react-toastify/dist/ReactToastify.css';
 import { getCookie } from 'cookies-next';
 
 const BuyNow = (props) => {
+
+    const referralCodes = ["ROHAN", "AMITSIR", "SANDEEPSIR", "HITESHSIR"]
+
     const router = useRouter();
     const [fullName, setFullName] = useState();
     const [email, setEmail] = useState();
     const [phoneNo, setPhoneNo] = useState();
     const [whatsappNo, setWhatsappNo] = useState();
+    const [referral, setReferral] = useState();
+    const [offer, setOffer] = useState(false);
     const handleChange = (e) => {
         if (e.target.name == 'email') {
             setEmail(e.target.value);
@@ -23,6 +28,18 @@ const BuyNow = (props) => {
             setFullName(e.target.value);
         } else if (e.target.name == 'whatsappNo') {
             setWhatsappNo(e.target.value);
+        } else if (e.target.name == 'referral') {
+            setReferral(e.target.value);
+        }
+    }
+    const checkReferral = () => {
+        for(let i=0; i<referralCodes.length; i++){
+            let checkingCode = referralCodes[i];
+            if(referral==checkingCode){
+                setOffer(true);
+                break;
+            }
+            setOffer(false);
         }
     }
     const somethingWentWrongToast = () => toast('Some Went Wrong...', {
@@ -49,6 +66,7 @@ const BuyNow = (props) => {
             somethingWentWrongToast();
         }
     }
+    
     return (
         <>
             <Head>
@@ -85,20 +103,27 @@ const BuyNow = (props) => {
                             </div>
 
                             <div className='px-2 md:px-6'>
-                                <label class="text-[#EEEEEE]" for="username">Referral Code</label>
-                                <form className="flex gap-2 pt-2">
-                                    <input placeholder="Referral Code" className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
+                                <label class="text-[#EEEEEE]" for="referral">Referral Code</label>
+                                <div className="flex gap-2 pt-2">
+                                    <input onChange={handleChange} placeholder="Referral Code" name='referral' type='text' id='referral' value={referral} className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
 
-                                    <button className="buynow-button inline-block rounded bg-[#a2cc4c] px-4 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Check Now</button>
-                                </form>
+                                    <button onClick={checkReferral} className="buynow-button inline-block rounded bg-[#a2cc4c] px-4 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Check Now</button>
+                                </div>
+                                {!offer && <h1>Enter a valid Referral Code</h1>}
                             </div>
 
-                            <div className='text-white font-bold text-lg md:text-2xl flex justify-between pt-4 pb-2 px-4'>
+                            {offer && <div className='text-white font-bold text-lg md:text-2xl flex justify-between pt-4 pb-2 px-4'>
+                                <h1>Final Price :</h1>
+                                <div className='flex'>
+                                    <h1 className='pr-4 text-lg md:text-2xl'>{props.courseCode == "training" && "₹799/-"}{props.courseCode == "datascience" && "₹1,599/-"}{props.courseCode == "aiml" && "₹1,599/-"}{props.courseCode == "android" && "₹1,999/-"}{props.courseCode == "fullstack" && "₹1,299/-"}{props.courseCode == "java" && "₹899/-"}</h1>
+                                </div>
+                            </div>}
+                            {!offer && <div className='text-white font-bold text-lg md:text-2xl flex justify-between pt-4 pb-2 px-4'>
                                 <h1>Final Price :</h1>
                                 <div className='flex'>
                                     <h1 className='pr-4 text-lg md:text-2xl'>{props.courseCode == "training" && "₹899/-"}{props.courseCode == "datascience" && "₹1,999/-"}{props.courseCode == "aiml" && "₹1,999/-"}{props.courseCode == "android" && "₹2,499/-"}{props.courseCode == "fullstack" && "₹1,499/-"}{props.courseCode == "java" && "₹999/-"}</h1>
                                 </div>
-                            </div>
+                            </div>}
                         </div>
 
 
