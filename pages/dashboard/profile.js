@@ -10,7 +10,7 @@ const Dashboard = (props) => {
             </Head>
             <div className='bg-black py-12 px-4 md:px-0 flex flex-col justify-center items-center'>
                 <h1 className='text-white text-font text-2xl md:text-4xl pb-2'>Hi! {props.userName.value}</h1>
-                <h1 className='text-white text-font text-2xl md:text-4xl pb-2'>Eduno Id: {localStorage.getItem('edunoId')}</h1>
+                <h1 className='text-white text-font text-2xl md:text-4xl pb-2'>Eduno Id: {props.edunoId.value}</h1>
                 <section class="profile-card-bg md:w-[60vw] p-6 mx-auto rounded-md shadow-md">
                     <h2 class="text-lg font-semibold text-gray-700 capitalize dark:text-white">Change Your Profile</h2>
 

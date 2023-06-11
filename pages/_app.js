@@ -9,6 +9,7 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
   const [user, setUser] = useState({ value: null });
   const [userName, setUserName] = useState({ value: null });
+  const [edunoId, setEdunoId] = useState({ value: null });
   const [key, setKey] = useState(0);
   const [courseCode, setCourseCode] = useState({ value: null });
   const [progress, setProgress] = useState(0);
@@ -31,6 +32,7 @@ export default function App({ Component, pageProps }) {
     if (confirm(logout_confirmation_message) == true) {
       localStorage.removeItem('loginToken');
       localStorage.removeItem('userName');
+      localStorage.removeItem('edunoId');
       setKey(Math.random());
       setUser({ value: null });
       router.push(`http://localhost:3000/`);
@@ -49,10 +51,12 @@ export default function App({ Component, pageProps }) {
       setProgress(100);
     })
     const loginToken = localStorage.getItem('loginToken');
-    const username = localStorage.getItem('userName');
+    const username = localStorage.getItem('userName'); 
+    const id = localStorage.getItem('edunoId'); 
     if (loginToken) {
       setUser({ value: loginToken });
       setUserName({ value: username });
+      setEdunoId({value: id});
       setKey(Math.random())
     }
   }, [router.query])
@@ -67,7 +71,7 @@ export default function App({ Component, pageProps }) {
 
     <Navbar logout={logout} user={user} userName={userName} key={key} />
 
-    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode} progress={progress} setProgress={setProgress} />
+    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode} progress={progress} setProgress={setProgress} edunoId={edunoId} />
 
     <Footer />
 

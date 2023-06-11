@@ -76,17 +76,28 @@ const BuyNow = (props) => {
                             {props.courseCode == "android" && <p className='font-bold text-xl text-white py-2 px-4 text-font'>Android App Development</p>}
                             {props.courseCode == "aiml" && <p className='font-bold text-xl text-white py-2 px-4 text-font'>AI / ML</p>}
 
-                            <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2 px-4'>
+                            <div className='text-white font-bold text-lg md:text-2xl flex justify-between pt-1 pb-2 px-4'>
                                 <h1>Price :</h1>
                                 <div className='flex'>
-                                    <h1 className='pr-4'>{props.courseCode == "training" && "₹899/-"}{props.courseCode == "datascience" && "₹1,999/-"}{props.courseCode == "aiml" && "₹1,999/-"}{props.courseCode == "android" && "₹2,499/-"}{props.courseCode == "fullstack" && "₹1,499/-"}{props.courseCode == "java" && "₹999/-"}</h1>
-                                    <span class="mb-0.5 text-red-500 line-through">{props.courseCode == "training" && "₹1,898/-"}{props.courseCode == "datascience" && "₹3,998/-"}{props.courseCode == "aiml" && "₹3,998/-"}{props.courseCode == "android" && "₹4,998/-"}{props.courseCode == "fullstack" && "₹2,998/-"}{props.courseCode == "java" && "₹1,998/-"}</span>
+                                    <h1 className='pr-4 text-lg md:text-2xl'>{props.courseCode == "training" && "₹899/-"}{props.courseCode == "datascience" && "₹1,999/-"}{props.courseCode == "aiml" && "₹1,999/-"}{props.courseCode == "android" && "₹2,499/-"}{props.courseCode == "fullstack" && "₹1,499/-"}{props.courseCode == "java" && "₹999/-"}</h1>
+                                    <span class="mb-0.5 text-red-500 line-through text-lg md:text-2xl">{props.courseCode == "training" && "₹1,898/-"}{props.courseCode == "datascience" && "₹3,998/-"}{props.courseCode == "aiml" && "₹3,998/-"}{props.courseCode == "android" && "₹4,998/-"}{props.courseCode == "fullstack" && "₹2,998/-"}{props.courseCode == "java" && "₹1,998/-"}</span>
                                 </div>
                             </div>
 
-                            <div>
-                                <label class="text-gray-700 dark:text-gray-200" for="username">Referral Code</label>
-                                <input id="username" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                            <div className='px-2 md:px-6'>
+                                <label class="text-[#EEEEEE]" for="username">Referral Code</label>
+                                <form className="flex gap-2 pt-2">
+                                    <input placeholder="Referral Code" className="bg-gray-white w-full flex-1 rounded border border-[#a2cc4c] px-3 py-2 text-gray-800 placeholder-gray-400 outline-none ring-[#a2cc4c] transition duration-100 focus:ring" />
+
+                                    <button className="buynow-button inline-block rounded bg-[#a2cc4c] px-4 py-2 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-[#719034] focus-visible:ring active:bg-indigo-700 md:text-base">Check Now</button>
+                                </form>
+                            </div>
+
+                            <div className='text-white font-bold text-lg md:text-2xl flex justify-between pt-4 pb-2 px-4'>
+                                <h1>Final Price :</h1>
+                                <div className='flex'>
+                                    <h1 className='pr-4 text-lg md:text-2xl'>{props.courseCode == "training" && "₹899/-"}{props.courseCode == "datascience" && "₹1,999/-"}{props.courseCode == "aiml" && "₹1,999/-"}{props.courseCode == "android" && "₹2,499/-"}{props.courseCode == "fullstack" && "₹1,499/-"}{props.courseCode == "java" && "₹999/-"}</h1>
+                                </div>
                             </div>
                         </div>
 
