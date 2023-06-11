@@ -76,12 +76,6 @@ const BuyNow = (props) => {
                             {props.courseCode == "android" && <p className='font-bold text-xl text-white py-2 px-4 text-font'>Android App Development</p>}
                             {props.courseCode == "aiml" && <p className='font-bold text-xl text-white py-2 px-4 text-font'>AI / ML</p>}
 
-                            {props.courseCode == "training" && <p className='text-sm text-white text-font px-4'>Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable.</p>}
-                            {props.courseCode == "java" && <p className='text-sm text-white text-font px-4'>A Java programming course is an educational program that teaches students the fundamentals of the Java programming language.</p>}
-                            {props.courseCode == "fullstack" && <p className='text-sm text-white text-font px-4'>A full-stack web development course is an educational program that teaches students the skills needed to build web applications from start to finish.</p>}
-                            {props.courseCode == "datascience" && <p className='text-sm text-white text-font px-4'>These courses are designed to provide a comprehensive overview of the techniques and technologies used in Data Science, including statistical analysis, machine learning, and data visualization.</p>}
-                            {props.courseCode == "android" && <p className='text-sm text-white text-font px-4'>Android app development is a highly sought-after skill in todays job market, and taking an Android app development course can be an excellent way to learn this skill.</p>}
-                            {props.courseCode == "aiml" && <p className='text-sm text-white text-font px-4'>AI/ML are rapidly evolving fields that are changing the way we live and work. AI/ML courses provide students with the skills and knowledge needed to pursue a career in these exciting fields.</p>}
                             <div className='text-white font-bold text-2xl flex justify-between pt-1 pb-2 px-4'>
                                 <h1>Price :</h1>
                                 <div className='flex'>
@@ -89,7 +83,14 @@ const BuyNow = (props) => {
                                     <span class="mb-0.5 text-red-500 line-through">{props.courseCode == "training" && "₹1,898/-"}{props.courseCode == "datascience" && "₹3,998/-"}{props.courseCode == "aiml" && "₹3,998/-"}{props.courseCode == "android" && "₹4,998/-"}{props.courseCode == "fullstack" && "₹2,998/-"}{props.courseCode == "java" && "₹1,998/-"}</span>
                                 </div>
                             </div>
+
+                            <div>
+                                <label class="text-gray-700 dark:text-gray-200" for="username">Referral Code</label>
+                                <input id="username" type="text" class="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
+                            </div>
                         </div>
+
+
 
                         <div class="lg:col-span-1 md:px-12">
                             <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">

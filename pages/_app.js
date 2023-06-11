@@ -12,8 +12,6 @@ export default function App({ Component, pageProps }) {
   const [key, setKey] = useState(0);
   const [courseCode, setCourseCode] = useState({ value: null });
   const [progress, setProgress] = useState(0);
-  const [userCourse, setUserCourse] = useState();
-  const [edunoId, setEdunoId] = useState();
 
   const buyNow = (courseCode) => {
     setCourseCode(courseCode);
@@ -52,12 +50,9 @@ export default function App({ Component, pageProps }) {
     })
     const loginToken = localStorage.getItem('loginToken');
     const username = localStorage.getItem('userName');
-    const Id = localStorage.getItem('edunoId');
     if (loginToken) {
       setUser({ value: loginToken });
       setUserName({ value: username });
-      setEdunoId(Id);
-      console.log(edunoId);
       setKey(Math.random())
     }
   }, [router.query])
@@ -72,7 +67,7 @@ export default function App({ Component, pageProps }) {
 
     <Navbar logout={logout} user={user} userName={userName} key={key} />
 
-    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode} progress={progress} setProgress={setProgress} getCourse={getCourse} />
+    <Component {...pageProps} user={user} userName={userName} buyNow={buyNow} courseCode={courseCode} progress={progress} setProgress={setProgress} />
 
     <Footer />
 
