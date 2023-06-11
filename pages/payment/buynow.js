@@ -152,12 +152,18 @@ const BuyNow = (props) => {
 
                             </div>
                             <div className='bg-black flex text-white py-4 flex-col md:flex-row'>
-                                {props.courseCode == "aiml" && <img className='h-56' src="../qrs/aiml.jpg" alt="" />}
+                                {!offer && <div className='w-full'>{props.courseCode == "aiml" && <img className='h-56' src="../qrs/aiml.jpg" alt="" />}
                                 {props.courseCode == "fullstack" && <img className='h-56' src="../qrs/fullstack.jpg" alt="" />}
                                 {props.courseCode == "android" && <img className='h-56' src="../qrs/android.jpg" alt="" />}
                                 {props.courseCode == "java" && <img className='h-56' src="../qrs/java.jpg" alt="" />}
                                 {props.courseCode == "datascience" && <img className='h-56' src="../qrs/datascience.jpg" alt="" />}
-                                {props.courseCode == "training" && <img className='h-56' src="../qrs/training.jpg" alt="" />}
+                                {props.courseCode == "training" && <img className='h-56' src="../qrs/training.jpg" alt="" />}</div>}
+                                {offer && <div className='w-full'>{props.courseCode == "aiml" && <img className='h-56' src="../offerqrs/offeraiml.jpg" alt="" />}
+                                {props.courseCode == "fullstack" && <img className='h-56' src="../offerqrs/offerfullstack.jpg" alt="" />}
+                                {props.courseCode == "android" && <img className='h-56' src="../offerqrs/offerandroid.jpg" alt="" />}
+                                {props.courseCode == "java" && <img className='h-56' src="../offerqrs/offerjava.jpg" alt="" />}
+                                {props.courseCode == "datascience" && <img className='h-56' src="../offerqrs/offerdatascience.jpg" alt="" />}
+                                {props.courseCode == "training" && <img className='h-56' src="../offerqrs/offertraining.jpg" alt="" />}</div>}
                                 <div>
                                     <h1 className='text-3xl p-4 text-font'>Scan & Pay</h1>
                                     <p className='px-4 text-font'>Scan and Pay is a secure payment method as it uses encryption to protect the customer's payment information. The customer confirms the payment amount on their mobile app and authorizes the payment.</p>
