@@ -24,7 +24,16 @@ const Navbar = (props) => {
     }
 
     const [dropdown, setDropdown] = useState(false);
+    const [androidDropdown, setAndroidDropdown] = useState(false);
 
+    const handleAndroidDropdown = (e) =>{
+        e.preventDefault();
+        if(androidDropdown==false){
+            setAndroidDropdown(true);
+        } else{
+            setAndroidDropdown(false);
+        }
+    }
 
     const ref = useRef();
 
@@ -86,7 +95,7 @@ const Navbar = (props) => {
                 </div>
 
 
-                <div ref={ref} className='sidebar flex flex-col items-center h-[100vh] px-3 py-4 fixed top-0 right-0 navbar-hamburger-bg transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#FD7014] z-10'>
+                <div ref={ref} className='sidebar flex flex-col items-center h-[100vh] px-3 py-4 fixed top-0 right-0 navbar-hamburger-bg transform transition-transform translate-x-full w-[20rem] shadow-2xl border-2 border-[#FD7014] overflow-y-auto z-10'>
 
                     <span onClick={handleMenu} className="items-start w-[100%]" ><img src="/icons/x-button.png" className='h-4' alt="" /></span>
                     <img src="/eduno-white.png" className='h-8 mb-8 mt-8' alt="" />
@@ -109,7 +118,14 @@ const Navbar = (props) => {
                     </div>}
 
                     {props.user.value && <div className='flex flex-col'>
-                        <Link href={'/'} className="inline-block rounded-lg bg-[#EEEEEE] px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-100 hover:bg-white hover:text-[#FD7014] focus-visible:ring active:bg-white md:text-base">Hi! {props.userName.value}</Link>
+                        <button onClick={handleAndroidDropdown} className="inline-block rounded-lg bg-[#EEEEEE] px-8 py-3 text-center text-sm font-semibold text-black outline-none  transition duration-100 hover:bg-white hover:text-[#FD7014] focus-visible:ring active:bg-white md:text-base">Hi! {props.userName.value}</button>
+                        {androidDropdown && <ul className='flex flex-col items-left text-white'>
+                                    <li className='cursor-pointer my-2 mb-4'><Link href={'/dashboard/profile'}>Profile</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4'><Link href={'/dashboard/yourcourses'}>Your Courses</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4'><Link href={'/dashboard/achievements'}>Achievements</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4'><Link href={'/dashboard/setting'}>Setting</Link></li>
+                                    <li className='cursor-pointer my-2 mb-4'><Link href={'/dashboard/help'}>Help</Link></li>
+                                </ul>}
                         <Link href={'/'} onClick={props.logout} className=" mt-4 inline-block rounded-lg border-4 border-[#fd7114c5] px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:bg-white hover:text-black focus-visible:ring active:bg-white md:text-base">Sign Out</Link>
                     </div>}
 
