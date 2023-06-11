@@ -17,7 +17,12 @@ const handler = async (req, res) => {
                     lastName: req.body.lastName,
                     email: req.body.email,
                     phoneNo: req.body.phoneNo,
-                    password: CryptoJS.AES.encrypt(req.body.password, process.env.secret_key).toString()
+                    password: CryptoJS.AES.encrypt(req.body.password, process.env.secret_key).toString(),
+                    bio:"",
+                    education:"",
+                    profession:"",
+                    linkedin:"",
+                    github:""
                 });
                 await new_user.save();
                 let user_course = new user_courses({
