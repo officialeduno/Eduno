@@ -47,16 +47,17 @@ const Your_Courses = (props) => {
             </Head>
 
             <div className='bg-black text-[#EEEEEE] flex flex-col justify-center items-center'>
-                <h1 className='py-6 md:py-12 text-xl md:text-3xl text-font'>Start Learning with us</h1>
+                <h1 className='py-6 md:py-12 text-2xl md:text-4xl text-font'>Start Learning with us</h1>
 
+                <div className='flex flex-row gap-4 md:gap-8 md:justify-center py-4 md:py-8 overflow-x-auto scroll whitespace-nowrap scroll-smooth w-[90vw]'>
                 {show == true &&
                     <div className='flex justify-center items-center'>
                         {course1 &&
                             <div>
                                 <section className='headerbg px-4 py-8 md:pt-2 md:pb-8 md:px-12'>
                                     <div className='border-2 rounded-xl'>
-                                        <a href="#" class="group relative block h-96 overflow-hidden rounded-t-lg bg-black">
-                                            {course1 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
+                                        <a href="#" class="group relative block w-72 md:w-96 h-40 md:h-80 overflow-hidden rounded-t-lg bg-black">
+                                            {course1 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course1 == "training" && <img src="../img/training.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course1 == "android" && <img src="../img/android.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course1 == "java" && <img src="../img/java.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
@@ -68,10 +69,10 @@ const Your_Courses = (props) => {
                                             <div class="flex flex-col">
                                                 <a href="#" class="font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-lg">
                                                     {course1 == "aiml" && "AI / ML"}
-                                                    {course1 == "training" && "Training & Internship"}
+                                                    {course1 == "training" && "Training 2023"}
                                                     {course1 == "datascience" && "Data Science"}
-                                                    {course1 == "android" && "Android App Dev"}
-                                                    {course1 == "fullstack" && "Full Stack Web Dev"}
+                                                    {course1 == "android" && "Android Dev"}
+                                                    {course1 == "fullstack" && "Web Dev"}
                                                     {course1 == "java" && "Java with DSA"}
                                                 </a>
                                                 <span class="text-sm text-gray-500 lg:text-base">by EDUNO</span>
@@ -93,7 +94,7 @@ const Your_Courses = (props) => {
                             <div>
                                 <section className='headerbg px-4 py-8 md:pt-2 md:pb-8 md:px-12'>
                                     <div className='border-2 rounded-xl'>
-                                        <a href="#" class="group relative block h-96 overflow-hidden rounded-t-lg bg-black">
+                                        <a href="#" class="group relative block w-72 md:w-96 h-40 md:h-80 overflow-hidden rounded-t-lg bg-black">
                                             {course2 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course2 == "training" && <img src="../img/training.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course2 == "android" && <img src="../img/android.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
@@ -106,10 +107,10 @@ const Your_Courses = (props) => {
                                             <div class="flex flex-col">
                                                 <a href="#" class="font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-lg">
                                                     {course2 == "aiml" && "AI / ML"}
-                                                    {course2 == "training" && "Training & Internship"}
+                                                    {course2 == "training" && "Training 2023"}
                                                     {course2 == "datascience" && "Data Science"}
-                                                    {course2 == "android" && "Android App Dev"}
-                                                    {course2 == "fullstack" && "Full Stack Web Dev"}
+                                                    {course2 == "android" && "Android Dev"}
+                                                    {course2 == "fullstack" && "Web Dev"}
                                                     {course2 == "java" && "Java with DSA"}
                                                 </a>
                                                 <span class="text-sm text-gray-500 lg:text-base">by EDUNO</span>
@@ -131,7 +132,7 @@ const Your_Courses = (props) => {
                             <div>
                                 <section className='headerbg px-4 py-8 md:pt-2 md:pb-8 md:px-12'>
                                     <div className='border-2 rounded-xl'>
-                                        <a href="#" class="group relative block h-96 overflow-hidden rounded-t-lg bg-black">
+                                        <a href="#" class="group relative block w-72 md:w-96 h-40 md:h-80 overflow-hidden rounded-t-lg bg-black">
                                             {course3 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course3 == "training" && <img src="../img/training.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course3 == "android" && <img src="../img/android.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
@@ -144,10 +145,10 @@ const Your_Courses = (props) => {
                                             <div class="flex flex-col">
                                                 <a href="#" class="font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-lg">
                                                     {course3 == "aiml" && "AI / ML"}
-                                                    {course3 == "training" && "Training & Internship"}
+                                                    {course3 == "training" && "Training 2023"}
                                                     {course3 == "datascience" && "Data Science"}
-                                                    {course3 == "android" && "Android App Dev"}
-                                                    {course3 == "fullstack" && "Full Stack Web Dev"}
+                                                    {course3 == "android" && "Android Dev"}
+                                                    {course3 == "fullstack" && "Web Dev"}
                                                     {course3 == "java" && "Java with DSA"}
                                                 </a>
                                                 <span class="text-sm text-gray-500 lg:text-base">by EDUNO</span>
@@ -166,14 +167,16 @@ const Your_Courses = (props) => {
                         }
                     </div>
                 }
+                </div>
 
+                <div className='flex flex-row gap-4 md:gap-8 md:justify-center py-4 md:py-8 overflow-x-auto scroll whitespace-nowrap scroll-smooth w-[90vw]'>
                 {show == true &&
                     <div className='flex justify-center items-center'>
                         {course4 &&
                             <div>
                                 <section className='headerbg px-4 py-8 md:pt-2 md:pb-8 md:px-12'>
                                     <div className='border-2 rounded-xl'>
-                                        <a href="#" class="group relative block h-96 overflow-hidden rounded-t-lg bg-black">
+                                        <a href="#" class="group relative block w-72 md:w-96 h-40 md:h-80 overflow-hidden rounded-t-lg bg-black">
                                             {course4 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course4 == "training" && <img src="../img/training.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course4 == "android" && <img src="../img/android.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
@@ -186,10 +189,10 @@ const Your_Courses = (props) => {
                                             <div class="flex flex-col">
                                                 <a href="#" class="font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-lg">
                                                     {course4 == "aiml" && "AI / ML"}
-                                                    {course4 == "training" && "Training & Internship"}
+                                                    {course4 == "training" && "Training 2023"}
                                                     {course4 == "datascience" && "Data Science"}
-                                                    {course4 == "android" && "Android App Dev"}
-                                                    {course4 == "fullstack" && "Full Stack Web Dev"}
+                                                    {course4 == "android" && "Android Dev"}
+                                                    {course4 == "fullstack" && "Web Dev"}
                                                     {course4 == "java" && "Java with DSA"}
                                                 </a>
                                                 <span class="text-sm text-gray-500 lg:text-base">by EDUNO</span>
@@ -211,7 +214,7 @@ const Your_Courses = (props) => {
                             <div>
                                 <section className='headerbg px-4 py-8 md:pt-2 md:pb-8 md:px-12'>
                                     <div className='border-2 rounded-xl'>
-                                        <a href="#" class="group relative block h-96 overflow-hidden rounded-t-lg bg-black">
+                                        <a href="#" class="group relative block w-72 md:w-96 h-40 md:h-80 overflow-hidden rounded-t-lg bg-black">
                                             {course5 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course5 == "training" && <img src="../img/training.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course5 == "android" && <img src="../img/android.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
@@ -224,10 +227,10 @@ const Your_Courses = (props) => {
                                             <div class="flex flex-col">
                                                 <a href="#" class="font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-lg">
                                                     {course5 == "aiml" && "AI / ML"}
-                                                    {course5 == "training" && "Training & Internship"}
+                                                    {course5 == "training" && "Training 2023"}
                                                     {course5 == "datascience" && "Data Science"}
-                                                    {course5 == "android" && "Android App Dev"}
-                                                    {course5 == "fullstack" && "Full Stack Web Dev"}
+                                                    {course5 == "android" && "Android Dev"}
+                                                    {course5 == "fullstack" && "Web Dev"}
                                                     {course5 == "java" && "Java with DSA"}
                                                 </a>
                                                 <span class="text-sm text-gray-500 lg:text-base">by EDUNO</span>
@@ -249,7 +252,7 @@ const Your_Courses = (props) => {
                             <div>
                                 <section className='headerbg px-4 py-8 md:pt-2 md:pb-8 md:px-12'>
                                     <div className='border-2 rounded-xl'>
-                                        <a href="#" class="group relative block h-96 overflow-hidden rounded-t-lg bg-black">
+                                        <a href="#" class="group relative block w-72 md:w-96 h-40 md:h-80 overflow-hidden rounded-t-lg bg-black">
                                             {course6 == "aiml" && <img src="../img/aiml.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course6 == "training" && <img src="../img/training.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
                                             {course6 == "android" && <img src="../img/android.png" loading="lazy" alt="Photo by Austin Wade" class="rounded-xl h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />}
@@ -262,10 +265,10 @@ const Your_Courses = (props) => {
                                             <div class="flex flex-col">
                                                 <a href="#" class="font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-lg">
                                                     {course6 == "aiml" && "AI / ML"}
-                                                    {course6 == "training" && "Training & Internship"}
+                                                    {course6 == "training" && "Training 2023"}
                                                     {course6 == "datascience" && "Data Science"}
-                                                    {course6 == "android" && "Android App Dev"}
-                                                    {course6 == "fullstack" && "Full Stack Web Dev"}
+                                                    {course6 == "android" && "Android Dev"}
+                                                    {course6 == "fullstack" && "Web Dev"}
                                                     {course6 == "java" && "Java with DSA"}
                                                 </a>
                                                 <span class="text-sm text-gray-500 lg:text-base">by EDUNO</span>
@@ -284,6 +287,7 @@ const Your_Courses = (props) => {
                         }
                     </div>
                 }
+                </div>
 
                 {show == false && <button onClick={handleShowButton} className="inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold  outline-none  transition duration-300 text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base my-4">Show More</button>}
                 {show == true && <button onClick={handleShowButton} className="inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold  outline-none  transition duration-300 text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base my-4">Show Less</button>}
