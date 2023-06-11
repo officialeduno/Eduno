@@ -39,6 +39,7 @@ const Signin = (props) => {
             setCookie('token', response.token);
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
+            localStorage.setItem('edunoId', response.edunoId);
             router.push(`http://localhost:3000/`)
         } else {
             signinCancelledToast();

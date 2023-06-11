@@ -59,6 +59,7 @@ const Signup = (props) => {
             setCookie('token', response.token);
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
+            localStorage.setItem('edunoId', response.edunoId);
             router.push("http://localhost:3000/")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();
