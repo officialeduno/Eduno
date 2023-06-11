@@ -71,7 +71,7 @@ const Navbar = (props) => {
                                     <li className='cursor-pointer my-2 mb-4 mx-4 mr-10' onClick={props.logout}>Sign Out</li>
                                 </ul>
                             </div>}
-                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base hi-button">Hi! {props.userName.value}</button></div>}
+                            {props.user.value && <div onMouseOver={() => { setDropdown(true) }} onMouseLeave={() => { setDropdown(false) }} className="-ml-8 hidden flex-col gap-2.5 sm:flex-row sm:justify-center lg:flex lg:justify-start"><button className="text-font inline-block rounded-lg px-8 py-3 text-center text-sm font-semibold text-white outline-none  transition duration-100 hover:text-white focus-visible:ring active:bg-[#a2cc4c] md:text-base hi-button">Hi! {props.userName.value}</button></div>}
 
                         </a>}
 

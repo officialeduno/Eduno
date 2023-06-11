@@ -102,3 +102,8 @@ background: linear-gradient(167deg, rgba(17,0,158,1) 0%, rgba(253,112,20,1) 100%
 background: linear-gradient(106deg, rgba(253,112,20,1) 0%, rgba(17,0,158,1) 100%);
     color: black;
 }
+
+.profile-card-bg{
+    background: rgb(0,0,0);
+background: radial-gradient(circle, rgba(0,0,0,1) 61%, rgba(0,4,152,1) 100%);
+}
