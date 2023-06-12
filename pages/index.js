@@ -3,27 +3,10 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { Inter } from 'next/font/google'
-import { useState } from 'react';
-import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  const [email, setEmail] = useState();
-  const handleChange = (e) => {
-    if (e.target.email == 'email') {
-      setEmail(e.target.value);
-    }
-  }
-  const signupNewsletterMessage = () => toast('Successfully Subscribed our News Letter and All the Updates are on your Notification.', {
-    autoClose: 2000,
-    type: 'success'
-  });
-  const signupNewsletter = (e) => {
-    e.preventDefault();
-    signupNewsletterMessage();
-  }
 
   return (
     <>

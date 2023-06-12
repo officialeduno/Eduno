@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Dashboard = (props) => {
@@ -24,12 +26,21 @@ const Dashboard = (props) => {
         }
     };
 
+    const enhanceprofilesuccessmessage = () => toast('Your Profile is update successfully.',{
+        autoClose: 2000,
+        type: 'success'
+    })
+    const socialmediaupdatesuccessmessage = () => toast('Your Social Meida Links is update successfully.',{
+        autoClose: 2000,
+        type: 'success'
+    })
+
     const handleSubmit2 = async (e) => {
         e.preventDefault();
         props.setProgress(40);
         const id = props.edunoId.value;
         const data = {edunoId: id, bio, education, profession};
-        let res = await fetch('http://localhost:3000/api/dashboard/updateprofile', {
+        let res = await fetch('https://eduno.in/api/dashboard/updateprofile', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
@@ -40,6 +51,7 @@ const Dashboard = (props) => {
         let resposnse = await res.json();
         if(resposnse.success == true){
             props.setProgress(100);
+            enhanceprofilesuccessmessage();
         }
     }
 
@@ -48,7 +60,7 @@ const Dashboard = (props) => {
         props.setProgress(40);
         const id = props.edunoId.value;
         const data = {edunoId: id, linkedin, github};
-        let res = await fetch('http://localhost:3000/api/dashboard/updatesocialmedia', {
+        let res = await fetch('https://eduno.in/api/dashboard/updatesocialmedia', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
@@ -59,11 +71,13 @@ const Dashboard = (props) => {
         let resposnse = await res.json();
         if(resposnse.success == true){
             props.setProgress(100);
+            socialmediaupdatesuccessmessage();
         }
     }
 
     return (
         <>
+            <ToastContainer />
             <Head>
                 <title>Your Profile | Eduno (Empower yourself with Eduno)</title>
             </Head>

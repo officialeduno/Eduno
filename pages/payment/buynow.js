@@ -51,7 +51,7 @@ const BuyNow = (props) => {
         props.setProgress(30);
         const edunoId = getCookie('edunoId');
         const data = { edunoId, fullName, email, phoneNo, whatsappNo, course: props.courseCode };
-        let res = await fetch('http://localhost:3000/api/payment/payment', {
+        let res = await fetch('https://eduno.in/api/payment/payment', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -61,7 +61,7 @@ const BuyNow = (props) => {
         props.setProgress(80);
         let response = await res.json();
         if (response.success == true) {
-            router.push(`http://localhost:3000/payment/confirmpayment`);
+            router.push(`https://eduno.in/payment/confirmpayment`);
         } else {
             somethingWentWrongToast();
         }
