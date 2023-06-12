@@ -11,7 +11,7 @@ const ForgotPassword = (props) => {
             setEmail(e.target.value);
         }
     };
-    const linkSend = () => toast('Link Send Successfully', {
+    const linkSend = () => toast('You receive an email within 5 minutes', {
         autoClose: 2000,
         type: 'success'
     });
