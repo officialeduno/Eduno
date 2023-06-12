@@ -18,7 +18,7 @@ const ForgotPassword = () => {
     const handleSubmit = async(e) => {
         e.preventDefault();
         const data = {email};
-        let res = await fetch(`https://www,eduno.in/api/auth/forgot`, {
+        let res = await fetch(`https://www.eduno.in/api/auth/forgot`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
