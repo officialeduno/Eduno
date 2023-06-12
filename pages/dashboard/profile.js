@@ -40,7 +40,7 @@ const Dashboard = (props) => {
         props.setProgress(40);
         const id = props.edunoId.value;
         const data = {edunoId: id, bio, education, profession};
-        let res = await fetch('https://www.eduno.in/api/dashboard/updateprofile', {
+        let res = await fetch('http://localhost:3000/api/dashboard/updateprofile', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'
@@ -60,7 +60,7 @@ const Dashboard = (props) => {
         props.setProgress(40);
         const id = props.edunoId.value;
         const data = {edunoId: id, linkedin, github};
-        let res = await fetch('https://www.eduno.in/api/dashboard/updatesocialmedia', {
+        let res = await fetch('http://localhost:3000/api/dashboard/updatesocialmedia', {
             method: 'POST',
             headers: {
                 'Content-Type' : 'application/json'

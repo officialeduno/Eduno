@@ -21,7 +21,7 @@ const Your_Courses = (props) => {
             setShow(true);
             const id = localStorage.getItem('edunoId')
             const data = { edunoId: id };
-            let res = await fetch('https://www.eduno.in/api/dashboard/getcourses', {
+            let res = await fetch('http://localhost:3000/api/dashboard/getcourses', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

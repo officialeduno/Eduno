@@ -63,8 +63,6 @@ const Android = (props) => {
                                     </div>
 
                                     <span class="ml-2 text-sm text-gray-500">4.2</span>
-
-                                    <a href="#" class="ml-4 text-sm font-semibold text-[#320bcfc2] transition duration-100 hover:text-[#a2cc4c] active:text-[#a2cc4c]">view all 47 reviews</a>
                                 </div>
                                 {/* <!-- rating - end --> */}
 
@@ -93,7 +91,7 @@ const Android = (props) => {
                                 <div class="mt-10 md:mt-8 lg:mt-12">
                                     <div class="mb-3 text-2xl font-bold text-white text-font">Description</div>
 
-                                    <p class="text-white text-font md:text-lg text-sm">
+                                    <p class="text-white md:text-lg text-sm">
                                         Training in Computer Science (CS) is an excellent way to gain skills and knowledge in the field of computing. With the rapid growth of technology, training in CS has become increasingly popular and valuable. <br /> <br />
 
                                         CS training programs can vary in length and focus, but typically cover a wide range of topics such as programming, data structures, algorithms, computer architecture, operating systems, software engineering, databases, artificial intelligence, and more. <br /> <br />
@@ -114,7 +112,7 @@ const Android = (props) => {
                             <h1 className='text-4xl font-bold italic text-font'>Features:</h1>
                             <section class="text-white body-font">
                                 <div class="container flex flex-wrap flex-col">
-                                    <div class="flex relative pt-4 pb-4 sm:items-center">
+                                <div class="flex relative pt-4 md:pb-4 sm:items-center">
                                         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                                             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                         </div>
@@ -122,12 +120,12 @@ const Android = (props) => {
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
 
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                                <h2 class="font-medium title-font text-white mb-1 text-2xl">Certification upon completion</h2>
-                                                <p class="leading-relaxed text-font"> Students who complete the course receive a certification that can be a valuable asset when applying for jobs in the industry.</p>
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Skill Development and Knowledge Enhancement</h2>
+                                                <p>This course provides participants with an opportunity to develop valuable skills and gain in-depth knowledge in the field of computing. With the rapidly evolving technology landscape, CS training has become highly sought after and valuable.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex relative pb-2 sm:items-center">
+                                    <div class="flex relative md:pb-2 sm:items-center">
                                         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                                             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                         </div>
@@ -135,8 +133,60 @@ const Android = (props) => {
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
 
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                                <h2 class="font-medium title-font text-white mb-1 text-2xl">Interactive learning experience</h2>
-                                                <p class="leading-relaxed text-font">The course is designed to be engaging and interactive, with hands-on projects and real-world examples to help students apply what theym have learned.</p>
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Customizable Program</h2>
+                                                <p>CS training programs can be tailored to suit the needs and goals of participants. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">3</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Hands-on Learning</h2>
+                                                <p>The course emphasizes practical, hands-on learning experiences. Participants have the opportunity to apply the theoretical knowledge gained in real-world scenarios, working on projects and assignments that simulate industry challenges. </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">4</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Internship Opportunities</h2>
+                                                <p>Alongside the training, participants may have the chance to engage in internships, which provide valuable industry exposure and practical work experience. Internships allow participants to apply their skills in real-world settings, gain insights into professional workflows, and build a professional network..</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">5</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Experienced Instructors</h2>
+                                                <p>The course is facilitated by experienced instructors who have expertise in various CS domains. They bring industry knowledge and practical insights into the classroom, ensuring that participants receive high-quality instruction and mentorship.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">6</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Career Advancement</h2>
+                                                <p>Completion of the training and internship course in CS equips participants with the skills and knowledge that are highly valued by employers in the industry. It enhances their career prospects, opening doors to a variety of opportunities in software development, data analysis, systems architecture, and more.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -176,8 +226,8 @@ const Android = (props) => {
                                 <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-6">
                                     <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
                                         <div>
-                                            <span class="block text-sm font-bold md:text-base text-white">John McCulling</span>
-                                            <span class="block text-sm text-gray-400">August 28, 2021</span>
+                                            <span class="block text-sm font-bold md:text-base text-white">Shreyansh Abhisekh</span>
+                                            <span class="block text-sm text-gray-400">May 28, 2023</span>
                                         </div>
 
                                         <div class="-ml-1 flex gap-0.5">
@@ -202,12 +252,12 @@ const Android = (props) => {
                                             </svg>
                                         </div>
 
-                                        <p class="text-gray-400">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+                                        <p class="text-gray-400">Furthermore, these training programs have a remarkable industry focus. Guest lectures and workshops led by experienced professionals from the tech industry provide invaluable industry insights, exposing participants to the latest trends, emerging technologies, and real-world applications of CS concepts. This exposure allows individuals to stay current and prepares them for future employment opportunities.</p>
                                     </div>
                                     <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
                                         <div>
-                                            <span class="block text-sm font-bold md:text-base text-white">Kate Berg</span>
-                                            <span class="block text-sm text-gray-400">July 21, 2021</span>
+                                            <span class="block text-sm font-bold md:text-base text-white">Somya Goyal</span>
+                                            <span class="block text-sm text-gray-400">May 21, 2023</span>
                                         </div>
 
                                         <div class="-ml-1 flex gap-0.5">
@@ -227,18 +277,18 @@ const Android = (props) => {
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
                                         </div>
 
-                                        <p class="text-gray-400">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+                                        <p class="text-gray-400">The program's greatest strength lies in its ability to equip individuals with comprehensive skills and knowledge. The instructors are highly knowledgeable and offer valuable insights throughout the training. Their expertise not only ensures a solid theoretical foundation but also promotes practical application by guiding students through hands-on projects and assignments.</p>
                                     </div>
 
                                     <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
                                         <div>
-                                            <span class="block text-sm font-bold md:text-base text-white">Greg Jackson</span>
-                                            <span class="block text-sm text-gray-400">March 16, 2021</span>
+                                            <span class="block text-sm font-bold md:text-base text-white">Anmol Jaiswal</span>
+                                            <span class="block text-sm text-gray-400">May 16, 2023</span>
                                         </div>
 
                                         <div class="-ml-1 flex gap-0.5">
@@ -254,16 +304,16 @@ const Android = (props) => {
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
 
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor">
                                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                             </svg>
                                         </div>
 
-                                        <p class="text-gray-400">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+                                        <p class="text-gray-400">Enrolling in a Training in Computer Science (CS) course was an exceptional decision that bolstered my expertise and understanding in the world of computing. As technology continues to advance rapidly, the significance and demand for CS training have grown exponentially.</p>
                                     </div>
                                 </div>
                             </div>

@@ -15,7 +15,7 @@ const Android = (props) => {
                 <title>Data Science | Eduno (Empower yourself with Eduno)</title>
             </Head>
 
-            
+
             <div>
                 <div class="bg-black pt-6 sm:pt-8 lg:pt-12">
                     <div class="mx-2 px-2 md:px-4 md:mx-4 lg:mx-24">
@@ -62,9 +62,7 @@ const Android = (props) => {
                                         </svg>
                                     </div>
 
-                                    <span class="ml-2 text-sm text-gray-500">4.2</span>
-
-                                    <a href="#" class="ml-4 text-sm font-semibold text-[#320bcfc2] transition duration-100 hover:text-[#a2cc4c] active:text-[#a2cc4c]">view all 47 reviews</a>
+                                    <span class="ml-2 text-sm text-gray-500">4.5</span>
                                 </div>
                                 {/* <!-- rating - end --> */}
 
@@ -93,10 +91,10 @@ const Android = (props) => {
                                 <div class="mt-10 md:mt-8 lg:mt-12">
                                     <div class="mb-3 text-2xl font-bold text-white text-font">Description</div>
 
-                                    <p class="text-white text-font md:text-lg text-sm">
-                                    The course covers a wide range of topics, including data exploration, data cleaning, data transformation, and data modeling. It also covers popular programming languages such as Python and R, and tools such as SQL, Tableau, and Hadoop. Students have access to practical, hands-on experience working with real-world data sets, learning how to use statistical techniques and machine learning algorithms to analyze data and gain insights. <br /> <br />
+                                    <p class="text-white md:text-lg text-sm">
+                                        The course covers a wide range of topics, including data exploration, data cleaning, data transformation, and data modeling. It also covers popular programming languages such as Python and R, and tools such as SQL, Tableau, and Hadoop. Students have access to practical, hands-on experience working with real-world data sets, learning how to use statistical techniques and machine learning algorithms to analyze data and gain insights. <br /> <br />
 
-Upon completion of the data science course, students receive a certification that is recognized and valued by employers in the industry. In addition to the certification, Eduno also offers goodies such as t-shirts, mugs, and other types of gifts according to the student's performance in the course, which can serve as a motivator and a symbol of accomplishment.
+                                        Upon completion of the data science course, students receive a certification that is recognized and valued by employers in the industry. In addition to the certification, Eduno also offers goodies such as t-shirts, mugs, and other types of gifts according to the student's performance in the course, which can serve as a motivator and a symbol of accomplishment.
 
                                     </p>
 
@@ -114,7 +112,7 @@ Upon completion of the data science course, students receive a certification tha
                             <h1 className='text-4xl font-bold italic text-font'>Features:</h1>
                             <section class="text-white body-font">
                                 <div class="container flex flex-wrap flex-col">
-                                    <div class="flex relative pt-4 pb-4 sm:items-center">
+                                    <div class="flex relative pt-4 md:pb-4 sm:items-center">
                                         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                                             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                         </div>
@@ -122,12 +120,12 @@ Upon completion of the data science course, students receive a certification tha
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
 
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                                <h2 class="font-medium title-font text-white mb-1 text-2xl">Certification upon completion</h2>
-                                                <p class="leading-relaxed text-font"> Students who complete the course receive a certification that can be a valuable asset when applying for jobs in the industry.</p>
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Comprehensive Coverage</h2>
+                                                <p>The course covers a wide range of essential topics in data science, including data exploration, data cleaning, data transformation, and data modeling. </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex relative pb-2 sm:items-center">
+                                    <div class="flex relative md:pb-2 sm:items-center">
                                         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
                                             <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
                                         </div>
@@ -135,8 +133,47 @@ Upon completion of the data science course, students receive a certification tha
                                         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
 
                                             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                                                <h2 class="font-medium title-font text-white mb-1 text-2xl">Interactive learning experience</h2>
-                                                <p class="leading-relaxed text-font">The course is designed to be engaging and interactive, with hands-on projects and real-world examples to help students apply what theym have learned.</p>
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Programming Languages and Tools</h2>
+                                                <p>The course also introduces tools like SQL, Tableau, and Hadoop, enabling students to work with databases, visualize data, and handle large-scale data processing.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">3</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Practical, Hands-on Experience</h2>
+                                                <p>Students have the opportunity to work with real-world data sets, gaining practical, hands-on experience in data science. Through interactive exercises and projects, they learn how to apply statistical techniques and machine learning algorithms to extract insights and make data-driven decisions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">4</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Recognized Certification</h2>
+                                                <p>Upon successful completion of the data science course, students receive a certification that is recognized and valued by employers in the industry. This certification serves as a testament to their proficiency in data science concepts and techniques, enhancing their credibility and career prospects in the field.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flex relative md:pb-2 sm:items-center">
+                                        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+                                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                                        </div>
+                                        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-[#FD7014] text-black relative z-10 title-font font-medium text-sm">5</div>
+                                        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+
+                                            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                                                <h2 class="font-medium title-font text-white mb-1 text-xl md:text-2xl">Performance-Based Rewards</h2>
+                                                <p>Eduno offers additional incentives to recognize and motivate students' performance in the course. Students can earn goodies such as t-shirts, mugs, and other types of gifts based on their achievements. These rewards serve as a motivating factor and a tangible symbol of accomplishment, adding to the overall learning experience.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -150,20 +187,20 @@ Upon completion of the data science course, students receive a certification tha
                             <div class="container px-5 pt-12 mx-auto">
                                 <div class="flex flex-wrap -m-4 text-center">
                                     <div class="p-4 sm:w-1/4 w-1/2">
-                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">7+</h2>
-                                        <p class="leading-relaxed text-[#FD7014]">Fields</p>
-                                    </div>
-                                    <div class="p-4 sm:w-1/4 w-1/2">
-                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">14+</h2>
+                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">45+</h2>
                                         <p class="leading-relaxed text-[#FD7014]">Days</p>
                                     </div>
                                     <div class="p-4 sm:w-1/4 w-1/2">
-                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">37+</h2>
-                                        <p class="leading-relaxed text-[#FD7014]">Subscriber</p>
+                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">40+</h2>
+                                        <p class="leading-relaxed text-[#FD7014]">Exercise</p>
                                     </div>
                                     <div class="p-4 sm:w-1/4 w-1/2">
-                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">243+</h2>
-                                        <p class="leading-relaxed text-[#FD7014]">View</p>
+                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">50+</h2>
+                                        <p class="leading-relaxed text-[#FD7014]">Articles</p>
+                                    </div>
+                                    <div class="p-4 sm:w-1/4 w-1/2">
+                                        <h2 class="title-font font-medium sm:text-4xl text-3xl text-white">120+</h2>
+                                        <p class="leading-relaxed text-[#FD7014]">Files</p>
                                     </div>
                                 </div>
                             </div>
@@ -176,8 +213,8 @@ Upon completion of the data science course, students receive a certification tha
                                 <div class="grid gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-6">
                                     <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
                                         <div>
-                                            <span class="block text-sm font-bold md:text-base text-white">John McCulling</span>
-                                            <span class="block text-sm text-gray-400">August 28, 2021</span>
+                                            <span class="block text-sm font-bold md:text-base text-white">Dilip Sharma</span>
+                                            <span class="block text-sm text-gray-400">May 22, 2023</span>
                                         </div>
 
                                         <div class="-ml-1 flex gap-0.5">
@@ -202,12 +239,12 @@ Upon completion of the data science course, students receive a certification tha
                                             </svg>
                                         </div>
 
-                                        <p class="text-gray-400">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+                                        <p class="text-gray-400">The data science course I undertook was an exceptional learning experience. It covered an extensive range of topics, including data exploration, cleaning, transformation, and modeling. Additionally, the inclusion of popular programming languages like Python and R, as well as tools such as SQL, Tableau, and Hadoop, provided a well-rounded education in data science.</p>
                                     </div>
                                     <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
                                         <div>
-                                            <span class="block text-sm font-bold md:text-base text-white">Kate Berg</span>
-                                            <span class="block text-sm text-gray-400">July 21, 2021</span>
+                                            <span class="block text-sm font-bold md:text-base text-white">Manpreet Singh</span>
+                                            <span class="block text-sm text-gray-400">May 30, 2023</span>
                                         </div>
 
                                         <div class="-ml-1 flex gap-0.5">
@@ -232,13 +269,13 @@ Upon completion of the data science course, students receive a certification tha
                                             </svg>
                                         </div>
 
-                                        <p class="text-gray-400">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+                                        <p class="text-gray-400">The data science course offered by Eduno exceeded my expectations. It covered an extensive range of topics, including data exploration, cleaning, transformation, and modeling. The inclusion of programming languages like Python and R, along with tools such as SQL, Tableau, and Hadoop, ensured a well-rounded education in data science.</p>
                                     </div>
 
                                     <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
                                         <div>
-                                            <span class="block text-sm font-bold md:text-base text-white">Greg Jackson</span>
-                                            <span class="block text-sm text-gray-400">March 16, 2021</span>
+                                            <span class="block text-sm font-bold md:text-base text-white">Sanjay Singh</span>
+                                            <span class="block text-sm text-gray-400">May 18, 2021</span>
                                         </div>
 
                                         <div class="-ml-1 flex gap-0.5">
@@ -263,13 +300,13 @@ Upon completion of the data science course, students receive a certification tha
                                             </svg>
                                         </div>
 
-                                        <p class="text-gray-400">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated. It may be used to display a sample of fonts or generate text for testing.</p>
+                                        <p class="text-gray-400">I recently completed the data science course offered by Eduno, and I must say it was an outstanding learning experience. The course covered an extensive</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        
+
                     </div>
                 </div>
             </div>

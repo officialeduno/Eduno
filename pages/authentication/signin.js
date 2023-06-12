@@ -25,7 +25,7 @@ const Signin = (props) => {
         e.preventDefault();
         props.setProgress(40);
         const data = { email, password };
-        let res = await fetch('https://www.eduno.in/api/auth/signin', {
+        let res = await fetch('http://localhost:3000/api/auth/signin', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ const Signin = (props) => {
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
             localStorage.setItem('edunoId', response.edunoId);
-            router.push(`https://www.eduno.in/`)
+            router.push(`http://localhost:3000/`)
         } else {
             signinCancelledToast();
         }

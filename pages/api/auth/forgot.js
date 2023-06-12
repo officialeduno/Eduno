@@ -15,7 +15,7 @@ const handler = async (req, res) => {
         } else {
             const secret = process.env.secret_key + user.password;
             const forgot_token = jwt.sign({ email: user.email, id: user._id }, secret, { expiresIn: "15m" });
-            const forgot_link = `https://www.eduno.in/authentication/resetpassword?userid=${user._id}&token=${forgot_token}`;
+            const forgot_link = `http://localhost:3000/authentication/resetpassword?userid=${user._id}&token=${forgot_token}`;
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
                 auth: {

@@ -19,7 +19,7 @@ const ForgotPassword = (props) => {
         e.preventDefault();
         props.setProgress(30);
         const data = {email};
-        let res = await fetch(`https://www.eduno.in/api/auth/forgot`, {
+        let res = await fetch(`http://localhost:3000/api/auth/forgot`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
