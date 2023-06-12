@@ -4,7 +4,7 @@ import Head from 'next/head'
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-const ForgotPassword = () => {
+const ForgotPassword = (props) => {
     const [email, setEmail] = useState();
     const handleChange = (e)=>{
         if (e.target.name == 'email') {
@@ -17,6 +17,7 @@ const ForgotPassword = () => {
     });
     const handleSubmit = async(e) => {
         e.preventDefault();
+        props.setProgress(30);
         const data = {email};
         let res = await fetch(`https://www.eduno.in/api/auth/forgot`, {
             method: 'POST',
@@ -25,9 +26,11 @@ const ForgotPassword = () => {
             },
             body: JSON.stringify(data)
         });
+        props.setProgress(90);
         let response = await res.json();
         if(response.success == true){
             linkSend();
+            props.setProgress(100);
         }
     }
 
