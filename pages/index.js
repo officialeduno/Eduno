@@ -69,7 +69,7 @@ export default function Home() {
       </section>
 
 
-      
+
 
 
       <section className='headerbg md:px-32 flex flex-col justify-center items-center md:py-12 md:pt-2 md:pb-0 pb-8'>
