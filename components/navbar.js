@@ -53,6 +53,7 @@ const Navbar = (props) => {
                             <Link href={'/courses/allcourses'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Course</Link>
                             <Link href={'https://roadmap.sh/'} target='_blank' className="inline-flex items-center navbar-menu-text-color gap-1 text-lg text-font navbar-menu-hover-text-color">RoadMaps</Link>
                             <Link href={'/contests/allcontest'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Contest</Link>
+                            <Link href={'/community/jointhecommunity'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Community</Link>
                             <Link href={'/mentorship/mentors'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Mentors</Link>
                             <Link href={'/blogs/blog'} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">Blog</Link>
                             <Link href={"/about"} className="text-lg text-font navbar-menu-text-color transition duration-100 navbar-menu-hover-text-color">About</Link>
@@ -105,6 +106,7 @@ const Navbar = (props) => {
                     <Link href={'/courses/allcourses'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Course</Link>
                     <Link href={"https://roadmap.sh/"} target='_blank' onClick={handleMenu} className="py-3 inline-flex items-center text-white gap-1 text-lg text-font navbar-menu-hover-text-color">RoadMaps</Link>
                     <Link href={'/contests/allcontest'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Contest</Link>
+                    <Link href={'/community/jointhecommunity'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Community</Link>
                     <Link href={'/mentorship/mentors'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Mentors</Link>
                     <Link href={'/blogs/blog'} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">Blog</Link>
                     <Link href={"/about"} onClick={handleMenu} className="py-3 text-lg text-font text-white transition duration-100 navbar-menu-hover-text-color">About</Link>
