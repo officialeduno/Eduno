@@ -7,11 +7,11 @@ const Join_the_Community = () => {
     return (
         <>
             <Head>
-                <title>Join the Community | Eduno (Empower Yourself with Eduno)</title>
+                <title>Join the Developer Community | Eduno (Empower Yourself with Eduno)</title>
             </Head>
 
             <div className='bg-black flex flex-col justify-center items-center p-2 md:p-8'>
-                <h1 className='text-font text-white text-xl md:text-4xl'>Join the Community! Now</h1>
+                <h1 className='text-font text-white text-2xl md:text-4xl text-center'>Join the Developer Community! Now</h1>
                 <div className='flex flex-row justify-center items-center py-4'>
                     <div className='flex flex-col justify-center items-center py-2 mx-2 md:px-16'>
                         <img src="../icons/discord.png" alt="" className='h-36 md:h-80 mb-2' />
