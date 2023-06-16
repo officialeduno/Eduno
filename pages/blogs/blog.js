@@ -13,12 +13,12 @@ const Blog = () => {
 
         <div>
 
-            <div className="bg-[#001719] py-6 sm:py-8 lg:py-12">
+            <div className="bg-black py-4 sm:py-6 lg:py-4">
                 <div className="mx-auto max-w-screen-xl px-4 md:px-8">
                     <div className="mb-10 md:mb-16">
                         <h2 className="mb-4 text-center text-4xl font-bold text-white md:mb-6 lg:text-6xl">Blog</h2>
 
-                        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text but is random or otherwise generated.</p>
+                        <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Welcome to the blog section of Eduno, your go-to source for the latest technical updates and insights! At Eduno, we understand the importance of staying ahead in the ever-evolving world of technology. Our blog is designed to keep you informed and inspired, providing you with the knowledge and tools to excel in your field.</p>
                     </div>
 
                     <div className="grid gap-4 sm:grid-cols-2 md:gap-6 lg:grid-cols-2 xl:grid-cols-2 xl:gap-8">
