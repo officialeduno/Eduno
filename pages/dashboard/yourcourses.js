@@ -79,7 +79,7 @@ const Your_Courses = (props) => {
                                             </div>
 
                                             <div class="flex flex-col items-end">
-                                                <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+                                                <Link href={"/yourcourses/furtherupdate"} className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                                                     Start Learning
                                                 </Link>
                                             </div>
@@ -117,7 +117,7 @@ const Your_Courses = (props) => {
                                             </div>
 
                                             <div class="flex flex-col items-end">
-                                                <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+                                                <Link href={"/yourcourses/furtherupdate"} className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                                                     Start Learning
                                                 </Link>
                                             </div>
@@ -155,7 +155,7 @@ const Your_Courses = (props) => {
                                             </div>
 
                                             <div class="flex flex-col items-end">
-                                                <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+                                                <Link href={"/yourcourses/furtherupdate"} className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                                                     Start Learning
                                                 </Link>
                                             </div>
@@ -199,7 +199,7 @@ const Your_Courses = (props) => {
                                             </div>
 
                                             <div class="flex flex-col items-end">
-                                                <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+                                                <Link href={"/yourcourses/furtherupdate"} className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                                                     Start Learning
                                                 </Link>
                                             </div>
@@ -237,7 +237,7 @@ const Your_Courses = (props) => {
                                             </div>
 
                                             <div class="flex flex-col items-end">
-                                                <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+                                                <Link href={"/yourcourses/furtherupdate"} className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                                                     Start Learning
                                                 </Link>
                                             </div>
@@ -275,7 +275,7 @@ const Your_Courses = (props) => {
                                             </div>
 
                                             <div class="flex flex-col items-end">
-                                                <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+                                                <Link href={"/yourcourses/furtherupdate"} className="inline-flex justify-center items-center py-2 mb-2 md:py-2 px-2 md:px-3 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                                                     Start Learning
                                                 </Link>
                                             </div>
