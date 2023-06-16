@@ -269,7 +269,7 @@ export default function Home() {
           <p className='text-white text-md md:px-12 text-center text-font'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more.
             EDUNO is not just limited to providing roadmaps and personal guidance; it offers a comprehensive solution to address all your mentoring requirements. Whether you are a beginner looking to kickstart your programming journey or an experienced developer seeking to expand your knowledge, EDUNO has got you covered.</p>
           <div className="mt-6">
-            <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center px-4 py-2 mb-6 md:py-3 md:px-5 md:ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+            <Link href={"/mentorship/mentors"} target='_blank' className="inline-flex justify-center items-center px-4 py-2 mb-6 md:py-3 md:px-5 md:ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
               Learn More
               <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
             </Link>
