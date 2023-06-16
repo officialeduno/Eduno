@@ -246,15 +246,15 @@ export default function Home() {
             <h1 className='text-white md:text-md px-2 md:px-12 text-center text-font'>Join the weekly coding contest to enhance your programming solving skills and boost your career with the help of contest. Get some exciting prizes and goodies (T-shirts, Hoodies,  Stickers, etc). By consistently participating and excelling in these contests, developers can establish a strong reputation within the programming community and enhance their professional credibility</h1>
 
             <div className="md:mt-6 my-2 flex flex-col md:flex-row">
-              <Link href="https://drive.google.com/file/d/1ggceuBmqModIkmCPoDvozN0hZqQzFdkC/view?usp=sharing" target='_blank' className="inline-flex justify-center items-center px-4 py-2 md:py-2 md:px-5 md:ml-2 text-base font-medium text-center focus:ring-4 rounded-lg focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
+              <Link href={"/contests/allcontest"} target='_blank' className="inline-flex justify-center items-center px-4 py-2 md:py-2 md:px-5 md:ml-2 text-base font-medium text-center focus:ring-4 rounded-lg focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
                 Join Contest
               </Link>
 
-              <a href="#" className="inline-flex justify-center items-center px-4 py-2 mt-2 md:mt-0 md:py-3 md:px-5 md:ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 button2-text">
+              <Link href={"/contests/allcontest"} className="inline-flex justify-center items-center px-4 py-2 mt-2 md:mt-0 md:py-3 md:px-5 md:ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 button2-text">
                 More Information
 
                 <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-              </a>
+              </Link>
             </div>
           </div>
           <img src="img/contest.png" className='h-[30vh] md:h-[45vh]' alt="" />
