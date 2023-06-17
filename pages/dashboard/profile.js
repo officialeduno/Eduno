@@ -51,6 +51,9 @@ const Dashboard = (props) => {
         let resposnse = await res.json();
         if (resposnse.success == true) {
             props.setProgress(100);
+            setBio("");
+            setEducation("");
+            setProfession("");
             enhanceProfileSuccessMessage();
         }
     }
@@ -72,6 +75,8 @@ const Dashboard = (props) => {
         let resposnse = await res.json();
         if (resposnse.success == true) {
             props.setProgress(100);
+            setGithub("");
+            setLinkedin("");
             socialMediaUpdateSuccessMessage();
         }
     }
