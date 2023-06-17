@@ -45,7 +45,7 @@ const Signup = (props) => {
         const random_number = Math.floor(Math.random()*10000000)
         const edunoId = `ED${random_number}`
         const data = { edunoId, firstName, lastName, email, phoneNo, password };
-        let res = await fetch('https://eduno.in/api/auth/signup', {
+        let res = await fetch('https://www.eduno.in/api/auth/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -60,7 +60,7 @@ const Signup = (props) => {
             localStorage.setItem('loginToken', response.token);
             localStorage.setItem('userName', response.userName);
             localStorage.setItem('edunoId', response.edunoId);
-            router.push("https://eduno.in/")
+            router.push("https://www.eduno.in/")
         } else if (response.error == "Phone Number already exists.") {
             phoneAlreadyExistsToast();
         } else if (response.error == "User already exists.") {
