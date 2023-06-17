@@ -10,6 +10,7 @@ const About = () => {
                 <title>About Us | Eduno (Empower Yourself with Eduno)</title>
             </Head>
 
+            {/* ########## About Section Start ########## */}
             <div className='bg-black'>
                 <div className="bg-black px-4 md:px-32 py-4 md:py-12">
                     <section>
@@ -36,7 +37,6 @@ const About = () => {
                                         </p>
                                         <Link href={"/community/jointhecommunity"} className="inline-flex justify-center items-center px-4 py-2 mb-4 md:py-3 md:px-5 md:ml-4 text-base font-medium text-center rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 button2-text">
                                         Learn More
-
                                         <svg className="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                                     </Link>
                                     </div>
@@ -47,6 +47,8 @@ const About = () => {
                     </section>
                 </div>
             </div>
+            {/* ########## About Section End ########## */}
+
         </>
     )
 }

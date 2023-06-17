@@ -5,10 +5,12 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 const Android = (props) => {
+    
     const buyNow = (e) => {
         e.preventDefault();
         props.buyNow("training")
     }
+
     return (
 
         <>

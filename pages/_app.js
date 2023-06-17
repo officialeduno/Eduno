@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import LoadingBar from 'react-top-loading-bar'
 
 export default function App({ Component, pageProps }) {
+
   const router = useRouter();
   const [user, setUser] = useState({ value: null });
   const [userName, setUserName] = useState({ value: null });
@@ -28,8 +29,8 @@ export default function App({ Component, pageProps }) {
   }
 
   const logout = () => {
-    const logout_confirmation_message = "Are you sure? Want to Sign Out?";
-    if (confirm(logout_confirmation_message) == true) {
+    const logoutConfirmationMessage = "Are you sure? Want to Sign Out?";
+    if (confirm(logoutConfirmationMessage) == true) {
       localStorage.removeItem('loginToken');
       localStorage.removeItem('userName');
       localStorage.removeItem('edunoId');
@@ -37,10 +38,6 @@ export default function App({ Component, pageProps }) {
       setUser({ value: null });
       router.push(`https://www.eduno.in/`);
     }
-  }
-
-  const getCourse = () => {
-    console.log("GEt cours")
   }
 
   useEffect(() => {

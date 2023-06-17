@@ -1,6 +1,5 @@
 import React from 'react'
 import Head from 'next/head'
-import Image from 'next/image'
 
 const Refund_policy = () => {
     return (
@@ -8,8 +7,10 @@ const Refund_policy = () => {
             <Head>
                 <title>Refund Policy | Eduno (Empower yourself with Eduno)</title>
             </Head>
+
+
+            {/* ########## Refund Section Start ########## */}
             <div className='bg-black text-[#EEEEEE] flex items-center flex-col'>
-                
                 <h1 className='text-4xl pt-4 pb-4 text-white'>Refund Policy</h1>
                 <div className='px-4 md:mx-24 md:px-24'>
                     <p className='text-sm md:text-lg pl-4'>At Eduno, we strive to provide the best coding courses and a comprehensive learning experience for all our users. We understand that sometimes circumstances may change, and you may need to request a refund. Please review our refund policy outlined below:</p>
@@ -41,9 +42,11 @@ const Refund_policy = () => {
                     <p className='text-sm md:text-xl pl-4 font-bold'>For any further questions or concerns regarding our refund policy, please contact our customer support team at <span className='font-bold text-[#FD7014]'>officialeduno@gmail.com</span> or <span className='font-bold text-[#FD7014]'>9457963552</span>. We are committed to providing excellent customer service and will be happy to assist you.</p>
                     <br />
                     <p className='text-sm md:text-xl pl-4 font-bold'>Thank you for choosing Eduno for your coding education needs. Happy learning!</p>
-                    <br /> 
+                    <br />
                 </div>
             </div>
+            {/* ########## Refund Section End ########## */}
+
         </>
     )
 }

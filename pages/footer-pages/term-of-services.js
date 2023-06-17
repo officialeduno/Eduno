@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import Head from 'next/head'
 
 const Terms_of_Services = () => {
@@ -8,6 +7,8 @@ const Terms_of_Services = () => {
             <Head>
                 <title>Terms of Services | Eduno (Empower yourself with Eduno)</title>
             </Head>
+
+            {/* ########## Terms Section Start ########## */}
             <div className='bg-black text-[#EEEEEE] flex items-center flex-col'>
                 <h1 className='text-4xl pt-4 pb-4 text-white'>Terms of Services</h1>
                 <div className='px-4 md:mx-24 md:px-24'>
@@ -46,6 +47,8 @@ const Terms_of_Services = () => {
                     <br />
                 </div>
             </div>
+            {/* ########## Terms Section End ########## */}
+
         </>
     )
 }
