@@ -10,7 +10,7 @@ import { getCookie } from 'cookies-next';
 
 const BuyNow = (props) => {
 
-    const referralCodes = ["ROHAN", "rohan", "Rohan", "AMITSIR", "SANDEEPSIR", "HITESHSIR"]
+    const referralCodes = [];
 
     const router = useRouter();
     const [fullName, setFullName] = useState();
