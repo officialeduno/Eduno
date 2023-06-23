@@ -15,7 +15,7 @@ const Android = (props) => {
 
         <>
             <Head>
-                <title>Training & Internship 2023 | Eduno (Empower yourself with Eduno)</title>
+                <title>Training & Internships 2023 | Eduno (Empower yourself with Eduno)</title>
             </Head>
 
             <div>
@@ -36,7 +36,7 @@ const Android = (props) => {
                             <div class="md:py-8">
                                 {/* <!-- name - start --> */}
                                 <div class="mb-2 md:mb-3">
-                                    <h2 class="text-xl md:text-3xl font-bold text-white lg:text-3xl text-font">Training and Internship 2023</h2>
+                                    <h2 class="text-xl md:text-3xl font-bold text-white lg:text-3xl text-font">Training and Internships 2023</h2>
                                 </div>
                                 {/* <!-- name - end --> */}
 

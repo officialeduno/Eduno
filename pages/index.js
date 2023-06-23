@@ -93,7 +93,7 @@ export default function Home() {
             </Link>
             <div className="flex items-start justify-between gap-2 px-2">
               <div className="flex flex-col">
-                <Link href={"/courses/training"} className="text-lg font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-xl">Training & Intership 2023</Link>
+                <Link href={"/courses/training"} className="text-lg font-bold text-[#EEEEEE] transition duration-100 hover:text-[#FD7014] lg:text-xl">Training & Interships 2023</Link>
                 <span className="text-gray-500">by EDUNO</span>
               </div>
               <div className="flex flex-col items-end">
