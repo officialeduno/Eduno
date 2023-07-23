@@ -15,7 +15,7 @@ const Refund_policy = () => {
                 <div className='px-4 md:mx-24 md:px-24'>
                     <p className='text-sm md:text-lg pl-4'>At Eduno, we strive to provide the best coding courses and a comprehensive learning experience for all our users. We understand that sometimes circumstances may change, and you may need to request a refund. Please review our refund policy outlined below:</p>
                     <h1 className='text-md md:text-xl font-medium pt-4'>1. Eligibility for Refund</h1>
-                    <p className='text-sm md:text-lg pl-4'>Refunds are applicable only to the purchases made directly on our website. Refunds can only be requested within 15 days from the date of purchase.</p>
+                    <p className='text-sm md:text-lg pl-4'>Refunds are applicable only to the purchases made directly on our website. Refunds can only be requested within 3 days from the date of purchase.</p>
 
                     <h1 className='text-md md:text-xl font-medium pt-4'>2. Refundable Items</h1>
                     <p className='text-sm md:text-lg pl-4'>(a) Weekly Coding Contest Entry Fees: Contest entry fees are non-refundable once the contest has commenced.</p>
