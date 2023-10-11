@@ -2,6 +2,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+
+// Adding some comments
 export default function Home() {
 
   return (
@@ -277,7 +279,7 @@ export default function Home() {
           <h1 className='text-[#FD7014] text-3xl md:text-5xl text-center pb-2 md:pb-6 text-font-heading'>Mentorship</h1>
           <p className='text-white text-md md:px-12 text-center text-font'>A complete solution to address all of your mentoring requirements., including educational materials, communities to join, opportunities, and much more.
             EDUNO is not just limited to providing roadmaps and personal guidance; it offers a comprehensive solution to address all your mentoring requirements. Whether you are a beginner looking to kickstart your programming journey or an experienced developer seeking to expand your knowledge, EDUNO has got you covered.</p>
-            {/* ########## Button of Mentor ship section ########## */}
+          {/* ########## Button of Mentor ship section ########## */}
           <div className="mt-6">
             <Link href={"/mentorship/mentors"} target='_blank' className="inline-flex justify-center items-center px-4 py-2 mb-6 md:py-3 md:px-5 md:ml-2 text-base font-medium text-center rounded-lg focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 button-background button-hover-background button-text button-hover-text">
               Learn More
